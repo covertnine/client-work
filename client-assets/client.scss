@@ -1,5 +1,5 @@
 /****************************************************************************************/
-/* CEA Specific Styling
+/* Client Specific Styling
 /****************************************************************************************/
 @import "client_variables";
 
@@ -13,31 +13,8 @@ body {
   font-size: 62.5%;
 }
 
-.page-id-681 .page {
-  background: transparent url("/wp-content/uploads/2019/03/bg-tile-talent-pattern.jpg") top left repeat;
-  background-size: 50%;
-}
-
-.page-id-681 .page .entry-content {
-  background-color: $light;
-}
-
-.starry-bg .container {
-  background-position: right bottom !important;
-  background-repeat: no-repeat !important;
-}
-
-.cea-link-text {
-  color: $primary;
-  text-decoration: underline;
-}
-
-.cea-link-text:hover {
-  color: $dark;
-}
-
 /****************************************************************************************/
-/* CEA default colors, button colors + background colors */
+/* Client default colors, button colors + background colors */
 /****************************************************************************************/
 
 .has-color-green-color {
@@ -88,32 +65,9 @@ body {
   background-color: $dark;
 }
 
-.has-color-pink-background-color,
-.entry-content .wp-block-button:not(.is-style-outline) .has-color-pink-background-color {
-  background-color: $secondary;
-}
-
-.has-color-green-background-color,
-.entry-content .wp-block-button:not(.is-style-outline) .has-color-green-background-color {
-  background-color: $primary;
-}
-
-.entry-content .wp-block-button:not(.is-style-outline) .has-color-white-background-color {
-  background-color: $light;
-}
-
-.entry-content .wp-block-button:not(.is-style-outline) .has-color-black-background-color {
-  background-color: $dark;
-}
-
-.entry-content .wp-block-button:not(.is-style-outline) .has-color-gray-background-color {
-  background-color: $gray-900;
-}
-
 /****************************************************************************************/
-/* CEA buttons */
+/* Client buttons */
 /****************************************************************************************/
-.btn-cea,
 .cortextoo button,
 .btn,
 #topnav input[type="submit"],
@@ -148,18 +102,6 @@ body {
   font-family: $font-family-base;
 }
 
-.btn-cea {
-  background-color: $primary;
-  color: $light;
-}
-
-.topnav-btn-signup {
-  background-color: $secondary;
-  padding: 5px 30px;
-  border-radius: 28px;
-  font-size: 1.2rem;
-}
-
 .btn-secondary,
 .cortextoo .entry-content .btn-secondary {
   background-color: $secondary;
@@ -173,10 +115,8 @@ body {
   padding-right: 8px;
 }
 
-.btn-cea:hover,
 .cortextoo button:hover,
 .btn:hover,
-#topnav input[type="submit"]:hover,
 .wp-block-button__link:hover,
 .editor-styles-wrapper .button:hover,
 .editor-styles-wrapper .button-primary:hover,
@@ -200,167 +140,9 @@ body {
   padding-right: 4px;
 }
 
-#topnav input[type="submit"] {
-  background-color: $dark;
-  border-radius: 28px;
-  color: $light;
-  padding: 7px 15px;
-  margin-left: 10px;
-}
 
 /****************************************************************************************/
-/* CEA topnav */
-/****************************************************************************************/
-#topnav {
-  background-color: $primary;
-  padding: 15px 0px;
-}
-
-/* login form */
-#topnav #loginform {
-  margin: 0px;
-}
-
-#topnav #loginform p {
-  display: inline;
-  margin: 0px;
-}
-
-#topnav #loginform p .input {
-  padding: 5px;
-  font-size: 1.2rem;
-  line-height: 1;
-  border: none;
-  margin: 0px;
-}
-
-#topnav #loginform p .input:focus {
-  outline-color: $secondary;
-}
-
-#topnav #loginform p label {
-  color: $light;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  padding-right: 15px;
-  letter-spacing: 0.08rem;
-  margin: 0px;
-}
-
-/* login form and post-logged in navigation */
-#topnav #loginform .login-password {
-  margin-left: 30px;
-}
-
-#topnav .widget_nav_menu ul {
-  margin: 0px;
-}
-
-#topnav .widget_nav_menu .menu li {
-  display: inline-block;
-  margin: 0px 20px;
-}
-
-#topnav .widget_nav_menu .menu li:first-child {
-  margin-left: 0px;
-}
-
-#topnav .widget_nav_menu .menu li a {
-  text-transform: uppercase;
-  color: $light;
-  letter-spacing: 0.11rem;
-}
-
-#topnav .widget_nav_menu .menu li a:hover {
-  color: $gray-300;
-}
-
-@media only screen and (min-width: 1px) and (max-width: 767px) {
-  #topnav {
-    padding: 10px 0px 0px 0px;
-  }
-
-  #topnav .container {
-    padding-right: 0px;
-    padding-left: 0px;
-    margin: 0px;
-    max-width: 100%;
-  }
-
-  #topnav #loginform {
-    width: 100%;
-    text-align: center;
-    margin: 0px auto;
-  }
-
-  #topnav #loginform p .input {
-    padding: 2px;
-    height: 16px;
-    max-width: 90px;
-  }
-
-  #topnav #loginform .login-password {
-    margin-left: 15px;
-  }
-
-  #topnav #loginform p label {
-    color: $light;
-    font-size: 0.9rem;
-    letter-spacing: 0.06rem;
-    padding-right: 5px;
-  }
-
-  #topnav input[type="submit"],
-  .topnav-btn-signup {
-    margin-left: 5px;
-    font-size: 0.9rem;
-    letter-spacing: 0.07rem;
-    padding: 4px 8px;
-  }
-
-  #topnav .topnav-btn-signup {
-    width: 100%;
-    display: block;
-    margin: 0px auto;
-    border-radius: 0px;
-    margin-top: 8px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-
-  #topnav input[type="submit"],
-  .topnav-btn-signup {
-    font-size: 1.3rem;
-    line-height: 1;
-    letter-spacing: 0.11rem;
-    padding: 7px 16px;
-  }
-
-  #topnav input[type="submit"] {
-    margin-left: 4px;
-    line-height: 1;
-  }
-
-  #topnav #loginform .login-password {
-    margin-left: 20px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .topnav-btn-signup {
-    padding: 7px 30px;
-  }
-
-  .form-linline {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-}
-
-/****************************************************************************************/
-/* CEA navbar */
+/* Client navbar */
 /****************************************************************************************/
 
 #wrapper-navbar {
@@ -375,6 +157,7 @@ body {
 
 .navbar-small {
   max-height: 55px;
+  -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
 }
 
@@ -422,6 +205,8 @@ body {
   }
 
   .navbar .container .navbar-small-buttons {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
   }
 
@@ -456,7 +241,7 @@ body {
 }
 
 /****************************************************************************************/
-/* CEA Typography */
+/* Client Typography */
 /****************************************************************************************/
 .entry-content,
 .editor-styles-wrapper p,
@@ -474,46 +259,12 @@ body {
   font-family: $font-family-base;
 }
 
-/* specific type classes */
-.mission {
-  font-weight: $font-weight-base !important;
-  font-size: 3.6rem !important;
-  letter-spacing: 0.02rem !important;
-  line-height: 1.6;
-  margin: 25px 0px;
-}
-
 /* Responsive Typography */
 @media only screen and (max-width: 575px) {
-  .entry-content .mission {
-    font-size: 2.6rem !important;
-    letter-spacing: 0.02rem !important;
-    line-height: 1.6;
-  }
 
   .entry-content p[class$="-font-size"] {
     line-height: 1;
   }
-}
-
-.icon-address {
-  color: $primary;
-  font: 500 1.2rem/1.7 $font-family-base, sans-serif !important;
-  padding: 0px 0px 0px 30px;
-  letter-spacing: 0.1rem;
-  position: relative;
-}
-
-.icon-address:before {
-  display: inline-block;
-  position: absolute;
-  left: 0px;
-  top: 5px;
-  height: 22px;
-  width: 22px;
-  font: normal normal normal 2.2rem/1 FontAwesome;
-  content: "\f041";
-  color: $primary;
 }
 
 @media only screen and (min-width: 1px) {
@@ -528,7 +279,6 @@ body {
   .entry-content h3.section-heading-accent-alt {
     margin: 10px auto;
     font-size: 1.6rem;
-    font-family: niveau-grotesk-small-caps, sans-serif;
     font-weight: 500;
     line-height: 1;
     letter-spacing: 0.08rem;
@@ -540,135 +290,93 @@ body {
 
 @media only screen and (min-width: 768px) {
 
-  /* section heading accents */
-  .editor-styles-wrapper .editor-rich-text .section-heading-accent,
-  .section-heading-accent,
-  .editor-styles-wrapper .editor-rich-text .section-heading-accent-alt,
-  .section-heading-accent-alt,
-  .entry-content .section-heading-accent-alt,
-  .entry-content h3.section-heading-accent,
-  .entry-content h3.section-heading-accent-alt {
-    line-height: 1.5;
+  /* subheadings */
+  .entry-content .subheading1,
+  .entry-content .subheading2,
+  .entry-content .subheading3,
+  .entry-content .subheading4,
+  .entry-content .subheading5,
+  .wp-block-heading .subheading1,
+  .wp-block-heading .subheading2,
+  .wp-block-heading .subheading3,
+  .wp-block-heading .subheading4,
+  .wp-block-heading .subheading5 {
+    font-weight: 400;
+    font-size: 2.6rem;
+    letter-spacing: 0.055rem;
+  }
+
+  .entry-content .subheading2,
+  .wp-block-heading .subheading2,
+  .subheading2 {
+    font-weight: 500;
+    font-size: 2.3rem;
+    letter-spacing: 0.12rem;
+  }
+
+  .entry-content .subheading3,
+  .wp-block-heading .subheading3,
+  .subheading3 {
+    font-weight: 100;
     font-size: 2rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  .entry-content .subheading4,
+  .wp-block-heading .subheading4,
+  .subheading4 {
+    font-size: 1.6rem;
+    letter-spacing: 0.001rem;
+  }
+
+  .entry-content .subheading5,
+  .wp-block-heading .subheading5,
+  .subheading5 {
+    font-size: 1.4rem;
+    letter-spacing: 0.125rem;
+    font-weight: $font-weight-normal;
+  }
+
+  .icon-label,
+  .entry-content .icon-label,
+  .wp-block-heading .icon-label {
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    font-size: 1.8rem !important;
+    letter-spacing: 0.2rem;
+    line-height: 1.1;
+  }
+
+  .entry-meta,
+  .entry-meta a {
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    line-height: 1;
+    font-size: 1.4rem;
+    color: $gray-700;
+  }
+
+  .entry-footer .comments-link {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  /* WordPress Gutenberg Font Sizes */
+  .has-small-font-size {
+    font-size: 1.4rem !important;
+    line-height: 1.5 !important;
+    letter-spacing: 0.125rem;
   }
 }
 
-.editor-styles-wrapper .section-heading-accent:before,
-.section-heading-accent:before,
-.editor-styles-wrapper .section-heading-accent-alt:before,
-.section-heading-accent-alt:before {
-  content: " ";
-  display: block;
-  width: 100%;
-  height: 40px;
-  background: transparent url("/wp-content/uploads/2019/02/one-divider.svg") no-repeat;
-  background-size: 100% 100%;
-  margin-bottom: 10px;
-  min-height: 50px;
-}
-
-.full-width-page-wrapper .section-heading-accent-alt:before,
-.full-width-page-wrapper .section-heading-accent:before {
-  min-height: 75px;
-}
-
-.editor-styles-wrapper .section-heading-accent-alt:before,
-.section-heading-accent-alt:before {
-  background: transparent url("/wp-content/uploads/2019/03/star-double-divider.svg") center center no-repeat;
-  background-size: cover;
-}
-
-/* subheadings */
-.entry-content .subheading1,
-.entry-content .subheading2,
-.entry-content .subheading3,
-.entry-content .subheading4,
-.entry-content .subheading5,
-.wp-block-heading .subheading1,
-.wp-block-heading .subheading2,
-.wp-block-heading .subheading3,
-.wp-block-heading .subheading4,
-.wp-block-heading .subheading5 {
-  font-weight: 400;
-  font-size: 2.6rem;
-  letter-spacing: 0.055rem;
-  color: #2b2b2b;
-}
-
-.entry-content .subheading2,
-.wp-block-heading .subheading2,
-.subheading2 {
-  font-weight: 500;
-  font-size: 2.3rem;
-  letter-spacing: 0.12rem;
-}
-
-.entry-content .subheading3,
-.wp-block-heading .subheading3,
-.subheading3 {
-  font-weight: 100;
-  font-size: 2rem;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
-.entry-content .subheading4,
-.wp-block-heading .subheading4,
-.subheading4 {
-  font-size: 1.6rem;
-  letter-spacing: 0.001rem;
-}
-
-.entry-content .subheading5,
-.wp-block-heading .subheading5,
-.subheading5 {
-  font-size: 1.4rem;
-  letter-spacing: 0.125rem;
-  font-weight: $font-weight-normal;
-}
-
-.icon-label,
-.entry-content .icon-label,
-.wp-block-heading .icon-label {
-  text-transform: uppercase;
-  font-weight: $font-weight-bold;
-  font-size: 1.8rem !important;
-  letter-spacing: 0.2rem;
-  line-height: 1.1;
-}
-
-.entry-meta,
-.entry-meta a {
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  line-height: 1;
-  font-size: 1.4rem;
-  color: $gray-700;
-}
-
-.entry-footer .comments-link {
-  display: block;
-  text-align: right;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-
-/* WordPress Gutenberg Font Sizes */
-.has-small-font-size {
-  font-size: 1.4rem !important;
-  line-height: 1.5 !important;
-  letter-spacing: 0.125rem;
-}
-
 /****************************************************************************************/
-/* CEA page title header on logins, search, pages, posts, etc. */
+/* Client page title header on logins, search, pages, posts, etc. */
 /****************************************************************************************/
 .page-template-fullwidthpage .cortextoo .entry-header,
-.cortextoo.page-activation .entry-header,
-.page-login .entry-header,
-.post-847 .entry-header,
-.post-851 .entry-header,
 .container-width-page-wrapper.cortextoo .page .entry-header {
   background-color: $primary;
 }
@@ -713,7 +421,7 @@ body {
 }
 
 /****************************************************************************************/
-/* CEA unordered list stylings */
+/* Client unordered list stylings */
 /****************************************************************************************/
 .entry-content ul:not(.wp-block-gallery),
 .entry-content ol,
@@ -748,7 +456,6 @@ body {
   margin-left: -45px;
   padding-left: 45px;
   line-height: 2;
-  background: transparent url("/wp-content/uploads/2019/02/Rating_star.svg") 0px -2px no-repeat;
   background-size: 25px 25px;
 }
 
@@ -760,427 +467,7 @@ body {
 }
 
 /****************************************************************************************/
-/* CEA borders around some columns */
-/****************************************************************************************/
-.row-col-bordergreen .wp-block-column,
-.row-col-bordergreen div[data-type="core/column"] {
-  border: 2px solid $primary;
-  padding: 30px 25px;
-}
-
-@media only screen and (min-width: 600px) {
-
-  .row-col-bordergreen .wp-block-column,
-  .row-col-bordergreen>.editor-inner-blocks>.editor-block-list__layout>[data-type="core/column"] {
-    padding: 20px 15px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-
-  .row-col-bordergreen .wp-block-column,
-  .row-col-bordergreen>.editor-inner-blocks>.editor-block-list__layout>[data-type="core/column"] {
-    padding: 30px 25px;
-  }
-}
-
-/****************************************************************************************/
-/* CEA gallery with logos */
-/****************************************************************************************/
-
-.wp-block-gallery-item-small .blocks-gallery-item {
-  padding: 0px 25px;
-}
-
-.wp-block-gallery-item-small .blocks-gallery-item:first-child {
-  padding-left: 0px;
-}
-
-.wp-block-gallery-item-small .blocks-gallery-item:last-child {
-  padding-right: 0px;
-}
-
-/****************************************************************************************/
-/* CEA Search Shortcode */
-/****************************************************************************************/
-.home-search #searchform #homesearchsubmit {
-  border-radius: 28px;
-}
-
-@media only screen and (min-width: 1px) {
-  .home-search .searchlabel {
-    display: inline-block;
-    text-transform: uppercase;
-    color: $light;
-    font-weight: 500;
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    margin: 0px;
-    padding: 0px;
-    line-height: 1;
-  }
-
-  .home-search #searchform {
-    max-width: 1140px;
-    width: 100%;
-    display: block;
-    margin: 30px auto;
-    text-align: center;
-  }
-
-  .search-fields-wrap {
-    flex-direction: column;
-  }
-
-  .home-search #searchform #s {
-    margin: 30px 0px;
-    display: block;
-    width: 100%;
-  }
-
-  .page-search-results .home-search #searchform #s {
-    margin: 5px 0px;
-  }
-
-  .home-search #searchform #s {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    height: 38px;
-  }
-}
-
-@media only screen and (min-width: 576px) {
-  .home-search #searchform {
-    max-width: 1140px;
-    width: 80%;
-    display: block;
-    margin: 30px auto;
-    text-align: center;
-  }
-
-  .home-search #searchform #s {
-    width: 100%;
-    display: inline-block;
-    padding-left: 30px;
-  }
-
-  .home-search #searchform #homesearchsubmit {
-    margin-top: 0px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .search-fields-wrap {
-    flex-direction: row;
-  }
-
-  .home-search .searchlabel {
-    margin-right: 20px;
-  }
-
-  .home-search #searchform #s {
-    width: 80%;
-  }
-
-  .home-search #searchform #homesearchsubmit {
-    margin-left: 20px;
-  }
-}
-
-/****************************************************************************************/
-/* CEA Profile Front End */
-/****************************************************************************************/
-
-@media only screen and (min-width: 1px) {
-  .profile-header {
-    max-height: 275px;
-  }
-
-  .cea-profile .entry-content {
-    padding-top: 30px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .profile-header {
-    height: 465px;
-    max-height: 465px;
-  }
-
-  .cea-profile .entry-content {
-    padding-top: 50px;
-  }
-}
-
-.profile-header {
-  position: relative;
-  text-align: center;
-  overflow: hidden;
-}
-
-.profile-header-wrapper {
-  position: relative;
-  z-index: 7;
-  height: 100%;
-}
-
-.profile-header-content {
-  text-align: center;
-  margin: 0px auto;
-}
-
-@media only screen and (min-width: 1px) {
-  .profile-carousel {
-    max-width: 375px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .profile-carousel {
-    max-width: none;
-  }
-
-  .profile-carousel .carousel-item .carousel-item-center {
-    min-height: 465px;
-  }
-}
-
-.profile-carousel .carousel-item .carousel-item-center {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  z-index: 34;
-}
-
-.profile-gallery-wrapper {
-  margin-bottom: 30px;
-}
-
-.profile-carousel .carousel-item .entry-profile-gallery-img {
-  max-height: 465px;
-  width: auto;
-}
-
-.entry-image-gallery-profile {
-  margin-bottom: 0px;
-}
-
-.profile-bg-img {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  z-index: 4;
-}
-
-.cea-ratings-container {
-  line-height: 1;
-  margin-bottom: 15px;
-}
-
-.profile-ratings-wrapper .section-heading-accent {
-  margin-bottom: 0px;
-}
-
-.profile-ratings-wrapper .cea-ratings-container .cea-rating {
-  background-size: contain;
-}
-
-.profile-ratings-wrapper .cea-ratings-container .cea-rating:before {
-  display: block;
-  content: " ";
-  height: 42px;
-  width: 188px;
-  margin: 0px auto;
-  padding: 0px;
-}
-
-.profile-ratings-wrapper .cea-ratings-container .cea-rating-0:before {
-  background: transparent url(/wp-content/uploads/2019/04/rating-star-0.svg) top center no-repeat;
-}
-
-.profile-ratings-wrapper .cea-ratings-container .cea-rating-1:before {
-  background: transparent url(/wp-content/uploads/2019/04/rating-star-1.svg) top center no-repeat;
-}
-
-.profile-ratings-wrapper .cea-ratings-container .cea-rating-2:before {
-  background: transparent url(/wp-content/uploads/2019/04/rating-star-2.svg) top center no-repeat;
-}
-
-.profile-ratings-wrapper .cea-ratings-container .cea-rating-3:before {
-  background: transparent url(/wp-content/uploads/2019/04/rating-star-3.svg) top center no-repeat;
-}
-
-.profile-ratings-wrapper .cea-ratings-container .cea-rating-4:before {
-  background: transparent url(/wp-content/uploads/2019/04/rating-star-4.svg) top center no-repeat;
-}
-
-.profile-ratings-wrapper .cea-ratings-container .cea-rating-5:before {
-  background: transparent url(/wp-content/uploads/2019/04/rating-star-5.svg) top center no-repeat;
-}
-
-.cea-ratings-container .cea-rating {
-  font-family: NiveauGroteskRegular-Italic;
-  font-size: 2.6rem;
-  font-weight: 300;
-  color: #c1c1c1;
-  letter-spacing: 0.054rem;
-}
-
-.cea-booking {
-  font-size: 2.3rem;
-  text-transform: uppercase;
-  color: #000;
-  letter-spacing: 0.12rem;
-  font-weight: 500;
-}
-
-.cea-bookings-container {
-  margin-bottom: 15px;
-}
-
-.cea-booking .cea-booking-green {
-  color: $primary;
-}
-
-.profile-carousel .carousel-inner,
-.profile-video-carousel .carousel-inner.profile-video-carousel-container {
-  padding: 0px;
-  margin-bottom: 0px;
-  z-index: 32;
-}
-
-/* talent video gallery */
-.profile-video-carousel .carousel-item .carousel-item-center {
-  text-align: center;
-}
-
-.profile-video-carousel .carousel-control-next {
-  justify-content: flex-end;
-}
-
-.profile-video-carousel .carousel-control-prev {
-  justify-content: flex-start;
-}
-
-.profile-video-nav .carousel-control-prev,
-.profile-video-nav .carousel-control-next {
-  z-index: 36;
-}
-
-.profile-video-carousel .carousel-inner.profile-video-carousel-container {
-  margin-left: 0px;
-}
-
-.entry-content .profile-video-carousel .carousel-item.active:before {
-  display: none;
-}
-
-.profile-video-wrapper {
-  background: #006a30 url("/wp-content/uploads/2019/04/videos-bg-144.jpg") center center no-repeat;
-  background-size: cover;
-  margin: 40px auto;
-  padding: 30px 0px;
-}
-
-.profile-video-carousel .profile-video-carousel-container .carousel-item:before {
-  display: none;
-}
-
-.profile-video-right {
-  color: $light;
-}
-
-.profile-video-right .talent-name,
-.profile-video-right .talent-videos-label {
-  text-transform: uppercase;
-  letter-spacing: 0.26rem;
-  font-size: 45px;
-  font-weight: 400;
-  display: block;
-  line-height: 1;
-  margin-bottom: 0px;
-  width: 100%;
-}
-
-.profile-video-right .talent-videos-label {
-  font-size: 70px;
-  font-weight: $font-weight-bold;
-}
-
-@media only screen and (min-width: 1px) {
-  .profile-video-carousel .carousel-item .carousel-item-center {
-    position: relative;
-  }
-
-  .profile-video-carousel .carousel-item .carousel-item-center:before {
-    content: " ";
-    display: block;
-    padding-top: 56.25%;
-  }
-
-  .profile-video-carousel .carousel-item .carousel-item-center iframe {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* talent gallery */
-.cea-profile .entry-content .profile-gallery-label {
-  font-size: 3.6rem;
-  letter-spacing: 0.2rem;
-  font-weight: $font-weight-bold;
-  display: block;
-  margin: 0px auto 20px auto;
-  text-align: center;
-}
-
-/* share/contact talent icons */
-.cea-profile .entry-content .profile-share-wrapper {
-  margin-bottom: 30px;
-}
-
-.cea-profile .entry-content .profile-share-list {
-  margin: 0px;
-  padding: 0px;
-}
-
-.cea-profile .profile-share-list .profile-share-item {
-  display: inline;
-  padding: 0px;
-  font-family: FontAwesome;
-  font-size: 3.6rem;
-  margin: 0px 5px;
-}
-
-.cea-profile .profile-share-list .profile-share-item .profile-share-link i {
-  color: $primary;
-  font-style: normal;
-}
-
-.cea-profile .profile-share-list .profile-share-item:before {
-  display: none;
-}
-
-/****************************************************************************************/
-/* CEA Ratings */
-/****************************************************************************************/
-
-/****************************************************************************************/
-/* CEA Footer */
+/* Client Footer */
 /****************************************************************************************/
 
 #wrapper-footer-full {
@@ -1202,7 +489,7 @@ body {
 }
 
 /****************************************************************************************/
-/* CEA widget customizations*/
+/* Client widget customizations*/
 /****************************************************************************************/
 
 /* all widgets */
@@ -1250,7 +537,7 @@ body {
 }
 
 /****************************************************************************************/
-/* CEA Gravity Forms */
+/* Client Gravity Forms */
 /****************************************************************************************/
 .ginput_card_expiration_container select,
 .ginput_card_expiration_container label {
@@ -1277,9 +564,5 @@ body {
 }
 
 /****************************************************************************************/
-/* CEA Custom Blocks */
+/* Client Custom Blocks */
 /****************************************************************************************/
-.c9-block-cta {
-  border-top: 4px solid #006a30;
-  border-bottom: 4px solid #006a30;
-}
