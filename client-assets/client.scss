@@ -6,6 +6,9 @@
 body {
   color: $gray-900;
   font-family: $font-family-base;
+}
+
+p {
   line-height: 2;
 }
 
@@ -82,7 +85,6 @@ body {
 }
 
 .btn,
-.button,
 .editor-styles-wrapper .button,
 .editor-styles-wrapper .button-primary,
 .editor-styles-wrapper .mce-content-body.button,
