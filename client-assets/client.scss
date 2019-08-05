@@ -306,9 +306,14 @@ h6,
 
 p.wp-block-subhead,
 .subhead-h,
-.c9-sh {
+.c9-sh,
+.text-muted {
   font-family: 'wisdom-script', $font-family-sans-serif;
   color: #FEC50A;
+}
+
+.text-muted {
+  color: #FEC50A !important;
 }
 
 .editor-styles-wrapper p.wp-block-subhead,
