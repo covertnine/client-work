@@ -12,9 +12,10 @@ p {
   line-height: 2;
 }
 
-:root {
-  font-size: 62.5%;
+.wrapper {
+  margin-top: -115px;
 }
+
 
 /****************************************************************************************/
 /* Client default colors, button colors + background colors */
@@ -149,18 +150,18 @@ p {
 
 #wrapper-navbar {
   z-index: 1020;
-  background-color: $light;
+  background-color: transparent;
 }
 
 .navbar {
   padding: 5px 0px;
-  background-color: $light;
 }
 
 .navbar-small {
   max-height: 55px;
   -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
+  background-color: $light;
 }
 
 .navbar-small .navbar-brand img {
