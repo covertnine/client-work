@@ -237,8 +237,9 @@ p {
 
 @media only screen and (min-width: 768px) {
   .navbar-brand img {
-    width: 285px;
+    max-width: 285px;
     max-height: 92px;
+    width: auto;
     height: auto;
   }
 
@@ -279,6 +280,7 @@ p {
   font-style: normal;
 }
 
+.c9-site-title,
 .cortextoo .h1,
 .cortextoo .h2,
 .cortextoo .h3,
