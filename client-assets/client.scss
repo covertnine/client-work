@@ -22,11 +22,11 @@ p {
 /* Client default colors, button colors + background colors */
 /****************************************************************************************/
 
-.has-color-green-color {
+.has-color-orange-color {
   color: $primary !important;
 }
 
-.has-color-pink-color {
+.has-color-yellow-color {
   color: $secondary !important;
 }
 
@@ -42,12 +42,26 @@ p {
   color: $gray-900 !important;
 }
 
-.bg-primary {
+.bg-primary,
+.has-color-orange-background-color {
   background-color: $primary;
 }
 
-.bg-secondary {
+.bg-secondary,
+.has-color-yellow-background-color {
   background-color: $secondary;
+}
+
+.has-color-gray-background-color {
+  background-color: $gray-100;
+}
+
+.has-color-white-background-color {
+  background-color: #fff;
+}
+
+.has-color-black-background-color {
+  background-color: #000;
 }
 
 .bg-success {
@@ -309,7 +323,9 @@ p {
 p.wp-block-subhead,
 .subhead-h,
 .c9-sh,
-.text-muted {
+.text-muted,
+.cortextoo .c9-sh,
+.cortextoo .text-muted {
   font-family: 'wisdom-script', $font-family-sans-serif;
   color: #FEC50A;
 }
@@ -600,13 +616,11 @@ p.wp-block-subhead,
 /****************************************************************************************/
 
 #wrapper-footer-full {
-  background-color: $primary;
-  color: $light;
+  color: $gray-100;
 }
 
 #wrapper-footer {
-  background-color: $primary;
-  color: $light;
+  color: $gray-100;
 }
 
 #wrapper-footer-full a {
