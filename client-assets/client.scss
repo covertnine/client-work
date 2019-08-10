@@ -17,6 +17,12 @@ p {
   margin-bottom: 0px;
 }
 
+@media only screen and (min-width: 1200px) {
+  .navbar .container {
+    width: 1340px;
+    max-width: 1340px;
+  }
+}
 
 /****************************************************************************************/
 /* Client default colors, button colors + background colors */
@@ -218,6 +224,19 @@ p {
     padding-bottom: 0px;
   }
 
+  .navbar-small .navbar-brand {
+    background: transparent url(/wp-content/uploads/2019/08/wells-lamont-logo-bloack.svg) center no-repeat;
+    background-size: contain;
+    max-width: 285px;
+    max-height: 45px;
+    width: auto;
+    height: auto;
+  }
+
+  .navbar-small .navbar-brand img {
+    opacity: 0;
+  }
+
   .navbar {
     display: block;
   }
@@ -254,6 +273,23 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
+  .navbar #mega-menu-wrap-primary #mega-menu-primary .mega-toggle-on .mega-menu-link {
+    position: relative;
+  }
+
+  .navbar #mega-menu-wrap-primary #mega-menu-primary .mega-toggle-on>.mega-menu-link:after,
+  .navbar #mega-menu-wrap-primary #mega-menu-primary .mega-toggle-on.mega-current_page_item>a.mega-menu-link:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    height: 5px;
+    bottom: -10px;
+    background-color: #FCBD13;
+  }
+
   .nav-search {
     display: none;
   }
@@ -307,6 +343,17 @@ p {
 .editor-styles-wrapper h6 {
   font-family: $headings-font-family;
   font-weight: 700;
+}
+
+.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link {
+  font-family: $headings-font-family;
+  color: #fff;
+  letter-spacing: 0.056rem;
+  line-height: .95;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
 }
 
 .c9-h,

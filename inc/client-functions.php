@@ -26,7 +26,7 @@ if (!function_exists('client_scripts')) {
      */
     function client_scripts()
     {
-        wp_enqueue_style('client-type', 'https://use.typekit.net/uqa4rne.css', array('cortextoo-styles'));
+        //wp_enqueue_style('client-type', 'https://use.typekit.net/uqa4rne.css', array('cortextoo-styles'));
         wp_enqueue_style('client-styles', get_stylesheet_directory_uri() . '/client/client-assets/dist/client.min.css', array('cortextoo-styles'));
         wp_enqueue_style('client-styles', get_stylesheet_directory_uri() . '/client/client-assets/dist/client-eidtor.min.css', 99999999);
         wp_enqueue_script('client-scripts', get_template_directory_uri() . '/client/client-assets/custom-client.js', array('jquery'), true);
