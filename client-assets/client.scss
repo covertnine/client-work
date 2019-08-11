@@ -684,6 +684,11 @@ p.wp-block-subhead,
 /* small style toggle */
 .c9-toggles .c9-toggles-toggle.small-toggle {
   padding: 25px 0px;
+  border: none;
+}
+
+.c9-toggles .c9-toggles-toggle.small-toggle:last-child {
+  border: none;
 }
 
 .c9-toggles .c9-toggles-toggle.small-toggle .mb-0 {
@@ -696,11 +701,11 @@ p.wp-block-subhead,
 
 .c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-heading .c9-toggles-toggle-label {
   font-family: helvetica, arial, verdana;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #000000;
   letter-spacing: 0.05px;
   text-align: left;
-  line-height: 1;
+  line-height: 1.2;
   text-transform: none;
 }
 
@@ -714,7 +719,37 @@ p.wp-block-subhead,
 .c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-collapse .fas,
 .c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-heading:not([data-toggle="collapse"]) .c9-toggles-item-collapse .fa-angle-right,
 .c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-heading[aria-expanded="true"] .c9-toggles-item-collapse .fa-angle-right {
+  -webkit-transform: none;
   transform: none;
+}
+
+.c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-collapse {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 2.8px solid #000000;
+  padding: 5px;
+  border-radius: 50%;
+  height: 27px;
+  width: 27px;
+}
+
+.c9-toggles .c9-toggles-toggle.small-toggle .fa-angle-right:before {
+  content: '\f067';
+  color: #EBB900;
+  font-size: 16px;
+  display: block;
+  padding-top: 2px;
+}
+
+.c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-heading[aria-expanded="true"] .fa-angle-right:before {
+  content: '\f068';
 }
 
 /****************************************************************************************/
