@@ -9,7 +9,7 @@
   font-size: 2rem;
 }
 
-.editor-styles-wrapper div,
+.editor-styles-wrapper,
 .editor-post-title__block .editor-post-title__input {
   font-family: $font-family-base !important;
 }
@@ -46,4 +46,8 @@
 .editor-styles-wrapper .c9-heading h5.subhead-h5,
 .editor-styles-wrapper .c9-heading h6.subhead-h6 {
   font-family: 'wisdom-script', $font-family-sans-serif;
+}
+
+.editor-styles-wrapper .c9-toggles .c9-toggles-item-heading .c9-toggles-label {
+  font-family: $headings-font-family !important;
 }
