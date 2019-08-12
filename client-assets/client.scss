@@ -682,24 +682,24 @@ p.wp-block-subhead,
 }
 
 /* small style toggle */
-.c9-toggles .c9-toggles-toggle.small-toggle {
+.c9-toggles.small-toggle .c9-toggles-toggle {
   padding: 25px 0px;
   border: none;
 }
 
-.c9-toggles .c9-toggles-toggle.small-toggle:last-child {
+.c9-toggles.small-toggle .c9-toggles-toggle:last-child {
   border: none;
 }
 
-.c9-toggles .c9-toggles-toggle.small-toggle .mb-0 {
+.c9-toggles.small-toggle .c9-toggles-toggle .mb-0 {
   position: relative;
 }
 
-.c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-heading {
+.c9-toggles.small-toggle .c9-toggles-toggle .c9-toggles-item-heading {
   padding-left: 50px;
 }
 
-.c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-heading .c9-toggles-toggle-label {
+.c9-toggles.small-toggle .c9-toggles-toggle .c9-toggles-item-heading .c9-toggles-toggle-label {
   font-family: helvetica, arial, verdana;
   font-size: 2.4rem;
   color: #000000;
@@ -709,21 +709,21 @@ p.wp-block-subhead,
   text-transform: none;
 }
 
-.c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-collapse {
+.c9-togglessmall-toggle .c9-toggles-toggle. .c9-toggles-item-collapse {
   position: absolute;
   left: -50px;
   top: 0;
   right: auto;
 }
 
-.c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-collapse .fas,
-.c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-heading:not([data-toggle="collapse"]) .c9-toggles-item-collapse .fa-angle-right,
-.c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-heading[aria-expanded="true"] .c9-toggles-item-collapse .fa-angle-right {
+.c9-toggles.small-toggle .c9-toggles-toggle .c9-toggles-item-collapse .fas,
+.c9-toggles.small-toggle .c9-toggles-toggle .c9-toggles-item-heading:not([data-toggle="collapse"]) .c9-toggles-item-collapse .fa-angle-right,
+.c9-toggles.small-toggle .c9-toggles-toggle .c9-toggles-item-heading[aria-expanded="true"] .c9-toggles-item-collapse .fa-angle-right {
   -webkit-transform: none;
   transform: none;
 }
 
-.c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-collapse {
+.c9-toggles.small-toggle .c9-toggles-toggle .c9-toggles-item-collapse {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -740,7 +740,7 @@ p.wp-block-subhead,
   width: 27px;
 }
 
-.c9-toggles .c9-toggles-toggle.small-toggle .fa-angle-right:before {
+.c9-toggles.small-toggle .c9-toggles-toggle .fa-angle-right:before {
   content: '\f067';
   color: #EBB900;
   font-size: 16px;
@@ -748,7 +748,7 @@ p.wp-block-subhead,
   padding-top: 2px;
 }
 
-.c9-toggles .c9-toggles-toggle.small-toggle .c9-toggles-item-heading[aria-expanded="true"] .fa-angle-right:before {
+.c9-toggles.small-toggle .c9-toggles-toggle .c9-toggles-item-heading[aria-expanded="true"] .fa-angle-right:before {
   content: '\f068';
 }
 
