@@ -200,23 +200,13 @@
         transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in, -webkit-transform 200ms ease-in;
     }
 
-    /* position of navigation after it is opened */
     #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"].mega-no-js li.mega-menu-item:hover>ul.mega-sub-menu,
     #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"].mega-no-js li.mega-menu-item:focus>ul.mega-sub-menu,
     #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-toggle-on>ul.mega-sub-menu,
-    #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on>ul.mega-sub-menu {
+    #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on ul.mega-sub-menu {
         opacity: 1;
         -webkit-transform: translate(0, 45px);
         transform: translate(0, 45px);
-    }
-
-    /* adjusted for small nav after scrolling */
-    .navbar-small #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"].mega-no-js li.mega-menu-item:hover>ul.mega-sub-menu,
-    .navbar-small #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"].mega-no-js li.mega-menu-item:focus>ul.mega-sub-menu,
-    .navbar-small #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-toggle-on>ul.mega-sub-menu,
-    .navbar-small #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on>ul.mega-sub-menu {
-        -webkit-transform: translate(0, 15px);
-        transform: translate(0, 15px);
     }
 
     #mega-menu-wrap-primary #mega-menu-primary[data-effect="slide_up"] li.mega-menu-item.mega-menu-megamenu>ul.mega-sub-menu,
@@ -713,6 +703,15 @@
 #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row .mega-menu-column>ul.mega-sub-menu>li.mega-menu-item {
     padding: 15px;
     width: 100%;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-megamenu>ul.mega-sub-menu {
+    z-index: 999;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    max-width: none;
+    left: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1477,20 +1476,6 @@ ul.mega-sub-menu {
         top: 32px;
     }
 
-    @media only screen and (max-width: 600px) {
-        #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children.mega-toggle-on>a.mega-menu-link>span.mega-indicator {
-            display: none;
-        }
-    }
-
-    @media only screen and (max-width: 992px) {
-
-        /* styling for drop down now that menu has been clicked */
-        .mega-menu-primary-mobile-open #mega-menu-wrap-primary #mega-menu-primary {
-            right: -9px;
-        }
-    }
-
     /* re-position nav for fixed top menu*/
     .mega-menu-primary-mobile-open .navbar.fixed-top #mega-menu-wrap-primary #mega-menu-primary {
         top: 32px;
@@ -1528,6 +1513,22 @@ ul.mega-sub-menu {
         top: 105px;
     }
 
+}
+
+@media only screen and (min-width: 768px) {
+
+    .mega-menu-wrap .mega-menu,
+    #mega-menu-wrap-primary #mega-menu-primary {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
 }
 
 @media only screen and (min-width: 992px) {
