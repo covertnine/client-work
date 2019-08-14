@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-lg-2 text-left footer-search-wrapper">
                                     <div class="footer-search">
-                                        [search]
+                                        <?php get_search_form(); ?>
                                     </div>
                                 </div>
                             </div>

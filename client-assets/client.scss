@@ -1213,6 +1213,28 @@ p.wp-block-subhead,
   }
 }
 
+.footer-search .input-group .input-group-append {
+  display: none;
+}
+
+.footer-search .input-group {
+  position: relative;
+  z-index: 20;
+}
+
+.footer-search .input-group:after {
+  font-family: 'FontAwesome';
+  color: #9B9B9B;
+  content: '\f002';
+  font-size: 1.2rem;
+  position: absolute;
+  right: 0px;
+  top: 7px;
+  transform: translateX(-50%);
+  z-index: 22;
+
+}
+
 /****************************************************************************************/
 /* Client widget customizations*/
 /****************************************************************************************/
