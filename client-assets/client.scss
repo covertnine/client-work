@@ -1101,14 +1101,47 @@ p.wp-block-subhead,
   color: $gray-300;
 }
 
-#wrapper-footer .site-footer p {
+#wrapper-footer .site-footer,
+#wrapper-footer .site-footer .row,
+#wrapper-footer .site-footer .row p,
+#wrapper-footer .site-footer .copyright {
+  line-height: 1.1;
+  font-size: 1.2rem;
+}
+
+#wrapper-footer .site-footer p,
+.footer-links a,
+#wrapper-footer .site-footer a {
   text-transform: none;
   font-family: 'Abel',
     helvetica,
     sans-serif;
-  font-size: 1.2rem;
   color: #4A4A4A;
   letter-spacing: 0.05px;
+  transition: color .3s;
+}
+
+#wrapper-footer .site-footer a:hover {
+  color: $dark;
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+.footer-social a i {
+  font-style: normal;
+}
+
+.footer-social a .fab:before {
+  color: #9B9B9B;
+  transition: color .4s;
+  font-size: 2rem;
+  font-family: 'fontawesome';
+}
+
+.footer-social a:hover .fab:before {
+  color: #000;
 }
 
 /****************************************************************************************/
