@@ -373,6 +373,66 @@ p {
   padding: 0px 40px;
 }
 
+/* header navbar search */
+.header-navbar .search {
+  min-width: 125px;
+  display: inline-block;
+}
+
+.search form {
+  display: inline;
+}
+
+.header-navbar .search input:focus {
+  outline: 0;
+}
+
+.header-navbar .search:before {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  color: #fff;
+  font-size: 1.9rem;
+  content: '\f002';
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.search ::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.search ::-moz-placeholder {
+  color: #fff !important;
+}
+
+.search ::-ms-placeholder {
+  color: #fff !important;
+}
+
+.search ::placeholder {
+  color: #fff !important;
+}
+
+.header-navbar .search #s {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+  font-family: $headings-font-family;
+  font-weight: 300;
+  width: 65px;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.9rem;
+  margin-left: 4px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.header-navbar .search #s:focus {
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
 @media only screen and (min-width: 1px) {
   .header-navbar {
     height: 55px;
@@ -1148,6 +1208,7 @@ p.wp-block-subhead,
     sans-serif;
   color: #4A4A4A;
   letter-spacing: 0.05px;
+  -webkit-transition: color .3s;
   transition: color .3s;
 }
 
@@ -1165,6 +1226,7 @@ p.wp-block-subhead,
 
 .footer-social a .fab:before {
   color: #9B9B9B;
+  -webkit-transition: color .4s;
   transition: color .4s;
   font-size: 2rem;
   font-family: 'fontawesome';
@@ -1230,6 +1292,7 @@ p.wp-block-subhead,
   position: absolute;
   right: 0px;
   top: 7px;
+  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 22;
 
@@ -1357,7 +1420,9 @@ p.wp-block-subhead,
   height: 60%;
   width: 100vw;
   content: url(wl-diagonal-bg.svg);
+  -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
+  -webkit-transform: scaleX(3.3);
   transform: scaleX(3.3)
 }
 
