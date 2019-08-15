@@ -1592,24 +1592,6 @@ ul.mega-sub-menu {
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .navbar #mega-menu-wrap-primary #mega-menu-primary .mega-toggle-on .mega-menu-link {
-        position: relative;
-    }
-
-    .navbar #mega-menu-wrap-primary #mega-menu-primary .mega-toggle-on .mega-menu-link:after,
-    .navbar #mega-menu-wrap-primary #mega-menu-primary .mega-current_page_item>a.mega-menu-link:after {
-        position: absolute;
-        content: '';
-        display: block;
-        width: 100%;
-        left: 0px;
-        bottom: 0px;
-        height: 5px;
-        bottom: -10px;
-        background-color: #FCBD13;
-    }
-}
 
 @media only screen and (min-width: 1200px) {
 
