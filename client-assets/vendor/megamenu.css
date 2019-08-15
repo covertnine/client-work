@@ -200,7 +200,6 @@
         transition: opacity 200ms ease-in, transform 200ms ease-in, visibility 200ms ease-in, -webkit-transform 200ms ease-in;
     }
 
-    /* position of navigation after it is opened */
     #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"].mega-no-js li.mega-menu-item:hover>ul.mega-sub-menu,
     #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"].mega-no-js li.mega-menu-item:focus>ul.mega-sub-menu,
     #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-toggle-on>ul.mega-sub-menu,
@@ -208,15 +207,6 @@
         opacity: 1;
         -webkit-transform: translate(0, 45px);
         transform: translate(0, 45px);
-    }
-
-    /* adjusted for small nav after scrolling */
-    .navbar-small #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"].mega-no-js li.mega-menu-item:hover>ul.mega-sub-menu,
-    .navbar-small #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"].mega-no-js li.mega-menu-item:focus>ul.mega-sub-menu,
-    .navbar-small #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-toggle-on>ul.mega-sub-menu,
-    .navbar-small #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-menu-megamenu.mega-toggle-on>ul.mega-sub-menu {
-        -webkit-transform: translate(0, 15px);
-        transform: translate(0, 15px);
     }
 
     #mega-menu-wrap-primary #mega-menu-primary[data-effect="slide_up"] li.mega-menu-item.mega-menu-megamenu>ul.mega-sub-menu,
@@ -715,6 +705,15 @@
     width: 100%;
 }
 
+#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-megamenu>ul.mega-sub-menu {
+    z-index: 999;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    max-width: none;
+    left: 0;
+}
+
 @media only screen and (max-width: 600px) {
     #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-megamenu>ul.mega-sub-menu {
         float: left;
@@ -1121,7 +1120,7 @@
     }
 
     #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children.mega-toggle-on>a.mega-menu-link>span.mega-indicator {
-        display: inline-block;
+        display: none;
     }
 
     #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children.mega-hide-sub-menu-on-mobile>a.mega-menu-link:after {
@@ -1470,25 +1469,10 @@ ul.mega-sub-menu {
         position: absolute;
         right: -15px;
         width: 100vw;
-        max-width: 540px;
         z-index: 999;
         background-color: #fff;
         padding: 0px;
         top: 32px;
-    }
-
-    @media only screen and (max-width: 600px) {
-        #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item-has-children.mega-toggle-on>a.mega-menu-link>span.mega-indicator {
-            display: none;
-        }
-    }
-
-    @media only screen and (max-width: 992px) {
-
-        /* styling for drop down now that menu has been clicked */
-        .mega-menu-primary-mobile-open #mega-menu-wrap-primary #mega-menu-primary {
-            right: -9px;
-        }
     }
 
     /* re-position nav for fixed top menu*/
@@ -1532,9 +1516,18 @@ ul.mega-sub-menu {
 
 @media only screen and (min-width: 992px) {
 
-    /* row width for first row */
-    #mega-menu-wrap-primary {
-        width: 80%;
+    /* row width for first row and alignments for tablet horizontal and higher*/
+    .mega-menu-wrap .mega-menu,
+    #mega-menu-wrap-primary #mega-menu-primary {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 
     .mega-menu-wrap #mega-menu-primary {
@@ -1599,24 +1592,6 @@ ul.mega-sub-menu {
     }
 }
 
-@media only screen and (min-width: 992px) {
-    .navbar #mega-menu-wrap-primary #mega-menu-primary .mega-toggle-on .mega-menu-link {
-        position: relative;
-    }
-
-    .navbar #mega-menu-wrap-primary #mega-menu-primary .mega-toggle-on .mega-menu-link:after,
-    .navbar #mega-menu-wrap-primary #mega-menu-primary .mega-current_page_item>a.mega-menu-link:after {
-        position: absolute;
-        content: '';
-        display: block;
-        width: 100%;
-        left: 0px;
-        bottom: 0px;
-        height: 5px;
-        bottom: -10px;
-        background-color: #FCBD13;
-    }
-}
 
 @media only screen and (min-width: 1200px) {
 
