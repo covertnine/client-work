@@ -62,31 +62,3 @@ function cortextoo_add_search_form($items, $args)
         $items .= '<li class="search"><form role="search" method="get" id="searchform" action="' . home_url('/') . '"><label class="sr-only">Search Site</label><input type="text" value="" placeholder="Search" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . esc_attr__('Search') . '" class="hide"/></form></li>';
     return $items;
 }
-
-/****************************************************************************************/
-/***************************** WooCommerce
-/****************************************************************************************/
-function c9_add_woocommerce_support()
-{
-    add_theme_support('woocommerce');
-}
-add_action('after_setup_theme', 'c9_add_woocommerce_support');
-
-// $path defaults to 'woocommerce/' (in your theme folder)
-add_filter('woocommerce_template_path', function ($path) {
-    $c9_client_path = get_stylesheet_directory() . '/client/woocommerce/';
-    return file_exists($c9_client_path) ? 'plugins/woocommerce/' : $path;
-});
-
-//remove related products
-remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
-
-function c9_add_custom_body_class($classes)
-{
-    if (is_page_template('search.php')) {
-        $classes[] = 'page-search';
-    }
-
-    return $classes;
-}
-add_filter('body_class', 'c9_add_custom_body_class', 10, 1);
