@@ -20,3 +20,9 @@ function my_acf_json_load_point($paths)
     // return
     return $paths;
 }
+
+// $path defaults to 'woocommerce/' (in your theme folder)
+add_filter('woocommerce_template_path', function ($path) {
+    $my_path = get_template_directory() . '/client/woocommerce/';
+    return file_exists($my_path) ? 'client/woocommerce/' : $path;
+});
