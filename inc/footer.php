@@ -23,8 +23,8 @@
                                 </div>
                                 <div class="col-xs-6 col-sm-3 col-lg-3 footer-links-wrapper">
                                     <div class="footer-links">
-                                        <a href="#">Terms</a> |
-                                        <a href="#">Privacy</a>
+                                        <a href="/terms">Terms</a> |
+                                        <a href="/privacy">Privacy</a>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-lg-5 p-0 footer-copyright-wrapper">

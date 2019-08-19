@@ -51,3 +51,15 @@
 .editor-styles-wrapper .c9-toggles .c9-toggles-item-heading .c9-toggles-label {
   font-family: $headings-font-family !important;
 }
+
+.editor-styles-wrapper .c9-h,
+.editor-styles-wrapper .c9-h.h,
+.editor-styles-wrapper .c9-txl,
+.editor-styles-wrapper .display-1,
+.editor-styles-wrapper .display-2,
+.editor-styles-wrapper .display-3,
+.editor-styles-wrapper .display-4,
+.editor-styles-wrapper .display-5,
+.editor-styles-wrapper .display-6 {
+  line-height: .9 !important;
+}

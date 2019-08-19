@@ -62,3 +62,17 @@ function cortextoo_add_search_form($items, $args)
         $items .= '<li class="search"><form role="search" method="get" id="searchform" action="' . home_url('/') . '"><label class="sr-only">Search Site</label><input type="text" value="" placeholder="Search" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . esc_attr__('Search') . '" class="hide"/></form></li>';
     return $items;
 }
+
+/****************************************************************************************/
+/***************************** WooCommerce Specifics
+/****************************************************************************************/
+/**
+ * Change number or products per row to 4
+ */
+add_filter('loop_shop_columns', 'loop_columns', 999);
+if (!function_exists('loop_columns')) {
+    function loop_columns()
+    {
+        return 4; // 4 products per row
+    }
+}

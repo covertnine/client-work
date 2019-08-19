@@ -414,6 +414,18 @@ p {
   color: #fff !important;
 }
 
+.search ::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.search :-ms-input-placeholder {
+  color: #fff !important;
+}
+
+.search ::-ms-input-placeholder {
+  color: #fff !important;
+}
+
 .search ::placeholder {
   color: #fff !important;
 }
@@ -451,6 +463,21 @@ p {
 }
 
 .header-navbar .navbar-small .search ::-ms-placeholder {
+  color: #000 !important;
+  text-shadow: none;
+}
+
+.header-navbar .navbar-small .search ::-webkit-input-placeholder {
+  color: #000 !important;
+  text-shadow: none;
+}
+
+.header-navbar .navbar-small .search :-ms-input-placeholder {
+  color: #000 !important;
+  text-shadow: none;
+}
+
+.header-navbar .navbar-small .search ::-ms-input-placeholder {
   color: #000 !important;
   text-shadow: none;
 }
@@ -708,6 +735,7 @@ p {
 
   #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-flyout.resources-dropdown ul.mega-sub-menu,
   #mega-menu-wrap-primary #mega-menu-primary[data-effect="fade_up"] li.mega-menu-item.mega-menu-flyout.resources-dropdown.mega-toggle-on>ul.mega-sub-menu {
+    -webkit-transform: translate(-50%, -60px) !important;
     transform: translate(-50%, -60px) !important;
     left: 50%;
   }
@@ -717,6 +745,7 @@ p {
 
   #mega-menu-wrap-primary #mega-menu-primary[data-effect=fade_up] li.mega-menu-item.mega-menu-flyout.resources-dropdown.mega-toggle-on>ul.mega-sub-menu,
   #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-flyout.resources-dropdown>ul.mega-sub-menu {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     max-width: 100%;
     width: 100%;
@@ -934,6 +963,12 @@ p.wp-block-subhead,
   line-height: .9;
 }
 
+.xxl-heading .c9-txl {
+  font-size: 180px !important;
+  line-height: .9;
+  letter-spacing: 0.02rem;
+}
+
 /* Responsive Typography */
 @media only screen and (max-width: 575px) {
 
@@ -1056,13 +1091,18 @@ p.wp-block-subhead,
   font-family: $font-family-base;
   font-weight: bold;
   font-size: 20px;
-  height: 20px;
+  min-height: 18px;
   color: #000000;
   background-color: #000000;
   letter-spacing: 0.06px;
   line-height: 1;
   overflow: hidden;
   margin-bottom: 20px !important;
+}
+
+.editor-styles-wrapper .heading-bar-black:last-child,
+.entry-content .heading-bar-black:last-child {
+  margin-bottom: 0px !important;
 }
 
 .editor-styles-wrapper .heading-bar-black strong,
@@ -1072,6 +1112,21 @@ p.wp-block-subhead,
   padding: 0px 20px;
   font-size: 25px;
   line-height: .9;
+}
+
+@media only screen and (max-width: 667px) {
+
+  .editor-styles-wrapper .heading-bar-black,
+  .entry-content .heading-bar-black {
+    font-size: 1.2rem;
+    min-height: 12px;
+  }
+
+  .editor-styles-wrapper .heading-bar-black strong,
+  .entry-content .heading-bar-black strong {
+    font-size: 1.4rem;
+    padding: 0px 8px;
+  }
 }
 
 .entry-content hr,
@@ -1277,9 +1332,9 @@ p.wp-block-subhead,
 /* Client Search */
 /****************************************************************************************/
 @media only screen and (min-width: 768px) {
-  // .search-results #wrapper-navbar {
-  //   background-color: #000;
-  // }
+  .search-results #wrapper-navbar {
+    background-color: #000;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -1551,12 +1606,30 @@ p.wp-block-subhead,
   margin-bottom: 60px;
 }
 
+/* File Attachments + Submit Buttons */
+.cortextoo .gform_wrapper input.button.gform_button_select_files,
+.cortextoo .gform_wrapper.gf_browser_safari input.button.gform_button_select_files,
+.cortextoo .gform_wrapper.gf_browser_chrome input.button.gform_button_select_files,
+.cortextoo .gform_wrapper .gform_footer input.button,
+.cortextoo .gform_wrapper .gform_footer input[type=submit],
+.cortextoo .gform_wrapper .gform_page_footer input.button,
+.cortextoo .gform_wrapper .gform_page_footer input[type=submit] {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#EBB900), to(#EADC23));
+  background-image: linear-gradient(0deg, #EBB900 0%, #EADC23 100%);
+  padding: 19px 28px 14px 28px !important;
+  color: #000;
+  font-family: $headings-font-family;
+  font-weight: 600;
+  font-size: 2.99rem;
+  letter-spacing: 1.26px;
+  text-align: center;
+  line-height: 1;
+  border-radius: 0px;
+}
+
 /****************************************************************************************/
 /* Client Custom Blocks */
 /****************************************************************************************/
-
-/* Gutenberg Block Buttons Custom Colors */
-
 
 /* header customizations to c9-grids */
 .gray-diagonal {
@@ -1566,7 +1639,7 @@ p.wp-block-subhead,
 .gray-diagonal:after {
   z-index: 6;
   position: absolute;
-  bottom: 0;
+  bottom: -165px;
   left: 0;
   height: 60%;
   width: 100vw;
@@ -1587,6 +1660,51 @@ p.wp-block-subhead,
   .gray-diagonal:after {
     height: 10%;
   }
+}
+
+.dark-gradient-left {
+  position: relative;
+}
+
+/* black gradient for about page backgrounds */
+.dark-gradient-left:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  content: '';
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+  background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 37%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(37%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 37%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 37%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 37%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 37%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1);
+}
+
+.wl-breadcrumbs {
+  font-family: 'Abel', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.05px;
+  text-align: left;
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.wl-breadcrumbs a {
+  color: #000000;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.wl-breadcrumbs a:hover {
+  color: #9b9b9b;
+  text-decoration: none;
 }
 
 /* tabs */
@@ -1624,6 +1742,79 @@ p.wp-block-subhead,
   .entry-content .c9-horizontal-tabs .nav.nav-tabs {
     padding: 0px;
   }
+}
+
+/* gallery adjustments  for core gallery block */
+.entry-content .container .wp-block-gallery {
+  max-width: 1140px;
+}
+
+.wl-icon-grid .wp-block-image figcaption {
+  font-weight: bold;
+  font-size: 2.1rem;
+  color: $dark;
+  letter-spacing: 0.05px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-family: $font-family-base;
+
+}
+
+/* carousel adjustments for grid of items */
+.wl-icon-grid .carousel-control-prev-icon {
+  background-image: url(prev-arrow.svg);
+}
+
+.wl-icon-grid .carousel-control-next-icon {
+  background-image: url(next-arrow.svg);
+}
+
+.wl-icon-grid .carousel-inner .c9-grid .container {
+  margin: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .page-template-default .entry-content>.c9-grid .wl-icon-grid .carousel-inner .c9-grid .container {
+    max-width: none;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.wl-icon-grid .c9-grid .container .c9-column {
+  min-height: 255px;
+  border-left: 1px solid #9B9B9B;
+  border-bottom: 1px solid #9B9B9B;
+  border-top: 1px solid #9B9B9B;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.wl-icon-grid .c9-grid .container .c9-column:nth-child(5) {
+  border-right: 1px solid #9B9B9B;
+}
+
+@media only screen and (max-width: 768px) {
+  .wl-icon-grid .c9-grid .container .c9-column {
+    border-right: 1px solid #9b9b9b;
+  }
+}
+
+.wl-icon-grid .c9-grid .container .c9-block-layout-column-gap-2 {
+  grid-gap: 0;
+}
+
+.wl-icon-grid .carousel-control-next,
+.wl-icon-grid .carousel-control-prev {
+  width: 50px;
 }
 
 /****************************************************************************************/

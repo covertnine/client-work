@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="26px" viewBox="0 0 18 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>next-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="7th-Round" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Home_Tab-Functionality_2_Rollover" transform="translate(-1291.000000, -865.000000)" stroke="#979797" stroke-width="6">
+            <g id="next-arrow" transform="translate(1300.000000, 878.000000) rotate(-180.000000) translate(-1300.000000, -878.000000) translate(1296.000000, 870.000000)">
+                <path d="M8,0 L0.087890625,7.91210938" id="Line-5"></path>
+                <path d="M8,8 L0.087890625,15.9121094" id="Line-5-Copy" transform="translate(4.000000, 12.000000) rotate(-270.000000) translate(-4.000000, -12.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
