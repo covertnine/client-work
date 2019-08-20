@@ -66,13 +66,37 @@ function cortextoo_add_search_form($items, $args)
 /****************************************************************************************/
 /***************************** WooCommerce Specifics
 /****************************************************************************************/
-/**
- * Change number or products per row to 4
- */
-add_filter('loop_shop_columns', 'loop_columns', 999);
-if (!function_exists('loop_columns')) {
-    function loop_columns()
-    {
-        return 4; // 4 products per row
-    }
+//declare support
+function c9_add_woocommerce_support()
+{
+    add_theme_support('woocommerce');
+    // add_theme_support('wc-product-gallery-zoom');
+    add_theme_support('wc-product-gallery-lightbox');
+    add_theme_support('wc-product-gallery-slider');
 }
+add_action('after_setup_theme', 'c9_add_woocommerce_support');
+
+//remove related items
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+
+// $path defaults to 'woocommerce/' (in client folder)
+add_filter('woocommerce_template_path', function () {
+    return 'client/woocommerce/';
+});
+
+// change woocommerce thumbnail image size
+add_filter('woocommerce_get_image_size_gallery_thumbnail', 'override_woocommerce_image_size_gallery_thumbnail');
+function override_woocommerce_image_size_gallery_thumbnail($size)
+{
+    // Gallery thumbnails: proportional, max width 200px
+    return array(
+        'width'  => 85,
+        'height' => 85,
+        'crop'   => 0,
+    );
+}
+
+
+add_filter('woocommerce_gallery_thumbnail_size', function ($size) {
+    return 'woocommerce_thumbnail';
+});
