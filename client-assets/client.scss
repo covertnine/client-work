@@ -538,6 +538,11 @@ p {
     top: 5px;
   }
 
+  .navbar .navbar-brand {
+    position: relative;
+    left: 5px;
+  }
+
   .navbar-small .navbar-brand img {
     opacity: 0;
   }
@@ -647,6 +652,14 @@ p {
 
   .header-navbar #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-row .mega-menu-column>ul.mega-sub-menu .widget_media_image {
     max-width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar .navbar-brand {
+    position: absolute;
+    left: 5px;
   }
 
 }
@@ -995,6 +1008,10 @@ p.wp-block-subhead,
   font-size: 180px !important;
   line-height: .9;
   letter-spacing: 0.02rem;
+}
+
+.c9-heading .c9-sh {
+  margin-bottom: 1.8rem;
 }
 
 /* Responsive Typography */
@@ -1363,6 +1380,11 @@ p.wp-block-subhead,
   color: $gray-700;
 }
 
+.entry-content .nav.nav-tabs .nav-item {
+  margin: 0px 10px;
+}
+
+
 .c9-horizontal-tabs .nav-tabs .nav-link:hover,
 .woocommerce div.product .woocommerce-tabs ul.tabs li a:hover {
   color: $gray-700;
@@ -1382,6 +1404,25 @@ p.wp-block-subhead,
 .woocommerce.single-product div.product .woocommerce-tabs ul.tabs li .nav-link {
   padding: 13px 55px;
 }
+
+@media only screen and (max-width: 768px) {
+  .c9-horizontal-tabs .nav-tabs .nav-link {
+    padding: 13px 30px;
+  }
+
+  .entry-content .nav.nav-tabs .nav-item {
+    margin: 0px 7px;
+  }
+
+  .entry-content .nav.nav-tabs .nav-item:first-child {
+    margin-left: 0px;
+  }
+
+  .entry-content .nav.nav-tabs .nav-item:last-child {
+    margin-right: 0px;
+  }
+}
+
 
 .woocommerce.single-product div.product .woocommerce-tabs ul.tabs li.active,
 .woocommerce.single-product div.product .woocommerce-tabs ul.tabs li {
@@ -1451,6 +1492,14 @@ p.wp-block-subhead,
     margin-top: 135px;
   }
 
+}
+
+/* fullscreen search */
+#search .btn {
+  font-size: 2rem;
+  font-family: $headings-font-family;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 /****************************************************************************************/
@@ -1801,6 +1850,43 @@ p.wp-block-subhead,
   max-width: 1140px;
 }
 
+.wl-icon-gallery.wp-block-gallery {
+  margin: 0px 0px 60px 0px;
+}
+
+.wl-icon-gallery.wp-block-gallery .blocks-gallery-image figcaption,
+.wl-icon-gallery.wp-block-gallery .blocks-gallery-item figcaption {
+  background: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $font-family-base;
+  bottom: -30px;
+  padding: 0px;
+}
+
+.wl-icon-gallery.wp-block-gallery.columns-4 .blocks-gallery-image img,
+.wl-icon-gallery.wp-block-gallery.columns-4 .blocks-gallery-item img {
+  max-width: 86px;
+  height: auto;
+}
+
+@media only screen and (max-width: 568px) {
+
+  .wl-icon-gallery.wp-block-gallery.columns-4 .blocks-gallery-image,
+  .wl-icon-gallery.wp-block-gallery.columns-4 .blocks-gallery-item {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 35px;
+  }
+
+  .wl-icon-gallery.wp-block-gallery.columns-4 .blocks-gallery-image img,
+  .wl-icon-gallery.wp-block-gallery.columns-4 .blocks-gallery-item img {
+    width: 100%;
+    margin: 0px auto;
+    display: block;
+  }
+}
+
 .wl-icon-grid .wp-block-image figcaption {
   font-weight: bold;
   font-size: 2.1rem;
@@ -1869,10 +1955,40 @@ p.wp-block-subhead,
   width: 50px;
 }
 
+/*call to action block*/
+.c9-cta .c9-cta-content .c9-cta-text p {
+  font-family: $headings-font-family;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 3.2rem;
+  letter-spacing: 0.44px;
+  text-align: left;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.c9-cta .c9-cta-button .square {
+  color: #000;
+  border-radius: 0px;
+  font-size: 2.3rem;
+  letter-spacing: .97px;
+  line-height: 1;
+}
+
+.c9-cta .c9-cta-button .square:hover {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .c9-cta .c9-cta-button .square {
+    font-size: 1.8rem;
+  }
+}
+
 /****************************************************************************************/
-/* woocommerce prodcuts blocks and product single */
+/* woocommerce products blocks and product single */
 /****************************************************************************************/
-/* homepage + catalog woocommerce prodcuts blocks */
+/* homepage + catalog woocommerce product blocks */
 .entry-content .wp-block-product-category .wc-block-grid__products,
 .entry-content .wp-block-product-category .wc-block-grid__products .wc-block-grid__product {
   margin: 0px;
@@ -1885,8 +2001,33 @@ p.wp-block-subhead,
   width: auto;
 }
 
+@media only screen and (max-width: 1024px) {
+
+  .archive.woocommerce ul.products li.product a img,
+  .entry-content .wp-block-product-category .wc-block-grid__products .wc-block-grid__product a .wc-block-grid__product-image .size-woocommerce_thumbnail {
+    max-height: 205px;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .theme-c9 .wc-block-grid.has-4-columns .wc-block-grid__product {
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+
+  .archive.woocommerce ul.products li.product a img,
+  .entry-content .wp-block-product-category .wc-block-grid__products .wc-block-grid__product a .wc-block-grid__product-image .size-woocommerce_thumbnail {
+    max-height: 133px;
+  }
+}
+
 .entry-content .wp-block-product-category .wc-block-grid__products .wc-block-grid__product a .wc-block-grid__product-image {
   margin-bottom: 30px;
+  transition: opacity .3s;
+}
+
+.entry-content .wp-block-product-category .wc-block-grid__products .wc-block-grid__product a .wc-block-grid__product-image:hover {
+  opacity: .95;
 }
 
 .wp-block-product-category .wc-block-grid__products .wc-block-grid__product:before {
@@ -1925,10 +2066,6 @@ p.wp-block-subhead,
     clear: none;
     width: 100%;
     margin-bottom: 30px;
-  }
-
-  .c9-horizontal-tabs .tab-content.c9-tabs-content {
-    padding-top: 0px;
   }
 
   .single-product .panel,
@@ -1992,6 +2129,11 @@ p.wp-block-subhead,
   position: relative;
 }
 
+.single-product .woocommerce-product-gallery__image a {
+  padding-bottom: 30px;
+  display: block;
+}
+
 .single-product .woocommerce-product-gallery__image:after {
   position: absolute;
   bottom: 0px;
@@ -2002,7 +2144,6 @@ p.wp-block-subhead,
   background-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 68%);
   background-repeat: no-repeat;
 }
-
 
 .product-sizes .product-size:last-child {
   margin-right: 0px;
@@ -2133,4 +2274,9 @@ p.wp-block-subhead,
 
 .menushow {
   display: block !important;
+}
+
+.heading-abel {
+  font-family: 'abel', sans-serif !important;
+  text-transform: uppercase;
 }
