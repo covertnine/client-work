@@ -860,9 +860,11 @@ h6 {
   text-transform: uppercase;
   font-weight: 400;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+  transition: color .3s;
 }
 
-.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:hover {
+.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:hover,
+.navbar.navbar-small #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:hover {
   color: $primary;
 }
 
@@ -1877,7 +1879,8 @@ p.wp-block-subhead,
   padding: 0px;
 }
 
-.entry-content .wp-block-product-category .wc-block-grid__products .wc-block-grid__product a .wc-block-grid__product-image .size-woocommerce_thumbnail {
+.entry-content .wp-block-product-category .wc-block-grid__products .wc-block-grid__product a .wc-block-grid__product-image .size-woocommerce_thumbnail,
+.archive.woocommerce ul.products li.product a img {
   max-height: 270px;
   width: auto;
 }
@@ -2075,6 +2078,50 @@ p.wp-block-subhead,
 .woocommerce .site-main .woocommerce-breadcrumb a:hover {
   color: #9b9b9b;
   text-decoration: none;
+}
+
+/* product index from breadcrumbs */
+.wl-product-catalog .products .product .woocommerce-loop-product__title {
+  display: none;
+}
+
+.theme-c9.woocommerce #wrapper-navbar {
+  background-color: #000;
+}
+
+.theme-c9 .woocommerce-products-header__title {
+  font-family: $headings-font-family;
+  font-weight: 700;
+  font-size: 7.9rem;
+  line-height: 1;
+}
+
+.theme-c9.woocommerce-result-count {
+  font-family: $font-family-base;
+}
+
+.theme-c9.woocommerce nav.woocommerce-pagination ul li span,
+.theme-c9.woocommerce nav.woocommerce-pagination ul li .page-numbers {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: $headings-font-family;
+  padding: 16px 10px 10px 10px;
+}
+
+.theme-c9.woocommerce nav.woocommerce-pagination ul li .current.page-numbers {
+  color: $dark;
+}
+
+.theme-c9.woocommerce nav.woocommerce-pagination ul li .page-numbers {
+  color: $primary;
+}
+
+.theme-c9.woocommerce nav.woocommerce-pagination ul li .page-numbers:hover {
+  color: $dark;
+}
+
+.theme-c9.woocommerce nav.woocommerce-pagination {
+  margin-bottom: 20px;
 }
 
 /****************************************************************************************/
