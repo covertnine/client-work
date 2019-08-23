@@ -1036,7 +1036,12 @@ p.wp-block-subhead,
 }
 
 /* Responsive Typography */
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 568px) {
+  .xxl-heading .c9-txl {
+    font-size: 100px !important;
+    line-height: .9;
+    letter-spacing: 0.02rem;
+  }
 
   .entry-content p[class$="-font-size"] {
     line-height: 1;
@@ -1907,7 +1912,7 @@ p.wp-block-subhead,
   top: 0;
   bottom: 0;
   content: '';
-  z-index: 10;
+  z-index: 9;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 1);
