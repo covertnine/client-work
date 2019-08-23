@@ -17,7 +17,7 @@
                                     <div class="footer-social text-center">
                                         <a href="https://www.pinterest.com/WellsLamont/" target="_blank"><i class="fab fa-pinterest"></i></a>
                                         <a href="https://www.facebook.com/WellsLamont" target="_blank"><i class="fab fa-facebook-official"></i></a>
-                                        <a href="https://www.instagram.com/WellsLamont" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://www.instagram.com/wells_lamont" target="_blank"><i class="fab fa-instagram"></i></a>
                                         <a href="https://www.linkedin.com/company/wells-lamont-retail" target="_blank"><i class="fab fa-linkedin-square"></i></a>
                                     </div>
                                 </div>

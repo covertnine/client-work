@@ -100,3 +100,14 @@ function override_woocommerce_image_size_gallery_thumbnail($size)
 add_filter('woocommerce_gallery_thumbnail_size', function ($size) {
     return 'woocommerce_thumbnail';
 });
+
+/** * Change number of products that are displayed per page (shop page) */
+add_filter('loop_shop_per_page', 'new_loop_shop_per_page', 40);
+function new_loop_shop_per_page($cols)
+{
+
+    // $cols contains the current number of products per page based on the value stored on Options -> Reading 
+    // Return the number of products you wanna show per page. 
+    $cols = 40;
+    return $cols;
+}
