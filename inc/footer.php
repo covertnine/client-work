@@ -13,7 +13,7 @@
 
                         <div class="container">
                             <div class="row text-center">
-                                <div class="col-xs-6 col-sm-3 col-lg-2 p-0 footer-social-wrapper">
+                                <div class="col-xs-12 col-sm-3 col-lg-2 p-0 footer-social-wrapper">
                                     <div class="footer-social text-center">
                                         <a href="https://www.pinterest.com/WellsLamont/" target="_blank"><i class="fab fa-pinterest"></i></a>
                                         <a href="https://www.facebook.com/WellsLamont" target="_blank"><i class="fab fa-facebook-official"></i></a>
@@ -21,7 +21,7 @@
                                         <a href="https://www.linkedin.com/company/wells-lamont-retail" target="_blank"><i class="fab fa-linkedin-square"></i></a>
                                     </div>
                                 </div>
-                                <div class="col-xs-6 col-sm-3 col-lg-3 footer-links-wrapper">
+                                <div class="col-xs-12 col-sm-3 col-lg-3 footer-links-wrapper">
                                     <div class="footer-links">
                                         <a href="/terms">Terms</a> |
                                         <a href="/privacy">Privacy</a>

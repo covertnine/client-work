@@ -37,7 +37,6 @@ if (!empty($tabs)) : ?>
             <a href="#tab-<?php echo esc_attr($key); ?>" class="nav-link"><?php echo apply_filters('woocommerce_product_' . $key . '_tab_title', esc_html($tab['title']), $key); ?></a>
         </li>
         <?php endforeach; ?>
-        <li class="nav-item" id="tab-title-specs"><a href="#tab-tab-specs" class="nav-link" role="tab" data-toggle="tab">Specs</a></li>
         <li class="nav-item" id="tab-title-fit-sizing"><a href="#tab-tab-fit-sizing" class="nav-link" role="tab" data-toggle="tab">Fit &amp; Sizing</a></li>
     </ul>
     <div class="c9-tabs-content tab-content">
@@ -48,14 +47,7 @@ if (!empty($tabs)) : ?>
                     } ?>
         </div>
         <?php endforeach; ?>
-        <div class="woocommerce-Tabs-panel c9-horizontal-tabs-tab tab-pane fade panel entry-content wc-tab" role="tabpanel" id="tab-tab-specs" aria-labelledby="tab-title-specs">
-            [specs]
-        </div>
         <div class="woocommerce-Tabs-panel c9-horizontal-tabs-tab tab-pane fade panel entry-content wc-tab" role="tabpanel" id="tab-tab-fit-sizing" aria-labelledby="tab-title-fit-sizing">
-            [fit+sizing]
-        </div>
+            <img src="/wp-content/uploads/2019/08/wells-lamont-glove-size-guide.jpg" alt="Size Chart" /> </div>
     </div>
-
-</div>
-
-<?php endif; ?>
+</div> <?php endif; ?>

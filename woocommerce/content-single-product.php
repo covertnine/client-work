@@ -102,7 +102,7 @@ global $product;
                     </ul>
                     <?php endif; ?>
 
-                    <a href="/size-guide" title="Size Guide" class="product-size-link">Review Size Guide</a>
+                    <a href="/wp-content/uploads/2019/08/wells-lamont-glove-size-guide.jpg" title="Size Guide" class="product-size-link cortex-popup">Review Size Guide</a>
                     <div class="where-to-buy">
                         <a href="/where-to-buy" title="Where to buy" class="btn">Where to Buy</a>
                     </div>

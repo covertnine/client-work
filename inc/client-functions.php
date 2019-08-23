@@ -111,3 +111,33 @@ function new_loop_shop_per_page($cols)
     $cols = 40;
     return $cols;
 }
+
+add_filter('woocommerce_product_tabs', 'c9_theme_product_tabs');
+
+//add product specs
+function c9_theme_product_tabs($tabs)
+{
+
+    // ensure ACF is available
+    if (!function_exists('get_field'))
+        return;
+
+    $content = trim(get_field('glove_specs'));
+
+    if (!empty($content)) {
+
+        $tabs['desc_tab'] = array(
+            'title' => 'Specs',
+            'priority' => 15,
+            'callback' => 'c9_theme_prod_specs'
+        );
+    }
+
+    return $tabs;
+}
+
+function c9_theme_prod_specs()
+{
+    $prod_id = get_the_ID();
+    echo get_post_meta($prod_id, 'glove_specs', true);
+}
