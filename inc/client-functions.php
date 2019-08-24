@@ -50,7 +50,19 @@ if (!function_exists('cortextoo_client_editor_style')) {
 /****************************************************************************************/
 /***************************** custom fields
 /****************************************************************************************/
-define('ACF_LITE', false);
+define('ACF_LITE', true);
+
+/****************************************************************************************/
+/***************************** hide non-essential admin
+/****************************************************************************************/
+function remove_admin_menu_items()
+{
+    remove_menu_page('pmxi-admin-home');
+    remove_menu_page('wr2x_settings-menu');
+    remove_menu_page('meowapps-main-menu');
+}
+add_action('admin_menu', 'remove_admin_menu_items', 999);
+
 
 /****************************************************************************************/
 /***************************** nav search form
@@ -114,7 +126,7 @@ function new_loop_shop_per_page($cols)
 
 add_filter('woocommerce_product_tabs', 'c9_theme_product_tabs');
 
-//add product specs
+//add product specs tab and field
 function c9_theme_product_tabs($tabs)
 {
 
