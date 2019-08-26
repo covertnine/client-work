@@ -21,5 +21,18 @@ jQuery(document).ready(function() {
           .toggleClass("hide");
       });
     }
+
+    //bouncing arrow
+    $(window).scroll(function() {
+      //scroll position variable
+      var scroll = $(window).scrollTop();
+
+      if (scroll >= 68) {
+        $(".bouncing-arrow").fadeOut();
+      }
+      if (scroll <= 67) {
+        $(".bouncing-arrow").fadeIn();
+      }
+    }); //end bouncing arrow
   })(jQuery); //end jquery function
 }); //end document ready
