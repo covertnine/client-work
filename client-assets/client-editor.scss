@@ -63,3 +63,10 @@
 .editor-styles-wrapper .display-6 {
   line-height: .9 !important;
 }
+
+/* for icon imagery in branded headers */
+[data-type="core/image"] .block-editor-block-list__block-edit figure.is-resized .block-editor-rich-text {
+  display: block;
+  caption-side: bottom;
+  min-width: 100%;
+}
