@@ -24,5 +24,31 @@ function my_acf_json_load_point($paths)
 // $path defaults to 'woocommerce/' (in your theme folder)
 add_filter('woocommerce_template_path', function ($path) {
     $new_path = get_template_directory() . '/client/woocommerce/';
-    return file_exists($my_path) ? 'client/woocommerce/' : $path;
+    return file_exists($new_path) ? 'client/woocommerce/' : $path;
 });
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function woocommerce_product_filter()
+{
+    register_sidebar(array(
+        'name'          => 'Product Filter Header',
+        'id'            => 'wc_product_filter',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="filter">',
+        'after_title'   => '</h2>',
+    ));
+}
+add_action('widgets_init', 'woocommerce_product_filter');
+
+// add_action('wp_enqueue_scripts', 'product_page_enqueue_scripts');
+// function product_page_enqueue_scripts()
+// {
+//     if (is_singular('product') || is_post_type_archive('product')) {
+//         wp_enqueue_script('sumoselect', get_template_directory_uri() . '/client/client-assets/vendor/jquery.sumoselect.min.js', array('jquery'));
+//         wp_enqueue_script('productpage', get_template_directory_uri() . '/client/client-assets/product-pages.js', array('sumoselect'));
+//     }
+// }
