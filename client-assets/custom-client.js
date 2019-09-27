@@ -1,5 +1,6 @@
 jQuery(document).ready(function() {
   (function($) {
+    console.log("sick");
     ///////////////////////// Move the content up by the height of the navbar object for a transparent nav effect ////
     //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     if ($(window).width() <= 667) {
@@ -33,5 +34,7 @@ jQuery(document).ready(function() {
         $(".bouncing-arrow").fadeIn();
       }
     }); //end bouncing arrow
+
+    $('.woof_redraw_zone').css({"opacity": "1"});
   })(jQuery); //end jquery function
 }); //end document ready

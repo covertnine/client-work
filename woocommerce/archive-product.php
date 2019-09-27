@@ -33,7 +33,7 @@ do_action('woocommerce_before_main_content');
 <header class="woocommerce-products-header">
     <div class="container">
         <?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
-        <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+            <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
         <?php endif; ?>
 
         <?php
@@ -47,6 +47,15 @@ do_action('woocommerce_before_main_content');
         ?>
     </div>
 </header>
+<section class="wl-catalog-filters">
+    <?php if (is_active_sidebar('wc_product_filter')) : ?>
+        <div class="container">
+            <div id="wc-product-filter" class="product-filter" role="complementary">
+                <?php dynamic_sidebar('wc_product_filter'); ?>
+            </div><!-- #primary-sidebar -->
+        </div>
+    <?php endif; ?>
+</section>
 <section class="wl-product-catalog">
     <div class="container">
         <?php
