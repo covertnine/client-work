@@ -14,7 +14,6 @@ jQuery(document).ready(function() {
       $(
         ".mega-sub-menu .mega-sub-menu .mega-sub-menu > .widget_custom_html > .mega-block-title"
       ).on("click", function() {
-        console.log("clicks ya bitches");
         $(this)
           .parent()
           .nextAll()

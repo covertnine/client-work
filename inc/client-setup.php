@@ -1,6 +1,6 @@
 <?php
-if (!function_exists('cortextoo_client_setup')) {
-    function cortextoo_client_setup()
+if (!function_exists('c9_client_setup')) {
+    function c9_client_setup()
     {
         // Make specific theme colors available in the editor.
         add_theme_support('editor-color-palette', array(
@@ -33,4 +33,4 @@ if (!function_exists('cortextoo_client_setup')) {
     }
 }
 
-add_action('after_setup_theme', 'cortextoo_client_setup');
+add_action('after_setup_theme', 'c9_client_setup');

@@ -1,6 +1,6 @@
 <div id="wrapper-navbar" class="header-navbar" itemscope itemtype="http://schema.org/WebSite">
 
-    <a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e('Skip to content', 'cortextoo'); ?></a>
+    <a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e('Skip to content', 'c9'); ?></a>
 
     <nav class="navbar navbar-expand-lg navbar-light">
 
@@ -26,7 +26,7 @@
                 <div class="nav-search">
                     <a href="#" class="btn-nav-search">
                         <i class="fa fa-search"></i>
-                        <span class="sr-only"><?php __('Search', 'cortextoo'); ?></span>
+                        <span class="sr-only"><?php __('Search', 'c9'); ?></span>
                     </a>
                 </div>
             </div><!-- .navbar-small-buttons-->
@@ -41,7 +41,7 @@
                     'fallback_cb'     => '',
                     'menu_id'         => 'main-menu',
                     'depth'           => 2,
-                    'walker'          => new cortextoo_WP_Bootstrap_Navwalker(),
+                    'walker'          => new c9_WP_Bootstrap_Navwalker(),
                 )
             ); ?>
 
