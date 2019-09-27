@@ -21,7 +21,7 @@ defined('ABSPATH') || exit;
 global $product;
 
 ?>
-<div class="cortextoo">
+<div class="c9 c9-woocommerce">
     <?php
     /**
      * Hook: woocommerce_before_single_product.

@@ -153,3 +153,5 @@ function c9_theme_prod_specs()
     $prod_id = get_the_ID();
     echo get_post_meta($prod_id, 'glove_specs', true);
 }
+
+add_filter( 'woocommerce_helper_suppress_admin_notices', '__return_true' );
