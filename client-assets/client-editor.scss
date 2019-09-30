@@ -44,7 +44,13 @@
 .editor-styles-wrapper .c9-heading h3.subhead-h3,
 .editor-styles-wrapper .c9-heading h4.subhead-h4,
 .editor-styles-wrapper .c9-heading h5.subhead-h5,
-.editor-styles-wrapper .c9-heading h6.subhead-h6 {
+.editor-styles-wrapper .c9-heading h6.subhead-h6,
+.editor-styles-wrapper .c9-heading .h1 .text-muted,
+.editor-styles-wrapper .c9-heading .h2 .text-muted,
+.editor-styles-wrapper .c9-heading .h3 .text-muted,
+.editor-styles-wrapper .c9-heading .h4 .text-muted,
+.editor-styles-wrapper .c9-heading .h5 .text-muted,
+.editor-styles-wrapper .c9-heading .h6 .text-muted {
   font-family: 'wisdom-script', $font-family-sans-serif;
 }
 

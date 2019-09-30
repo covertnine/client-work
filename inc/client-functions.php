@@ -1,5 +1,5 @@
 <?php
-//functions for client specifics
+//functions for client specifics Wells Lamont
 
 /****************************************************************************************/
 /***************************** remove admin bar
@@ -155,3 +155,23 @@ function c9_theme_prod_specs()
 }
 
 add_filter( 'woocommerce_helper_suppress_admin_notices', '__return_true' );
+
+
+/****************************************************************************************/
+/******** Adding filter to look for client folder templates before child theme templates
+/****************************************************************************************/
+
+add_filter( 'template_include', function( $template ) {
+  $path = explode('/', $template );
+  echo print_r($path) . ' ';
+  $template_chosen = end( $path );
+  echo $template_chosen . ' ';
+  $grandchild_template = get_template_directory() . '/client/' . $template_chosen;
+  echo $grandchild_template . ' ';
+  if ( file_exists( $grandchild_template  ) ) {
+     	$template = $grandchild_template;
+  }
+
+  return $template;
+
+}, 99);
