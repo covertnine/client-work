@@ -2008,6 +2008,16 @@ p.wp-block-subhead,
   max-width: 1140px;
 }
 
+.wp-block-gallery .blocks-gallery-item a img {
+  opacity: 1;
+  transition: opacity .4s;
+  cursor: pointer;
+}
+
+.wp-block-gallery .blocks-gallery-item a:hover img {
+  opacity: .9;
+}
+
 .wl-icon-gallery.wp-block-gallery {
   margin: 0px 0px 60px 0px;
 }
