@@ -2231,6 +2231,28 @@ p.wp-block-subhead,
   opacity: 0;
 }
 
+.page .entry-content .woocommerce ul.products {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.woocommerce ul.products li.product a img {
+  max-height: 247px;
+  width: auto !important;
+  margin: 0px auto !important;
+}
+
+@media only screen and (max-width: 568px) {
+  .woocommerce ul.products li.product a img {
+    max-height: 146px;
+  }
+}
+
+.woocommerce .products li.product:before,
+.woocommerce .products .woocommerce-loop-product__title {
+  display: none;
+}
+
 /* woof filtering */
 #woof_svg_load_container,
 .chosen-container-single .chosen-single div b {
