@@ -156,6 +156,16 @@ function c9_theme_prod_specs()
 
 add_filter( 'woocommerce_helper_suppress_admin_notices', '__return_true' );
 
+/* changing # of items in pagination */
+function wl_posts_per_page( $query ) {
+	if ( ! $query->is_main_query() || is_admin() ) {
+return;
+	}
+
+	$query->set( 'posts_per_page', 24 );
+	return;
+}
+add_action( 'pre_get_posts', 'wl_posts_per_page', 99999 );
 
 /****************************************************************************************/
 /******** Adding filter to look for client folder templates before child theme templates

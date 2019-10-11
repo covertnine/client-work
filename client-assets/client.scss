@@ -1577,6 +1577,12 @@ p.wp-block-subhead,
   }
 }
 
+/* image captions on homepage tabs */
+.c9 .wp-block-gallery .blocks-gallery-image figcaption,
+.c9 .wp-block-gallery .blocks-gallery-item figcaption {
+  font-size: 2.1rem;
+}
+
 /****************************************************************************************/
 /* Client Search */
 /****************************************************************************************/
