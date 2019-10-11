@@ -2233,6 +2233,12 @@ p.wp-block-subhead,
 /****************************************************************************************/
 /* woocommerce products blocks and product single */
 /****************************************************************************************/
+/* hide sorting options */
+.woocommerce-ordering {
+  display: none !important;
+}
+
+
 .woof_redraw_zone {
   opacity: 0;
 }
