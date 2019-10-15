@@ -1,3 +1,8 @@
+	<div class="footer-entirety">
+
+		<?php
+		get_sidebar( 'footerfull' );
+		?>
 <div class="footer-wrapper" id="wrapper-footer">
 
     <div class="container">
@@ -51,3 +56,4 @@
     </div><!-- container end -->
 
 </div><!-- wrapper end -->
+	</div><!--end .footer-entirety-->
