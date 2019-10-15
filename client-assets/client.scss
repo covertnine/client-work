@@ -1025,7 +1025,6 @@ p.wp-block-subhead,
 .wp-block-pullquote blockquote p,
 .editor-default-block-appender textarea.editor-default-block-appender__content,
 #wrapper-footer {
-  font-size: 2rem;
   word-wrap: break-word;
   font-family: $font-family-base;
 }
@@ -2646,6 +2645,7 @@ body .woocommerce-info:before {
 .product-size-link {
   text-decoration: underline;
   color: $dark;
+  font-size: 1.4em;
 }
 
 .product-size-link:hover {
