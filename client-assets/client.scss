@@ -1556,6 +1556,10 @@ p.wp-block-subhead,
   .product .c9-horizontal-tabs .nav.nav-tabs .nav-item {
     margin: 0px 6px;
   }
+
+  .woocommerce.single-product .c9 div.product .woocommerce-tabs ul.tabs>li>.nav-link {
+    padding: 13px 30px;
+  }
 }
 
 @media only screen and (max-width: 667px) {
@@ -1575,6 +1579,20 @@ p.wp-block-subhead,
   .product .c9-horizontal-tabs .nav.nav-tabs {
     padding: 0px;
   }
+}
+
+@media only screen and (max-width: 375px) {
+  .woocommerce.single-product .c9 div.product .woocommerce-tabs ul.tabs>li {
+    display: block;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .woocommerce.single-product .c9 div.product .woocommerce-tabs ul.tabs>li>a {
+    width: 100%;
+    text-align: center;
+  }
+
 }
 
 /* image captions on homepage tabs */
