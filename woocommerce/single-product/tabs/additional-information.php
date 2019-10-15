@@ -20,7 +20,7 @@ defined('ABSPATH') || exit;
 
 global $product;
 
-$heading = apply_filters('woocommerce_product_additional_information_heading', __('Additional information', 'woocommerce'));
+$heading = apply_filters('woocommerce_product_additional_information_heading', __('Specs', 'woocommerce'));
 
 ?>
 

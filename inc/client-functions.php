@@ -167,6 +167,19 @@ return;
 }
 add_action( 'pre_get_posts', 'wl_posts_per_page', 99999 );
 
+/**
+ * Rename product data tabs
+ */
+add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
+function woo_rename_tabs( $tabs ) {
+
+	$tabs['description']['title'] = __( 'Details' );		// Rename the description tab
+	$tabs['additional_information']['title'] = __( 'Specs' );	// Rename the additional information tab
+
+	return $tabs;
+
+}
+
 /****************************************************************************************/
 /******** Adding filter to look for client folder templates before child theme templates
 /****************************************************************************************/
