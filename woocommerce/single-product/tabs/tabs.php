@@ -48,6 +48,6 @@ if (!empty($tabs)) : ?>
         </div>
         <?php endforeach; ?>
         <div class="woocommerce-Tabs-panel c9-horizontal-tabs-tab tab-pane fade panel entry-content wc-tab" role="tabpanel" id="tab-tab-fit-sizing" aria-labelledby="tab-title-fit-sizing">
-            <img src="/wp-content/uploads/2019/08/wells-lamont-glove-size-guide.jpg" alt="Size Chart" /> </div>
+            <img src="/wp-content/uploads/2019/10/1Wells-Lamont-Sizing-Chart_square-2.jpg" alt="Size Chart" /> </div>
     </div>
 </div> <?php endif; ?>
