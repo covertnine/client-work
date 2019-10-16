@@ -1603,7 +1603,9 @@ p.wp-block-subhead,
 /****************************************************************************************/
 /* Client Search */
 /****************************************************************************************/
-.search-results #wrapper-navbar {
+.search-results #wrapper-navbar,
+.theme-c9.search #wrapper-navbar,
+.earch-no-results #wrapper-navbar {
   background-color: #000;
 }
 
@@ -2810,7 +2812,8 @@ body .woocommerce-info:before {
   max-width: 60%;
 }
 
-.error-404 .page-content #searchform .btn-primary {
+.error-404 .page-content #searchform .btn-primary,
+.search .page-content #searchform .btn-primary {
   color: #000;
   font-size: 2rem;
   font-weight: 700;
