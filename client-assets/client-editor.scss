@@ -4,12 +4,6 @@
 @import "client_variables";
 
 .editor-styles-wrapper,
-.wp-block-pullquote blockquote>.block-library-pullquote__content .editor-rich-text__tinymce[data-is-empty="true"]::before,
-.wp-block-pullquote blockquote>.editor-rich-text p {
-  font-size: 2rem;
-}
-
-.editor-styles-wrapper,
 .editor-post-title__block .editor-post-title__input {
   font-family: $font-family-base !important;
 }
@@ -93,4 +87,9 @@
 
 .editor-styles-wrapper .c9-horizontal-tabs ul.nav.nav-tabs {
   margin: 30px 0px 0px 0px !important;
+}
+
+/* buttons */
+.editor-styles-wrapper .c9-block-cta .c9-cta-content .wp-block-button__link {
+  font-size: 30px;
 }
