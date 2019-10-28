@@ -1918,6 +1918,34 @@ p.wp-block-subhead,
 /****************************************************************************************/
 /* Client Gravity Forms */
 /****************************************************************************************/
+.c9 .gform_wrapper label.gfield_label,
+.c9 .gform_wrapper legend.gfield_label,
+.wp-block[data-type="gravityforms/block"] .gform_wrapper label.gfield_label,
+.wp-block[data-type="gravityforms/block"] .gform_wrapper legend.gfield_label,
+.c9 .gform_confirmation_message {
+  font-size: 18px;
+}
+
+.c9 .gform_confirmation_message {
+  margin-bottom: 30px;
+}
+
+.c9 .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+.c9 .gform_wrapper input[type=password],
+.c9 .gform_wrapper input[type=tel],
+.c9 .gform_wrapper input[type=text],
+.c9 .gform_wrapper textarea,
+.wp-block[data-type="gravityforms/block"] .gform_wrapper input[type=password],
+.wp-block[data-type="gravityforms/block"] .gform_wrapper input[type=tel],
+.wp-block[data-type="gravityforms/block"] .gform_wrapper input[type=text],
+.wp-block[data-type="gravityforms/block"] .gform_wrapper textarea {
+  font-size: 16px;
+}
+
+.c9 .entry-content ul.gform_fields {
+  padding-left: 0px !important;
+}
+
 .ginput_card_expiration_container select,
 .ginput_card_expiration_container label {
   float: left;
