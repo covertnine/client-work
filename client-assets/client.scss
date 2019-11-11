@@ -262,6 +262,10 @@ a {
   width: auto;
 }
 
+.header-navbar .nav-search .btn-nav-search {
+  font-size: 20px;
+}
+
 .navbar-nav li a {
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -273,7 +277,6 @@ a {
 .nav-search,
 .nav-toggle {
   display: inline-block;
-  font-size: 2rem;
   line-height: 2;
 }
 
@@ -1091,6 +1094,12 @@ p.wp-block-subhead,
   margin-bottom: 1.8rem;
 }
 
+@media only screen and (max-width: 667px) {
+  .entry-content .c9-grid .c9-2-col-equal h1 {
+    font-size: 48px;
+  }
+}
+
 /* Responsive Typography */
 @media only screen and (max-width: 568px) {
   .xxl-heading .c9-txl {
@@ -1593,6 +1602,21 @@ p.wp-block-subhead,
   .woocommerce.single-product .c9 div.product .woocommerce-tabs ul.tabs>li>a {
     width: 100%;
     text-align: center;
+  }
+
+  .c9 .entry-content .c9-horizontal-tabs>.nav.nav-tabs,
+  .editor-styles-wrapper .c9-horizontal-tabs>.nav.nav-tabs {
+    flex-wrap: wrap;
+  }
+
+  .c9 .entry-content .c9-horizontal-tabs>.nav.nav-tabs .nav-item {
+    flex-grow: 1;
+    text-align: center;
+    margin: 3px;
+  }
+
+  .c9 .c9-horizontal-tabs .nav-tabs .nav-link {
+    padding: 13px 10px;
   }
 
 }
