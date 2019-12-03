@@ -21,6 +21,14 @@ a {
   margin-bottom: 0px;
 }
 
+.c9-layout-column-wrap {
+  display: -ms-grid;
+}
+
+.c9-grid .c9-layout-column-wrap {
+  position: relative;
+}
+
 @media only screen and (max-width: 667px) {
   .single .entry-content {
     padding: 0px;
@@ -1244,9 +1252,9 @@ p.wp-block-subhead,
 .entry-content .heading-bar-black strong {
   background-color: #fff;
   color: #000;
-  padding: 0px 20px;
+  padding: 2px 20px;
   font-size: 25px;
-  line-height: 0.9;
+  line-height: 1;
   font-weight: bold;
 }
 
@@ -1261,7 +1269,8 @@ p.wp-block-subhead,
   .editor-styles-wrapper .heading-bar-black strong,
   .entry-content .heading-bar-black strong {
     font-size: 1.4rem;
-    padding: 0px 8px;
+    padding: 2px 8px !important;
+    line-height: 1;
   }
 }
 
@@ -1345,8 +1354,8 @@ p.wp-block-subhead,
   position: relative;
 }
 
-.entry-content ul:not(.wp-block-gallery) li:before,
-.editor-styles-wrapper .editor-rich-text ul:not(.wp-block-gallery) li:before {
+.entry-content ul:not(.blocks-gallery-grid) li:before,
+.editor-styles-wrapper .editor-rich-text ul:not(.blocks-gallery-grid) li:before {
   font-family: "FontAwesome";
   font-size: 0.6rem;
   content: "\f111";
@@ -1363,9 +1372,17 @@ p.wp-block-subhead,
   max-width: 60%;
 }
 
+/* resources guide */
+@media only screen and (max-width: 414px) {
+  .c9-grid.p5 .c9-layout-columns-2 .c9-column-inner ul:not(.wp-block-gallery) {
+    margin: 0px !important;
+  }
+}
+
 /****************************************************************************************/
 /* Client Tabs + Toggles */
 /****************************************************************************************/
+
 .c9 .c9-toggles .c9-toggles-toggle,
 .editor-styles-wrapper .c9-toggles .c9-toggles-toggle {
   padding: 29px 0px 15px 0px;
@@ -1484,6 +1501,10 @@ p.wp-block-subhead,
   margin: 30px 0px 0px 0px;
 }
 
+.entry-content .c9-horizontal-tabs .blocks-gallery-grid .blocks-gallery-item a {
+  text-decoration: none;
+}
+
 .c9-horizontal-tabs .nav-tabs .nav-link,
 .woocommerce .c9 div.product .woocommerce-tabs ul.tabs li a {
   background-color: #adb1b2;
@@ -1552,6 +1573,19 @@ p.wp-block-subhead,
   margin-right: 0px;
 }
 
+@media only screen and (max-width: 414px) {
+
+  /* product single spacing/font size for descriptions*/
+  .single-product .woocommerce-Tabs-panel:first-child ul {
+    margin-top: -10px !important;
+  }
+}
+
+.single-product .woocommerce-Tabs-panel:first-child ul li {
+  font-size: 1.6em;
+  margin: 10px 0px;
+}
+
 @media only screen and (max-width: 768px) {
 
   .woocommerce.single-product div.product .woocommerce-tabs ul.tabs li.active,
@@ -1592,7 +1626,7 @@ p.wp-block-subhead,
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   .woocommerce.single-product .c9 div.product .woocommerce-tabs ul.tabs>li {
     display: block;
     width: 100%;
@@ -1619,6 +1653,9 @@ p.wp-block-subhead,
     padding: 13px 10px;
   }
 
+  .single-product .c9-horizontal-tabs>.nav.nav-tabs .nav-link {
+    font-size: 11px;
+  }
 }
 
 /* image captions on homepage tabs */
@@ -1685,6 +1722,12 @@ p.wp-block-subhead,
 
   .brand-header.c9-grid .c9-image-container {
     background-size: 100% 100% !important;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .brand-header .c9-layout-columns-3 .c9-column .wp-block-image:only-child img {
+    margin-top: 45px !important;
   }
 }
 
