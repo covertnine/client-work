@@ -93,3 +93,31 @@
 .editor-styles-wrapper .c9-block-cta .c9-cta-content .wp-block-button__link {
   font-size: 30px;
 }
+
+/* grids inside of grids inside of tabs */
+@media only screen and (min-width: 1200px) {
+
+  body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .c9-grid .container,
+  body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .c9-grid .container {
+    width: auto;
+    min-width: 600px;
+  }
+}
+
+/* black bar headings */
+.editor-styles-wrapper .heading-bar-black strong {
+  background-color: #fff;
+  color: #000;
+  padding: 4px 20px;
+  font-size: 25px;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+/* home tabs adjustments */
+.wl-icon-grid .wp-block-image>div>div,
+.wl-icon-grid .wp-block-image>div>div>img {
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+}

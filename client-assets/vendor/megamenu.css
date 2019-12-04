@@ -1483,7 +1483,7 @@ ul.mega-sub-menu {
     /* default nav drop down positioning from top of .nav for the mega menu second drop down */
     .navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>ul.mega-sub-menu,
     .navbar #mega-menu-wrap-primary #mega-menu-primary>ul.mega-sub-menu {
-        top: 110px;
+        top: 0px;
     }
 
     .mega-menu-primary-mobile-open #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item,
@@ -1509,7 +1509,7 @@ ul.mega-sub-menu {
 
     /* second drop down */
     .navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>ul.mega-sub-menu {
-        top: 105px;
+        top: 0px;
     }
 
 }
