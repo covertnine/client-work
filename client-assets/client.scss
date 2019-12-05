@@ -1070,52 +1070,38 @@ p.wp-block-subhead,
   font-family: $font-family-base;
 }
 
-.entry-content h1,
-.entry-content .h1,
-.wp-block-heading h1,
-.entry-header h1,
 .entry-content h1.c9-txl {
-  font-size: 7.9rem;
+  font-size: 7.9em;
   line-height: 0.9;
 }
 
-.entry-content h2,
-.entry-content .h2,
-.wp-block-heading h2 {
-  font-size: 5.6rem;
+.entry-content h2.c9-txl {
+  font-size: 5.6em;
   line-height: 0.9;
 }
 
-.entry-content h3,
-.entry-content .h3,
-.wp-block-heading h3 {
-  font-size: 4rem;
+.entry-content h3.c9-txl {
+  font-size: 4em;
   line-height: 0.9;
 }
 
-.entry-content h4,
-.entry-content .h4,
-.wp-block-heading h4 {
-  font-size: 2.8rem;
+.entry-content h4.c9-txl {
+  font-size: 2.8em;
   line-height: 0.9;
 }
 
-.entry-content h5,
-.entry-content .h5,
-.wp-block-heading h5 {
-  font-size: 2rem;
+.entry-content h5.c9-txl {
+  font-size: 2em;
   line-height: 0.9;
 }
 
-.entry-content h6,
-.entry-content .h6,
-.wp-block-heading h6 {
-  font-size: 1.4rem;
+.entry-content h6.c9-txl {
+  font-size: 1.4em;
   line-height: 0.9;
 }
 
 .entry-header h2 {
-  font-size: 3rem;
+  font-size: 3em;
   line-height: 0.9;
 }
 
@@ -1123,10 +1109,6 @@ p.wp-block-subhead,
   font-size: 180px !important;
   line-height: 0.9;
   letter-spacing: 0.02rem;
-}
-
-.c9-heading .c9-sh {
-  margin-bottom: 1.8rem;
 }
 
 @media only screen and (max-width: 667px) {
@@ -2324,6 +2306,16 @@ p.wp-block-subhead,
 .wl-icon-grid .carousel-control-next,
 .wl-icon-grid .carousel-control-prev {
   width: 50px;
+}
+
+@media only screen and (max-width: 667px) {
+  .wl-icon-grid .carousel-control-next {
+    right: -38px;
+  }
+
+  .wl-icon-grid .carousel-control-prev {
+    left: -38px;
+  }
 }
 
 .editor-styles-wrapper .wl-icon-grid .wp-block-image,
