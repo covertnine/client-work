@@ -1375,7 +1375,13 @@ p.wp-block-subhead,
   }
 
   .home .c9-horizontal-tabs-tab:last-child .blocks-gallery-grid .blocks-gallery-item {
-    width: calc((100% - 16px)/3);
+    // width: calc((100% - 16px)/3);
+  }
+
+  .home .by-user-gallery .blocks-gallery-item:nth-child(3) {
+    max-width: 50%;
+    height: auto;
+    margin: 0px auto;
   }
 }
 
