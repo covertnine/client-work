@@ -1355,8 +1355,8 @@ p.wp-block-subhead,
 
 .entry-content ol li,
 .editor-styles-wrapper .editor-rich-text ol li,
-.entry-content ul:not(.wp-block-gallery) li,
-.editor-styles-wrapper .editor-rich-text ul:not(.wp-block-gallery) li {
+.entry-content ul:not(.wp-block-gallery):not(.blocks-gallery-grid) li,
+.editor-styles-wrapper .editor-rich-text ul:not(.wp-block-gallery):not(.blocks-gallery-grid) li {
   margin: 15px 0px;
 }
 
@@ -1372,10 +1372,6 @@ p.wp-block-subhead,
 
   .home .c9-horizontal-tabs-tab:last-child .wp-block-spacer {
     display: none;
-  }
-
-  .home .c9-horizontal-tabs-tab:last-child .blocks-gallery-grid .blocks-gallery-item {
-    // width: calc((100% - 16px)/3);
   }
 
   .home .by-user-gallery .blocks-gallery-item:nth-child(3) {
