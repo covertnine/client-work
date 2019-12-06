@@ -1349,7 +1349,7 @@ p.wp-block-subhead,
 }
 
 .entry-content ol,
-.entry-content ul:not(.blocks-gallery-grid):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) {
+.entry-content ul:not(.blocks-gallery-grid):not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) {
   margin: 30px 0px 30px 30px;
 }
 
