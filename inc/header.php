@@ -2,7 +2,7 @@
 
     <a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e('Skip to content', 'c9'); ?></a>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
 
         <div class="container-fluid">
             <?php

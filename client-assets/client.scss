@@ -21,6 +21,14 @@ a {
   margin-bottom: 0px;
 }
 
+@media only screen and (min-width: 768px) {
+
+  .home .wrapper {
+    margin-top: 30px;
+  }
+
+}
+
 .c9-layout-column-wrap {
   display: -ms-grid;
 }
@@ -241,7 +249,7 @@ a {
 
 #wrapper-navbar {
   z-index: 1020;
-  background-color: transparent;
+  background-color: $dark;
 }
 
 .header-navbar .navbar {
@@ -616,7 +624,7 @@ a {
   }
 
   .navbar-small .navbar-brand {
-    background: transparent url(wells-lamont-logo-black-nocaption.svg) center no-repeat;
+    background: transparent url(/wp-content/uploads/2020/01/c9-work-logo.svg) center no-repeat;
     background-size: contain;
     max-width: 285px;
     max-height: 45px;
