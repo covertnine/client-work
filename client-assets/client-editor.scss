@@ -64,6 +64,20 @@
   line-height: .9 !important;
 }
 
+.editor-styles-wrapper p.wp-block-subhead,
+.editor-styles-wrapper .subhead-h,
+.editor-styles-wrapper .c9-sh,
+.editor-styles-wrapper .c9-heading h1.subhead-h1,
+.editor-styles-wrapper .c9-heading h2.subhead-h2,
+.editor-styles-wrapper .c9-heading h3.subhead-h3,
+.editor-styles-wrapper .c9-heading h4.subhead-h4,
+.editor-styles-wrapper .c9-heading h5.subhead-h5,
+.editor-styles-wrapper .c9-heading h6.subhead-h6 {
+  font-family: "wisdom-script", $font-family-sans-serif;
+  font-weight: 700;
+}
+
+
 /* for icon imagery in branded headers */
 [data-type="core/image"] .block-editor-block-list__block-edit figure.is-resized .block-editor-rich-text {
   display: block;
