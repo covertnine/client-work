@@ -266,7 +266,7 @@ a {
 }
 
 .header-navbar .nav-item.search {
-  display: none;
+  display: none !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1737,41 +1737,15 @@ p.wp-block-subhead,
 }
 
 /****************************************************************************************/
-/* Branded Headers for some landing pages */
+/* Client Blog Single */
 /****************************************************************************************/
-.brand-header .c9-layout-columns-3 .c9-column:last-child .wp-block-image {
-  margin-bottom: 0px;
-}
-
-@media only screen and (max-width: 768px) {
-  .brand-header .c9-layout-columns-3 .c9-column:last-child {
-    display: none;
-  }
-
-  .brand-header.c9-grid .c9-image-container {
-    background-size: 100% 100% !important;
-  }
-}
-
-@media only screen and (max-width: 414px) {
-  .brand-header .c9-layout-columns-3 .c9-column .wp-block-image:only-child img {
-    margin-top: 45px !important;
-  }
-}
-
-.brand-header .wp-block-image.is-resized.img-pull-left,
-.brand-header .c9-layout-columns-3 .c9-column:first-child .wp-block-image,
-.img-pull-left {
-  position: absolute;
-  display: block;
-  left: calc((-100vw + 100%) / 2);
-}
-
-.editor-styles-wrapper .brand-header .wp-block-image.is-resized.img-pull-left,
-.editor-styles-wrapper .brand-header .c9-layout-columns-3 .c9-column:first-child .wp-block-image,
-.editor-styles-wrapper .img-pull-left {
-  position: relative;
-  left: 0px;
+.entry-big-header .entry-title-box .entry-meta,
+.entry-big-header .entry-title-box .entry-meta .author a,
+.entry-big-header .entry-title-box .entry-meta .byline,
+.entry-big-header .entry-title-box .entry-meta .posted-on,
+.entry-big-header .entry-title-box .entry-meta .posted-on a {
+  font-size: 1.2em;
+  color: $light;
 }
 
 /****************************************************************************************/
