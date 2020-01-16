@@ -77,21 +77,6 @@
   font-weight: 700;
 }
 
-
-/* for icon imagery in branded headers */
-[data-type="core/image"] .block-editor-block-list__block-edit figure.is-resized .block-editor-rich-text {
-  display: block;
-  caption-side: bottom;
-  min-width: 100%;
-}
-
-/* carousel icon grid on homepage needs changes for backend to look same*/
-.wl-icon-grid .c9-layout-columns-5>.c9-layout-column-wrap-admin>.block-editor-inner-blocks>.block-editor-block-list__layout {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "col1 col2 col3 col4 col5";
-  display: grid;
-}
-
 /* custom tabs */
 .editor-styles-wrapper .c9-horizontal-tabs .nav-tabs .nav-link.active,
 .editor-styles-wrapper .woocommerce div.product .woocommerce-tabs ul.tabs li.active a.nav-link {
@@ -108,6 +93,18 @@
   font-size: 30px;
 }
 
+/* search widget block */
+.wp-block-search .wp-block-search__button .wp-block-search__button-rich-text {
+  padding: 0px;
+  margin: 0px;
+  color: #000;
+  font-size: 30px;
+}
+
+.editor-styles-wrapper .wp-block-search .wp-block-search__button {
+  font-weight: 600;
+}
+
 /* grids inside of grids inside of tabs */
 @media only screen and (min-width: 1200px) {
 
@@ -116,22 +113,4 @@
     width: auto;
     min-width: 600px;
   }
-}
-
-/* black bar headings */
-.editor-styles-wrapper .heading-bar-black strong {
-  background-color: #fff;
-  color: #000;
-  padding: 4px 20px;
-  font-size: 25px;
-  line-height: 1.1;
-  font-weight: bold;
-}
-
-/* home tabs adjustments */
-.wl-icon-grid .wp-block-image>div>div,
-.wl-icon-grid .wp-block-image>div>div>img {
-  display: block;
-  margin: 0px auto;
-  text-align: center;
 }
