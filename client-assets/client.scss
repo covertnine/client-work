@@ -43,7 +43,7 @@ a {
 
 @media only screen and (max-width: 667px) {
   .single .entry-content {
-    padding: 0px;
+    padding: 20px;
   }
 
   .page-search-results {
@@ -1259,12 +1259,6 @@ p.wp-block-subhead,
   .single-product .c9-horizontal-tabs>.nav.nav-tabs .nav-link {
     font-size: 11px;
   }
-}
-
-/* image captions on homepage tabs */
-.c9 .wp-block-gallery .blocks-gallery-image figcaption,
-.c9 .wp-block-gallery .blocks-gallery-item figcaption {
-  font-size: 2.1rem;
 }
 
 /****************************************************************************************/
