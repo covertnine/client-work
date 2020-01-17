@@ -1,8 +1,17 @@
+<?php
+/**
+ * The header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="content">
+ *
+ * @package C9
+ */
+?>
 <div id="wrapper-navbar" class="header-navbar" itemscope itemtype="http://schema.org/WebSite">
 
-    <a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e('Skip to content', 'c9'); ?></a>
+    <a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'c9' ); ?></a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg">
 
         <div class="container-fluid">
             <?php
@@ -14,9 +23,9 @@
             if (!empty($c9Logo['logo'])) {
                 ?>
             <a href="<?php echo get_home_url(); ?>" title="<?php echo $c9SiteName . __(' Homepage', 'cortextoo'); ?>" class="navbar-brand custom-logo-link c9-custom-logo">
-                <img src="<?= $c9Logo['logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __(' Logo', 'cortextoo'); ?>" />
+                <img src="<?php echo $c9Logo['logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __(' Logo', 'cortextoo'); ?>" />
             </a>
-            <?php
+                <?php
             } else {
                 the_custom_logo();
             }
@@ -28,6 +37,11 @@
                         <i class="fa fa-search"></i>
                         <span class="sr-only"><?php __('Search', 'c9'); ?></span>
                     </a>
+                </div>
+                <div class="nav-toggle">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
                 </div>
             </div><!-- .navbar-small-buttons-->
 
