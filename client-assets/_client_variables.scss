@@ -1,17 +1,24 @@
 @import "../../assets/styles/theme/theme_variables";
 
 :root {
-    font-family: "helvetica",
-        times,
-        serif;
+	font-family: "helvetica",
+		times,
+		serif;
 }
 
 // Typography
-$headings-font-family: "bebas-neue-by-fontfabric",
+$headings-font-family: "Bebas Neue",
 "helvetica",
 times,
 serif;
 $headings-font-weight: 700;
+
+$second-font-family: "Abel",
+helvetica,
+sans-serif;
+
+$subheadings-font-family: "Lobster",
+cursive;
 
 $font-family-sans-serif: "helvetica",
 times,

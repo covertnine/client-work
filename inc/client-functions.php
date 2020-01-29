@@ -102,8 +102,8 @@ add_filter('woocommerce_gallery_thumbnail_size', function ($size) {
 add_filter('loop_shop_per_page', 'c9_loop_shop_per_page', 40);
 function c9_loop_shop_per_page($cols) {
 
-    // $cols contains the current number of products per page based on the value stored on Options -> Reading 
-    // Return the number of products you wanna show per page. 
+    // $cols contains the current number of products per page based on the value stored on Options -> Reading
+    // Return the number of products you wanna show per page.
     $cols = 40;
     return $cols;
 }
@@ -129,6 +129,6 @@ add_filter('wp_nav_menu_items', 'cortextoo_add_search_form', 10, 2);
 function cortextoo_add_search_form($items, $args)
 {
     if ($args->theme_location == 'primary')
-        $items .= '<li class="search"><form role="search" method="get" id="searchform" action="' . home_url('/') . '"><label class="sr-only">Search Site</label><input type="text" value="" placeholder="Search" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . esc_attr__('Search') . '" class="hide"/></form></li>';
+        $items .= '<li class="search"><form role="search" method="get" id="searchform" action="' . home_url('/') . '"><label class="sr-only">Search Site</label><input type="text" value="" placeholder="Search" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . esc_attr__('Search') . '" class="invisible sr-only"/></form></li>';
     return $items;
 }

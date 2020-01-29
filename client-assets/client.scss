@@ -105,7 +105,7 @@ a {
 }
 
 .has-color-black-background-color {
-	background-color: #000;
+	background-color: $dark;
 }
 
 .bg-success {
@@ -131,59 +131,47 @@ a {
 /****************************************************************************************/
 /* Client buttons */
 /****************************************************************************************/
-.c9 button,
+.c9 .entry-content button,
+.c9-cta .c9-cta-button .wp-block-button__link,
 .btn,
-.wp-block-button__link,
-.entry-content .wp-block-button__link,
 .editor-styles-wrapper .wp-block-search__button,
 .editor-styles-wrapper .button-primary,
 .editor-styles-wrapper .mce-content-body.button,
 .editor-styles-wrapper .wp-block-button__link,
-.c9-cta .c9-cta-button .wp-block-button__link,
-.editor-styles-wrapper .c9-cta .c9-cta-button .wp-block-button__link {
+.editor-styles-wrapper .c9-cta .c9-cta-button .wp-block-button__link,
+.editor-styles-wrapper .button,
+.editor-styles-wrapper .button-primary,
+.editor-styles-wrapper .mce-content-body.button,
+.entry-content .btn,
+.entry-content .btn:visited,
+.entry-content button,
+.entry-content .button,
+.entry-content input[type="button"],
+.entry-content input[type="reset"],
+.entry-content input[type="submit"],
+.entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link,
+.entry-content .wp-block-button__link,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link.mce-content-body,
+.wp-block-button__link,
+.wp-block-file__button,
+.wp-block-file .wp-block-file__button {
 	background-image: -webkit-gradient(linear, left bottom, left top, from(#ebb900), to(#eadc23));
 	background-image: linear-gradient(0deg, #ebb900 0%, #eadc23 100%);
-	padding: 19px 28px 14px 28px !important;
-	color: #000;
+	padding: 19px 28px 14px 28px;
+	color: $dark;
 	font-family: $headings-font-family;
-	font-weight: 600;
-	font-size: 3em;
-	letter-spacing: 1.26px;
+	font-size: 20px;
+	letter-spacing: .01em;
 	text-align: center;
 	line-height: 1;
 	border-radius: 0px;
 	border: none;
 }
 
-.btn,
-.editor-styles-wrapper .button,
-.editor-styles-wrapper .button-primary,
-.editor-styles-wrapper .mce-content-body.button,
-.c9 button,
-.entry-content .btn,
-.entry-content .btn:visited,
-.entry-content button,
-.entry-content input[type="button"],
-.entry-content input[type="reset"],
-.entry-content input[type="submit"],
-.entry-content .button,
-.entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link,
-.wp-block-button__link,
-.wp-block-button:not(.is-style-outline) .wp-block-button__link.mce-content-body,
-.wp-block-file__button,
-.wp-block-file .wp-block-file__button {
-	background-image: -webkit-gradient(linear, left bottom, left top, from(#ebb900), to(#eadc23));
-	background-image: linear-gradient(0deg, #ebb900 0%, #eadc23 100%);
-	padding: 19px 28px 14px 28px !important;
-	color: $dark;
-	font-family: $headings-font-family;
-	font-weight: 600;
-	font-size: 2.99rem;
-	letter-spacing: 1.26px;
-	text-align: center;
-	line-height: 1;
-	border-radius: 0px;
-	text-decoration: none;
+.c9-cta .wp-block-button__link.c9-button-shape-outline {
+	background-image: none;
+	background-color: transparent;
+	border: 3px solid $dark;
 }
 
 .btn-secondary,
@@ -240,8 +228,8 @@ a {
 
 /* tags */
 .i-tag {
-	font-size: 1.6rem;
-	letter-spacing: 0.137rem;
+	font-size: 1.6em;
+	letter-spacing: 0.137em;
 }
 
 .i-tag:before {
@@ -258,11 +246,19 @@ a {
 
 #wrapper-navbar {
 	z-index: 1020;
-	background-color: $dark;
 }
 
 .header-navbar .navbar {
 	background-color: transparent;
+}
+
+.header-navbar .navbar-small,
+.blog .header-navbar,
+.archive .header-navbar,
+.single-post .header-navbar,
+.error404 .header-navbar,
+.search .header-navbar {
+	background-color: $dark;
 }
 
 .header-navbar .navbar.navbar-small {
@@ -301,12 +297,20 @@ a {
 }
 
 .navbar-nav li a,
-.navbar-small.navbar-dark .navbar-nav .nav-link {
+.navbar-small .navbar-nav .nav-link {
 	text-transform: uppercase;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	line-height: 1;
 	color: rgba(43, 43, 43, 0.77);
-	letter-spacing: 0.09rem;
+	letter-spacing: 0.09em;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.navbar-nav>li>a {
+		color: #fff;
+
+	}
 }
 
 .nav-search,
@@ -343,7 +347,7 @@ a {
 	display: inline-block;
 	font-family: "FontAwesome";
 	color: #fff;
-	font-size: 1.9rem;
+	font-size: 1.9em;
 	content: "\f002";
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
 }
@@ -383,12 +387,15 @@ a {
 	text-transform: uppercase;
 	font-family: $headings-font-family;
 	font-weight: 300;
+	line-height: 1;
 	width: 65px;
 	display: inline-block;
 	color: #fff;
-	font-size: 1.9rem;
+	font-size: 1.9em;
 	margin-left: 4px;
+	padding-bottom: 0px;
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+	height: auto;
 }
 
 .header-navbar .search #s:focus {
@@ -485,7 +492,7 @@ a {
 
 	.btn-nav-search,
 	.navbar-toggler {
-		color: #000;
+		color: $dark;
 		margin: 0px;
 		padding: 5px;
 	}
@@ -502,7 +509,7 @@ a {
 	.navbar-small .btn-nav-search,
 	.navbar-small .navbar-toggler,
 	.navbar-small #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after {
-		color: #000;
+		color: $dark;
 	}
 
 	.nav-search-icon {
@@ -556,25 +563,8 @@ a {
 /****************************************************************************************/
 /* Client Typography */
 /****************************************************************************************/
-@import "https://use.typekit.net/ytq2zwn.css";
-@import "https://fonts.googleapis.com/css?family=Abel&display=swap";
 
-@font-face {
-	font-family: "wisdom-script";
-	src: url("wisdom-script.otf");
-	src: url('wisdom-script.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-.h1,
-.h2,
-.h3,
-h1,
-h2,
-h3 {
-	margin-bottom: 1.5rem;
-}
+@import url('https://fonts.googleapis.com/css?family=Abel|Bebas+Neue|Lobster&display=swap');
 
 .h4,
 .h5,
@@ -582,7 +572,7 @@ h3 {
 h4,
 h5,
 h6 {
-	margin-bottom: 0.25rem;
+	margin-bottom: 0.25em;
 }
 
 .c9-site-title,
@@ -599,7 +589,8 @@ h6 {
 .c9 h5,
 .c9 h6 {
 	font-family: $headings-font-family;
-	font-weight: 700;
+	letter-spacing: .04em;
+	line-height: 1.2;
 }
 
 .c9-h,
@@ -621,55 +612,61 @@ p.wp-block-subhead,
 .text-muted,
 .c9 .c9-sh,
 .c9 .text-muted {
-	font-family: "wisdom-script", $font-family-sans-serif;
-	color: #fec50a;
-}
-
-.text-muted {
-	color: #fec50a !important;
+	font-family: $subheadings-font-family;
 }
 
 .entry-content,
-.editor-styles-wrapper p,
-.editor-styles-wrapper .container p,
-.editor-styles-wrapper .editor-rich-text .mce-content-body p,
-.editor-styles-wrapper .wp-block-paragraph,
-.editor-styles-wrapper .wp-block-quote p,
-.editor-styles-wrapper .wp-block-file,
 .wp-block-pullquote,
 .wp-block-pullquote blockquote p,
-.editor-default-block-appender textarea.editor-default-block-appender__content,
 #wrapper-footer {
 	word-wrap: break-word;
 	font-family: $font-family-base;
 }
 
-.entry-content h1.c9-txl {
+.c9-heading .display-1,
+.editor-styles-wrapper .c9-heading .display-1.c9-txl,
+.entry-content .c9-heading .c9-txl.display-1,
+.entry-content .c9-heading h1.c9-txl {
 	font-size: 7.9em;
 	line-height: 0.9;
 }
 
-.entry-content h2.c9-txl {
+.c9-heading .display-2,
+.editor-styles-wrapper .c9-heading .display-2.c9-txl,
+.entry-content .c9-heading .c9-txl.display-2,
+.entry-content .c9-heading h2.c9-txl {
 	font-size: 5.6em;
 	line-height: 0.9;
 }
 
-.entry-content h3.c9-txl {
+.c9-heading .display-3,
+.editor-styles-wrapper .c9-heading .display-3.c9-txl,
+.entry-content .c9-heading .c9-txl.display-3,
+.entry-content .c9-heading h3.c9-txl {
 	font-size: 4em;
 	line-height: 0.9;
 }
 
-.entry-content h4.c9-txl {
+.c9-heading .display-4,
+.editor-styles-wrapper .c9-heading .display-4.c9-txl,
+.entry-content .c9-heading .c9-txl.display-4,
+.entry-content .c9-heading h4.c9-txl {
 	font-size: 2.8em;
 	line-height: 0.9;
 }
 
-.entry-content h5.c9-txl {
+.c9-heading .display-5,
+.editor-styles-wrapper .c9-heading .display-5.c9-txl,
+.entry-content .c9-heading .c9-txl.display-5,
+.entry-content .c9-heading h5.c9-txl {
 	font-size: 2em;
 	line-height: 0.9;
 }
 
-.entry-content h6.c9-txl {
+.c9-heading .display-6,
+.editor-styles-wrapper .c9-heading .display-6.c9-txl,
+.entry-content .c9-heading .c9-txl.display-6,
+.entry-content .c9-heading h6.c9-txl {
 	font-size: 1.4em;
 	line-height: 0.9;
 }
@@ -682,13 +679,7 @@ p.wp-block-subhead,
 .xxl-heading .c9-txl {
 	font-size: 180px !important;
 	line-height: 0.9;
-	letter-spacing: 0.02rem;
-}
-
-@media only screen and (max-width: 667px) {
-	.entry-content .c9-grid .c9-2-col-equal h1 {
-		font-size: 48px;
-	}
+	letter-spacing: 0.02em;
 }
 
 /* Responsive Typography */
@@ -696,7 +687,7 @@ p.wp-block-subhead,
 	.xxl-heading .c9-txl {
 		font-size: 100px !important;
 		line-height: 0.9;
-		letter-spacing: 0.02rem;
+		letter-spacing: 0.02em;
 	}
 
 	.entry-content p[class$="-font-size"] {
@@ -715,10 +706,10 @@ p.wp-block-subhead,
 	.entry-content h3.section-heading-accent,
 	.entry-content h3.section-heading-accent-alt {
 		margin: 10px auto;
-		font-size: 1.6rem;
+		font-size: 1.6em;
 		font-weight: 500;
 		line-height: 1;
-		letter-spacing: 0.08rem;
+		letter-spacing: 0.08em;
 		text-align: center;
 		text-transform: uppercase;
 		color: $dark;
@@ -739,24 +730,24 @@ p.wp-block-subhead,
 	.wp-block-heading .subheading4,
 	.wp-block-heading .subheading5 {
 		font-weight: 400;
-		font-size: 2.6rem;
-		letter-spacing: 0.055rem;
+		font-size: 2.6em;
+		letter-spacing: 0.055em;
 	}
 
 	.entry-content .subheading2,
 	.wp-block-heading .subheading2,
 	.subheading2 {
 		font-weight: 500;
-		font-size: 2.3rem;
-		letter-spacing: 0.12rem;
+		font-size: 2.3em;
+		letter-spacing: 0.12em;
 	}
 
 	.entry-content .subheading3,
 	.wp-block-heading .subheading3,
 	.subheading3 {
 		font-weight: 100;
-		font-size: 2rem;
-		letter-spacing: 0.05rem;
+		font-size: 2em;
+		letter-spacing: 0.05em;
 		text-transform: uppercase;
 		line-height: 1.2;
 	}
@@ -764,15 +755,15 @@ p.wp-block-subhead,
 	.entry-content .subheading4,
 	.wp-block-heading .subheading4,
 	.subheading4 {
-		font-size: 1.6rem;
-		letter-spacing: 0.001rem;
+		font-size: 1.6em;
+		letter-spacing: 0.001em;
 	}
 
 	.entry-content .subheading5,
 	.wp-block-heading .subheading5,
 	.subheading5 {
-		font-size: 1.4rem;
-		letter-spacing: 0.125rem;
+		font-size: 1.4em;
+		letter-spacing: 0.125em;
 		font-weight: $font-weight-normal;
 	}
 
@@ -782,16 +773,16 @@ p.wp-block-subhead,
 		text-transform: uppercase;
 		font-weight: $font-weight-bold;
 		font-size: 1.8rem !important;
-		letter-spacing: 0.2rem;
+		letter-spacing: 0.2em;
 		line-height: 1.1;
 	}
 
 	.entry-meta,
 	.entry-meta a {
 		text-transform: uppercase;
-		letter-spacing: 0.05rem;
+		letter-spacing: 0.05em;
 		line-height: 1;
-		font-size: 1.4rem;
+		font-size: 1.4em;
 		color: $gray-700;
 	}
 
@@ -799,14 +790,14 @@ p.wp-block-subhead,
 		display: block;
 		text-align: right;
 		text-transform: uppercase;
-		font-size: 1.2rem;
+		font-size: 1.2em;
 	}
 
 	/* WordPress Gutenberg Font Sizes */
 	.has-small-font-size {
 		font-size: 1.4rem !important;
 		line-height: 1.5 !important;
-		letter-spacing: 0.125rem;
+		letter-spacing: 0.125em;
 	}
 }
 
@@ -818,8 +809,8 @@ p.wp-block-subhead,
 	font-family: $font-family-base;
 	font-size: 20px;
 	min-height: 18px;
-	color: #000000;
-	background-color: #000000;
+	color: $dark;
+	background-color: $dark;
 	letter-spacing: 0.06px;
 	line-height: 1;
 	overflow: hidden;
@@ -833,7 +824,7 @@ p.wp-block-subhead,
 
 .entry-content .heading-bar-black strong {
 	background-color: #fff;
-	color: #000;
+	color: $dark;
 	padding: 2px 20px;
 	font-size: 25px;
 	line-height: 1.1;
@@ -844,13 +835,13 @@ p.wp-block-subhead,
 
 	.editor-styles-wrapper .heading-bar-black,
 	.entry-content .heading-bar-black {
-		font-size: 1.2rem;
+		font-size: 1.2em;
 		min-height: 12px;
 	}
 
 	.editor-styles-wrapper .heading-bar-black strong,
 	.entry-content .heading-bar-black strong {
-		font-size: 1.4rem;
+		font-size: 1.4em;
 		padding: 2px 8px !important;
 		line-height: 1.1;
 	}
@@ -860,7 +851,7 @@ p.wp-block-subhead,
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
 	width: 100%;
 	height: 20px;
-	background-color: #000;
+	background-color: $dark;
 }
 
 /****************************************************************************************/
@@ -877,9 +868,9 @@ p.wp-block-subhead,
 
 .page-search-results .home-search .entry-title {
 	color: $light;
-	font-size: 5rem;
+	font-size: 5em;
 	line-height: 1;
-	letter-spacing: 0.12rem;
+	letter-spacing: 0.12em;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -888,7 +879,7 @@ p.wp-block-subhead,
 
 @media only screen and (min-width: 1px) {
 	.c9 .page .entry-header h1 {
-		font-size: 5rem;
+		font-size: 5em;
 		text-align: center;
 		color: $light;
 		margin: 70px auto;
@@ -898,7 +889,7 @@ p.wp-block-subhead,
 
 @media only screen and (min-width: 768px) {
 	.c9 .page .entry-header h1 {
-		font-size: 8rem;
+		font-size: 8em;
 	}
 }
 
@@ -964,7 +955,7 @@ p.wp-block-subhead,
 .entry-content ul:not(.blocks-gallery-grid) li:before,
 .editor-styles-wrapper .editor-rich-text ul:not(.blocks-gallery-grid) li:before {
 	font-family: "FontAwesome";
-	font-size: 0.6rem;
+	font-size: 0.6em;
 	content: "\f111";
 	margin-left: -16px;
 	position: absolute;
@@ -1009,7 +1000,7 @@ p.wp-block-subhead,
 	font-family: $headings-font-family;
 	text-transform: uppercase;
 	color: $dark;
-	font-size: 7.9rem;
+	font-size: 7.9em;
 	text-align: left;
 	line-height: 0.9;
 	transition: color .5s ease-out;
@@ -1052,8 +1043,8 @@ p.wp-block-subhead,
 
 .c9-toggles.small-toggle .c9-toggles-toggle .c9-toggles-item-heading .c9-toggles-toggle-label {
 	font-family: helvetica, arial, verdana;
-	font-size: 2.4rem;
-	color: #000000;
+	font-size: 2.4em;
+	color: $dark;
 	letter-spacing: 0.05px;
 	text-align: left;
 	line-height: 1.2;
@@ -1084,7 +1075,7 @@ p.wp-block-subhead,
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	border: 2.8px solid #000000;
+	border: 2.8px solid $dark;
 	padding: 5px;
 	border-radius: 50%;
 	height: 27px;
@@ -1211,7 +1202,7 @@ p.wp-block-subhead,
 
 	.c9-horizontal-tabs .nav-tabs .nav-link {
 		padding: 11px 19px;
-		font-size: 1.1rem;
+		font-size: 1.1em;
 	}
 
 	.entry-content .c9-horizontal-tabs .nav.nav-tabs,
@@ -1258,12 +1249,12 @@ p.wp-block-subhead,
 .search-results #wrapper-navbar,
 .c9.search #wrapper-navbar,
 .search-no-results #wrapper-navbar {
-	background-color: #000;
+	background-color: $dark;
 }
 
 @media only screen and (min-width: 768px) {
 	.search-results #wrapper-navbar {
-		background-color: #000;
+		background-color: $dark;
 	}
 }
 
@@ -1278,7 +1269,7 @@ p.wp-block-subhead,
 }
 
 .search-results .site-main .container .entry-header .entry-title a {
-	color: #000;
+	color: $dark;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
@@ -1289,7 +1280,7 @@ p.wp-block-subhead,
 
 /* fullscreen search */
 #fullscreensearch .btn {
-	font-size: 2rem;
+	font-size: 2em;
 	font-family: $headings-font-family;
 	font-weight: bold;
 	margin-top: 20px;
@@ -1306,6 +1297,16 @@ p.wp-block-subhead,
 .entry-big-header .entry-title-box .entry-meta .posted-on a {
 	font-size: 1.2em;
 	color: $light;
+}
+
+/****************************************************************************************/
+/* Client Animations */
+/****************************************************************************************/
+#icon-mouse-scroll {
+	text-align: center;
+	margin: auto;
+	width: 25px;
+	height: 25px;
 }
 
 /****************************************************************************************/
@@ -1343,14 +1344,14 @@ p.wp-block-subhead,
 #wrapper-footer .site-footer .row p,
 #wrapper-footer .site-footer .copyright {
 	line-height: 1.1;
-	font-size: 1.2rem;
+	font-size: 1.2em;
 }
 
 #wrapper-footer .site-footer p,
 .footer-links a,
 #wrapper-footer .site-footer a {
 	text-transform: none;
-	font-family: "Abel", helvetica, sans-serif;
+	font-family: $second-font-family;
 	color: #4a4a4a;
 	letter-spacing: 0.05px;
 	-webkit-transition: color 0.3s;
@@ -1374,12 +1375,12 @@ p.wp-block-subhead,
 	color: #9b9b9b;
 	-webkit-transition: color 0.4s;
 	transition: color 0.4s;
-	font-size: 2rem;
+	font-size: 2em;
 	font-family: "fontawesome";
 }
 
 .footer-social a:hover .fab:before {
-	color: #000;
+	color: $dark;
 }
 
 .footer-social-wrapper {
@@ -1404,7 +1405,7 @@ p.wp-block-subhead,
 	font-family: "FontAwesome";
 	color: #9b9b9b;
 	content: "\f002";
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	position: absolute;
 	right: 10px;
 	top: 14px;
@@ -1415,9 +1416,9 @@ p.wp-block-subhead,
 
 .footer-search .input-group #s {
 	padding: 10px 12px;
-	font-family: "abel", sans-serif;
-	font-size: 1.3rem;
-	letter-spacing: 0.04rem;
+	font-family: $second-font-family;
+	font-size: 1.3em;
+	letter-spacing: 0.04em;
 	height: auto;
 }
 
@@ -1477,14 +1478,14 @@ p.wp-block-subhead,
 /* all widgets */
 .footer-widget .menu .menu-item,
 .footer-widget ul li {
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	line-height: 2;
 	padding-left: 0px;
 	margin: 0;
 }
 
 .footer-widget h3 {
-	font-size: 1.7rem;
+	font-size: 1.7em;
 	letter-spacing: 0.05px;
 	text-align: left;
 	line-height: 1;
@@ -1496,7 +1497,7 @@ p.wp-block-subhead,
 
 /* footer latest posts news */
 .c9-recent-posts .c9-article-title .entry-title {
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	color: $gray-800;
 }
 
@@ -1505,7 +1506,7 @@ p.wp-block-subhead,
 }
 
 .c9-recent-posts .c9-article-title .c9-article-date {
-	font-size: 1.4rem;
+	font-size: 1.4em;
 	line-height: 1;
 }
 
@@ -1514,8 +1515,8 @@ p.wp-block-subhead,
 }
 
 .footer-widget .menu .menu-item a {
-	font-family: "Abel", sans-serif;
-	font-size: 1.6rem;
+	font-family: $second-font-family;
+	font-size: 1.6em;
 	color: $dark;
 	letter-spacing: 0.04px;
 }
@@ -1541,7 +1542,7 @@ p.wp-block-subhead,
 #sb_instagram .sbi_follow_btn a:hover {
 	background-color: transparent;
 	box-shadow: none;
-	color: #000;
+	color: $dark;
 	text-decoration: none;
 }
 
@@ -1628,10 +1629,10 @@ p.wp-block-subhead,
 	background-image: -webkit-gradient(linear, left bottom, left top, from(#ebb900), to(#eadc23));
 	background-image: linear-gradient(0deg, #ebb900 0%, #eadc23 100%);
 	padding: 19px 28px 14px 28px !important;
-	color: #000;
+	color: $dark;
 	font-family: $headings-font-family;
 	font-weight: 600;
-	font-size: 2.99rem;
+	font-size: 2.99em;
 	letter-spacing: 1.26px;
 	text-align: center;
 	line-height: 1;
@@ -1721,18 +1722,8 @@ p.wp-block-subhead,
 }
 
 /*call to action block*/
-.c9-cta .c9-cta-content .c9-cta-text p {
-	font-family: $headings-font-family;
-	text-transform: uppercase;
-	color: #000;
-	font-size: 3.2rem;
-	letter-spacing: 0.44px;
-	font-weight: 700;
-	line-height: 1;
-}
-
 .c9-cta .c9-cta-button .square {
-	color: #000;
+	color: $dark;
 	border-radius: 0px;
 	font-size: 30px;
 	letter-spacing: 0.97px;
@@ -1745,22 +1736,13 @@ p.wp-block-subhead,
 
 @media only screen and (max-width: 768px) {
 	.c9-cta .c9-cta-button .square {
-		font-size: 1.8rem;
+		font-size: 1.8em;
 	}
 }
 
 /****************************************************************************************/
 /* woocommerce products blocks and product single */
 /****************************************************************************************/
-/* hide sorting options */
-.woocommerce-ordering {
-	display: none !important;
-}
-
-
-.woof_redraw_zone {
-	opacity: 0;
-}
 
 .page .entry-content .woocommerce ul.products {
 	margin: 0px !important;
@@ -1784,131 +1766,6 @@ p.wp-block-subhead,
 	display: none;
 }
 
-/* woof filtering */
-#woof_svg_load_container,
-.chosen-container-single .chosen-single div b {
-	display: none !important;
-}
-
-#wc-product-filter {
-	margin-top: 20px;
-}
-
-.wl-product-catalog .woof_products_top_panel li {
-	margin-right: 5px !important;
-}
-
-#wc-product-filter .woof_container {
-	margin-bottom: 0;
-}
-
-@media only screen and (max-width: 768px) {
-	.woof_container {
-		display: inline-block;
-	}
-}
-
-@media only screen and (max-width: 567px) {
-	.woof_container {
-		display: block;
-	}
-}
-
-.entry-content .woof {
-	margin-top: 20px;
-}
-
-#wc-product-filter .woof_submit_search_form_container,
-.woof_redrew_zone .woof_container {
-	border-radius: 0;
-	background: white;
-	font-family: $headings-font-family;
-	margin-bottom: 0;
-}
-
-
-#wc-product-filter .chosen-container-single .chosen-single,
-.woof_redraw_zone .woof_container .woof_container_inner .woof_block_html_items .chosen-single {
-	background: white;
-	border: none;
-	border-radius: 0;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-	padding-left: 0;
-}
-
-#wc-product-filter .chosen-container-single .chosen-search input[type="text"],
-.woof_redraw_zone .chosen-container-single .chosen-search input[type="text"] {
-	font-family: $headings-font-family;
-	letter-spacing: 0.45px;
-	border: 1px solid black;
-}
-
-#wc-product-filter .chosen-container .chosen-drop,
-.woof_redraw_zone .woof_container .woof_container_inner .woof_block_html_items .chosen-single {
-	border: none;
-	border-radius: 0;
-}
-
-#wc-product-filter .chosen-container-single .chosen-single span,
-.woof_redraw_zone .woof_container .woof_container_inner .woof_block_html_items .chosen-single>span {
-	font-family: $headings-font-family;
-	font-size: 30px;
-	line-height: 1;
-	font-weight: 900;
-	color: black;
-}
-
-#wc-product-filter .chosen-container-single .chosen-single:after,
-.woof_redraw_zone .woof_container .woof_container_inner .woof_block_html_items .chosen-single:after {
-	position: absolute;
-	content: "\f078";
-	top: 0;
-	right: 0;
-	font-family: FontAwesome;
-	color: $dark;
-}
-
-.chosen-container .chosen-results li.highlighted {
-	background-color: $dark !important;
-	background-image: none !important;
-}
-
-.woof .chosen-container .chosen-results {
-	margin: 0px !important;
-	padding: 0px !important;
-}
-
-.c9 .woof_submit_search_form_container {
-	margin-top: -20px;
-}
-
-@media only screen and (max-width: 768px) {
-	.c9 .woof_submit_search_form_container {
-		margin-top: 10px;
-	}
-}
-
-.woof_submit_search_form_container .button.woof_reset_search_form:hover {
-	color: $dark;
-}
-
-#wc-product-filter .chosen-container .chosen-results li,
-.woof .chosen-container .chosen-results>li {
-	font-size: 20px;
-	line-height: 1;
-	font-family: $headings-font-family;
-}
-
-#wc-product-filter .chosen-container-single .chosen-single div {
-	display: none !important;
-}
-
-#wc-product-filter .woof_reset_search_form:focus {
-	outline: none;
-}
-
-/* Woof Filtering End */
 body .woocommerce-info {
 	border: none !important;
 	background: white;
@@ -1920,24 +1777,6 @@ body .woocommerce-info {
 
 body .woocommerce-info:before {
 	display: none;
-}
-
-.wl-product-catalog .woof_products_top_panel li .woof_remove_ppi {
-	background: none;
-	font-family: $headings-font-family;
-	color: black;
-	font-size: 13px;
-	letter-spacing: 0.45px;
-}
-
-.wl-product-catalog .woof_products_top_panel li .woof_remove_ppi:hover {
-	opacity: 0.8;
-}
-
-.wl-product-catalog .woof_products_top_panel li .woof_remove_ppi:after {
-	content: "\f057";
-	font-family: FontAwesome;
-	padding-left: 5px;
 }
 
 /* homepage + catalog woocommerce product blocks */
@@ -2043,13 +1882,6 @@ body .woocommerce-info:before {
 	display: none;
 }
 
-.wl-product-info {
-	float: right;
-	clear: none;
-	width: 48%;
-	margin-bottom: 30px;
-}
-
 .woocommerce.single-product div.product div.images .flex-control-thumbs li img {
 	max-width: 85px;
 	width: 100%;
@@ -2057,20 +1889,14 @@ body .woocommerce-info:before {
 }
 
 @media only screen and (max-width: 768px) {
-	.wl-product-info {
-		float: none;
-		clear: none;
-		width: 100%;
-		margin-bottom: 30px;
-	}
 
 	.single-product .panel,
 	.single-product .panel p,
 	.single-product .panel ul,
 	.single-product .panel ul li {
-		font-size: 1.5rem;
+		font-size: 1.5em;
 		line-height: 1.5;
-		letter-spacing: 0.03rem;
+		letter-spacing: 0.03em;
 	}
 
 	.single-product .panel ul li:before {
@@ -2110,13 +1936,13 @@ body .woocommerce-info:before {
 	display: inline-block;
 	font-family: $font-family-base;
 	font-weight: bold;
-	font-size: 3.7rem;
+	font-size: 3.7em;
 	line-height: 1;
-	color: #000000;
+	color: $dark;
 	letter-spacing: 0.3px;
 	text-align: left;
 	text-transform: uppercase;
-	border: 1px solid #000000;
+	border: 1px solid $dark;
 	padding: 18px;
 	margin-right: 10px;
 }
@@ -2210,18 +2036,18 @@ body .woocommerce-info:before {
 .wl-breadcrumbs,
 .editor-styles-wrapper .wp-block-paragraph.wl-breadcrumbs,
 .woocommerce .site-main .woocommerce-breadcrumb {
-	font-family: "Abel", sans-serif;
-	font-size: 2rem;
+	font-family: $second-font-family;
+	font-size: 2em;
 	letter-spacing: 0.05px;
 	text-align: left;
-	color: #000000;
+	color: $dark;
 	text-transform: uppercase;
 }
 
 .wl-breadcrumbs a,
 .editor-styles-wrapper .wl-breadcrumbs a,
 .woocommerce .site-main .woocommerce-breadcrumb a {
-	color: #000000;
+	color: $dark;
 	text-decoration: none;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
@@ -2240,13 +2066,13 @@ body .woocommerce-info:before {
 }
 
 .c9.woocommerce #wrapper-navbar {
-	background-color: #000;
+	background-color: $dark;
 }
 
 .c9 .woocommerce-products-header__title {
 	font-family: $headings-font-family;
 	font-weight: 700;
-	font-size: 7.9rem;
+	font-size: 7.9em;
 	line-height: 1;
 }
 
@@ -2273,7 +2099,7 @@ body .woocommerce-info:before {
 .page-search-results nav .pagination .page-item .page-link,
 .c9.woocommerce nav.woocommerce-pagination ul li span,
 .c9.woocommerce nav.woocommerce-pagination ul li .page-numbers {
-	font-size: 2rem;
+	font-size: 2em;
 	font-weight: 700;
 	font-family: $headings-font-family;
 	padding: 16px 10px 10px 10px;
@@ -2320,7 +2146,7 @@ body .woocommerce-info:before {
 }
 
 .error-404 .page-content p {
-	font-size: 1.6rem;
+	font-size: 1.6em;
 }
 
 .error-404 h1 {
@@ -2335,8 +2161,8 @@ body .woocommerce-info:before {
 
 .error-404 .page-content #searchform .btn-primary,
 .search .page-content #searchform .btn-primary {
-	color: #000;
-	font-size: 2rem;
+	color: $dark;
+	font-size: 2em;
 	font-weight: 700;
 	border: none;
 	border-radius: 0px;
@@ -2358,26 +2184,22 @@ body .woocommerce-info:before {
 
 .error-404 .page-content #searchform .input-group #s {
 	padding: 10px 12px;
-	font-family: abel, sans-serif;
-	font-size: 1.3rem;
-	letter-spacing: 0.04rem;
+	font-family: $second-font-family;
+	font-size: 1.3em;
+	letter-spacing: 0.04em;
 	height: auto;
 	border: 1px solid rgb(206, 212, 218);
 }
 
 .error404 #wrapper-navbar {
-	background-color: #000;
+	background-color: $dark;
 }
 
 /****************************************************************************************/
 /* Utility Classes */
 /****************************************************************************************/
-.hide {
-	display: none !important;
-}
-
 .heading-abel {
-	font-family: "abel", sans-serif !important;
+	font-family: $second-font-family !important;
 	text-transform: uppercase;
 	letter-spacing: 0px;
 }
