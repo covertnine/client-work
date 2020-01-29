@@ -40,7 +40,7 @@ if ( ! function_exists( 'c9_client_editor_style' ) ) {
 
 
 /****************************************************************************************/
-/******** Sets up colors and post types
+/******** Sets up colors and post types and custom styles for core blocks
 /****************************************************************************************/
 include("client-setup.php");
 

@@ -1,9 +1,44 @@
 <?php
 /**
- * Color scheme and post formats setup
+ * Color scheme, style variations for core blocks, and post formats setup
  *
  * @package c9
  */
+
+ // Registers a style variation for separators
+register_block_style(
+    'core/separator',
+    array(
+        'name'         => 'black-bar',
+        'label'        => __( 'Full Width Black Bar' ),
+    )
+);
+
+register_block_style(
+    'c9-blocks/grid',
+    array(
+        'name'         => 'gray-diagonal',
+        'label'        => __( 'Gray Diagonal Background' ),
+	)
+
+);
+
+register_block_style(
+    'c9-blocks/grid',
+	array(
+			'name'		  => 'dark-gradient-left',
+			'label'		  => __( 'Left Side Dark Gradient Background' ),
+	)
+);
+
+register_block_style(
+    'core/image',
+	array(
+			'name'		  => 'img-shadow',
+			'label'		  => __( 'Shadow Below' ),
+	)
+);
+
 if (!function_exists('c9_client_setup')) {
     function c9_client_setup()
     {
