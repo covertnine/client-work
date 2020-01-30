@@ -47,6 +47,14 @@ register_block_style(
 	)
 );
 
+register_block_style(
+    'core/paragraph',
+	array(
+			'name'		  => 'black-bar',
+			'label'		  => __( 'Black Bar Behind' ),
+	)
+);
+
 if (!function_exists('c9_client_setup')) {
     function c9_client_setup()
     {

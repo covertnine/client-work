@@ -3,6 +3,16 @@
 /****************************************************************************************/
 @import "client_variables";
 
+.editor-styles-wrapper .wp-block-paragraph a {
+	color: $dark;
+	text-decoration: underline;
+}
+
+.editor-styles-wrapper .wp-block-paragraph a:hover {
+	color: $link-hover-color;
+	text-decoration: none;
+}
+
 /****************************************************************************************/
 /***************************** Typography
 /****************************************************************************************/
@@ -179,7 +189,23 @@
 }
 
 /* woocommerce product blocks */
-.editor-styles-wrapper a:not(.wp-block-button__link),
+.editor-styles-wrapper .wc-block-grid a:not(.wp-block-button__link),
 .editor-styles-wrapper .wc-block-grid .wc-block-grid_product a.wc-block-grid_product-link {
 	text-decoration: none;
+}
+
+/****************************************************************************************/
+/***************************** Gravity Forms Backend Adjustments
+/****************************************************************************************/
+.editor-styles-wrapper .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+.editor-styles-wrapper .gform_wrapper input[type=password],
+.editor-styles-wrapper .gform_wrapper input[type=tel],
+.editor-styles-wrapper .gform_wrapper input[type=text],
+.editor-styles-wrapper .gform_wrapper textarea,
+.editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type=password],
+.editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type=tel],
+.editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type=text],
+.editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper textarea {
+	font-size: 16px;
+	min-height: 50px;
 }
