@@ -17,6 +17,11 @@
 	font-family: $font-family-base;
 }
 
+.editor-styles-wrapper .c9-cta-text.c9-h p,
+.editor-styles-wrapper .container .c9-cta-text.c9-h p {
+	font-family: $headings-font-family;
+}
+
 .editor-styles-wrapper,
 .editor-post-title__block .editor-post-title__input {
 	font-family: $font-family-base !important;
@@ -24,7 +29,6 @@
 
 .editor-styles-wrapper ul li,
 .editor-styles-wrapper ol li {
-	font-size: 2em;
 	color: $gray-900;
 }
 
@@ -67,7 +71,6 @@
 .editor-styles-wrapper .block-editor-block-list__layout h4,
 .editor-styles-wrapper .block-editor-block-list__layout h5,
 .editor-styles-wrapper .block-editor-block-list__layout h6 {
-	line-height: 1.2;
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
@@ -93,18 +96,6 @@
 
 .editor-styles-wrapper .c9-toggles .c9-toggles-item-heading .c9-toggles-label {
 	font-family: $headings-font-family !important;
-}
-
-.editor-styles-wrapper .c9-h,
-.editor-styles-wrapper .c9-h.h,
-.editor-styles-wrapper .c9-txl,
-.editor-styles-wrapper .display-1,
-.editor-styles-wrapper .display-2,
-.editor-styles-wrapper .display-3,
-.editor-styles-wrapper .display-4,
-.editor-styles-wrapper .display-5,
-.editor-styles-wrapper .display-6 {
-	line-height: .9 !important;
 }
 
 .editor-styles-wrapper p.wp-block-subhead,
@@ -185,4 +176,10 @@
 		width: auto;
 		min-width: 600px;
 	}
+}
+
+/* woocommerce product blocks */
+.editor-styles-wrapper a:not(.wp-block-button__link),
+.editor-styles-wrapper .wc-block-grid .wc-block-grid_product a.wc-block-grid_product-link {
+	text-decoration: none;
 }

@@ -39,6 +39,14 @@ register_block_style(
 	)
 );
 
+register_block_style(
+    'c9-blocks/heading',
+	array(
+			'name'		  => 'abel-heading',
+			'label'		  => __( 'Second Heading' ),
+	)
+);
+
 if (!function_exists('c9_client_setup')) {
     function c9_client_setup()
     {
