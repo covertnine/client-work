@@ -811,6 +811,15 @@ p.wp-block-subhead,
 	letter-spacing: 0.02em;
 }
 
+.c9 .c9-heading h1,
+.c9 .c9-heading h2,
+.c9 .c9-heading h3,
+.c9 .c9-heading h4,
+.c9 .c9-heading h5,
+.c9 .c9-heading h6 {
+	line-height: 1;
+}
+
 /* Responsive Typography */
 @media only screen and (max-width: 568px) {
 	.xxl-heading .c9-txl {
