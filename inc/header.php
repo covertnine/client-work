@@ -37,27 +37,45 @@
                         <i class="fa fa-search"></i>
                         <span class="sr-only"><?php __('Search', 'c9'); ?></span>
                     </a>
-                </div>
+				</div>
+				<?php
+if ( !function_exists('max_mega_menu_is_enabled') && !max_mega_menu_is_enabled('primary') ) {
+				?>
                 <div class="nav-toggle">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-bars"></i>
                     </button>
-                </div>
+				</div>
+<?php } ?>
             </div><!-- .navbar-small-buttons-->
 
             <!-- The WordPress Menu goes here -->
-            <?php wp_nav_menu(
-                array(
-                    'theme_location'  => 'primary',
-                    'container_class' => 'collapse navbar-collapse justify-content-center navbar-expand-md',
-                    'container_id'    => 'navbarNavDropdown',
-                    'menu_class'      => 'navbar-nav nav nav-fill justify-content-between',
-                    'fallback_cb'     => '',
-                    'menu_id'         => 'main-menu',
-                    'depth'           => 2,
-                    'walker'          => new c9_WP_Bootstrap_Navwalker(),
-                )
-            ); ?>
+			<?php
+			if ( function_exists('max_mega_menu_is_enabled') && max_mega_menu_is_enabled('primary') ) {
+				wp_nav_menu(
+					array(
+						'theme_location' => 'primary',
+						'link_before'     => '<span>',
+						'link_after'	  => '</span>'
+					)
+				);
+			} else {
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'primary',
+						'container_class' => 'collapse navbar-collapse justify-content-center navbar-expand-md',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav nav nav-fill justify-content-between',
+						'fallback_cb'     => '',
+						'menu_id'         => 'main-menu',
+						'link_before'     => '<span>',
+						'link_after'	  => '</span>',
+						'depth'           => 2,
+						'walker'          => new c9_WP_Bootstrap_Navwalker(),
+					)
+				);
+			} ?>
+
 
         </div><!-- .container -->
 

@@ -6,6 +6,6 @@ jQuery(document).ready(function() {
       $("#page-wrapper").css("margin-top", "0");
     }
 
-    $(".woof_redraw_zone").css({ opacity: "1" });
+    $(".mega-menu-link").wrapInner("<span>" + $(this).text() + "</span>");
   })(jQuery); //end jquery function
 }); //end document ready
