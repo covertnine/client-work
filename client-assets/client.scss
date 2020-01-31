@@ -20,7 +20,7 @@ a:hover {
 	color: $link-hover-color;
 }
 
-.wrapper {
+.c9 .wrapper {
 	margin-top: -115px;
 	margin-bottom: 0px;
 }
@@ -31,7 +31,7 @@ a:hover {
 
 @media only screen and (min-width: 768px) {
 
-	.home .wrapper {
+	.blog .c9 .wrapper {
 		margin-top: 30px;
 	}
 
@@ -1908,6 +1908,11 @@ p.wp-block-subhead,
 // .entry-content .wc-block-grid.has-6-columns .wc-block-grid__product:nth-child(6) {
 // 	margin-right: 0px;
 // }
+
+/* store notice */
+.woocommerce-store-notice {
+	font-size: 1.6em;
+}
 
 .entry-content .wc-block-grid .wc-block-grid__product:before {
 	display: none;
