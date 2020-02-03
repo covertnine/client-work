@@ -4,8 +4,8 @@
  *
  * @package c9
  */
-function megamenu_add_theme_c9_work_1580446435($themes) {
-    $themes["c9_work_1580446435"] = array(
+function megamenu_add_theme_c9_work_1580703782($themes) {
+    $themes["c9_work_1580703782"] = array(
         'title' => 'C9 Work',
         'container_background_from' => 'rgba(34, 34, 34, 0)',
         'container_background_to' => 'rgba(34, 34, 34, 0)',
@@ -121,4 +121,4 @@ function megamenu_add_theme_c9_work_1580446435($themes) {
     );
     return $themes;
 }
-add_filter("megamenu_themes", "megamenu_add_theme_c9_work_1580446435");
+add_filter("megamenu_themes", "megamenu_add_theme_c9_work_1580703782");

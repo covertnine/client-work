@@ -47,16 +47,7 @@ do_action('woocommerce_before_main_content');
         ?>
     </div>
 </header>
-<section class="wl-catalog-filters">
-    <?php if (is_active_sidebar('wc_product_filter')) : ?>
-        <div class="container">
-            <div id="wc-product-filter" class="product-filter" role="complementary">
-                <?php dynamic_sidebar('wc_product_filter'); ?>
-            </div><!-- #primary-sidebar -->
-        </div>
-    <?php endif; ?>
-</section>
-<section class="wl-product-catalog">
+<section class="c9-product-catalog">
     <div class="container">
         <?php
         if (woocommerce_product_loop()) {

@@ -67,47 +67,6 @@ global $product;
                     ?>
                 </div>
 
-                <div class="wl-product-info">
-                    <?php
-                    // check if the repeater field has rows of data
-                    if (have_rows('glove_colors')) :
-                        ?>
-                    Colors
-                    <div class="box-colors"><?php
-
-                                                // loop through the rows of data
-                                                while (have_rows('glove_colors')) : the_row(); ?>
-                        <span class="product-color-box" style="background-color: <?php the_sub_field('glove_color'); ?>"></span>
-                        <?php
-
-                            endwhile;
-                            ?>
-                    </div>
-                    <?php
-                    endif;
-                    ?>
-                    <?php
-
-                    // vars	
-                    $glove_sizes = get_field('glove_sizes');
-
-
-                    // check
-                    if ($glove_sizes) : ?>
-                    <span class="sizes-available-label">Sizes Available</span>
-                    <ul class="product-sizes">
-                        <?php foreach ($glove_sizes as $size) : ?>
-                        <li class="product-size"><?php echo $size; ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                    <?php endif; ?>
-
-                    <a href="/wp-content/uploads/2019/08/wells-lamont-glove-size-guide.jpg" title="Size Guide" class="product-size-link cortex-popup">Review Size Guide</a>
-                    <div class="where-to-buy">
-                        <a href="/where-to-buy" title="Where to buy" class="btn">Where to Buy</a>
-                    </div>
-                </div>
-
                 <?php
                 /**
                  * Hook: woocommerce_after_single_product_summary.
