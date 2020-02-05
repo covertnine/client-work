@@ -1943,8 +1943,19 @@ p.wp-block-subhead,
 .c9 .entry-content .comment-form .comment-form-comment,
 .c9 .entry-content .comment-form p,
 .c9 .woocommerce-ordering,
-.woocommerce .c9 div.product p.stock {
+.woocommerce .c9 div.product p.stock,
+.woocommerce-notices-wrapper,
+.shop_table,
+.c9 .woocommerce #respond input#submit,
+.c9 .woocommerce a.button,
+.c9 .woocommerce button.button,
+.c9 .woocommerce input.button {
 	font-size: 16px;
+}
+
+.woocommerce-notices-wrapper {
+	max-width: 960px;
+	margin: 0px auto;
 }
 
 .c9 .entry-content .comment-form label {
