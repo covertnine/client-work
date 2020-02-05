@@ -4,8 +4,8 @@
  *
  * @package c9
  */
-function megamenu_add_theme_c9_work_1580703782($themes) {
-    $themes["c9_work_1580703782"] = array(
+function megamenu_add_theme_c9_work_1580924236($themes) {
+    $themes["c9_work_1580924236"] = array(
         'title' => 'C9 Work',
         'container_background_from' => 'rgba(34, 34, 34, 0)',
         'container_background_to' => 'rgba(34, 34, 34, 0)',
@@ -117,8 +117,61 @@ function megamenu_add_theme_c9_work_1580703782($themes) {
 .c9 .mega-menu-link:hover, .c9 .mega-menu-link:focus {
 	color: #16181b;
 	background-color: #f8f9fa;
+}
+
+.c9 #mega-menu-wrap-primary #mega-menu-primary .widget_nav_menu a {padding: 6px 0px;}
+
+@media only screen and (max-width: 667px) {
+
+	.navbar-small #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item,
+	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item,
+	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span,
+	.navbar-small #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span {
+		line-height: 1;
+		display: block;
+		margin: 0px auto;
+		text-align: center;
+	}
+
+	.navbar-small #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link,
+	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link {
+		margin: 20px auto;
+		font-size: 20px;
+		display: block;
+		line-height: 1;
+		min-height: 20px;
+		overflow: visible;
+	}
+
+	.header-navbar .nav .nav-item .nav-link:after,
+	.header-navbar .nav .nav-item .nav-link:before,
+	.header-navbar .nav .nav-item .nav-link>span:after,
+	.header-navbar .nav .nav-item .nav-link>span:before,
+	.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:after,
+	.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:before,
+	.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span:after,
+	.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span:before,
+	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:after,
+	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:before,
+	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span:after,
+	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span:before {
+		display: none;
+	}
+
+	#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link,
+	#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
+	#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link,
+	#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item.mega-toggle-on>a.mega-menu-link {
+		background-color: transparent;
+	}
+
+	#mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link {
+		margin: 0px auto;
+		text-align: center;
+	}
+
 }',
     );
     return $themes;
 }
-add_filter("megamenu_themes", "megamenu_add_theme_c9_work_1580703782");
+add_filter("megamenu_themes", "megamenu_add_theme_c9_work_1580924236");
