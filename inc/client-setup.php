@@ -56,8 +56,8 @@ register_block_style(
 );
 
 if (!function_exists('c9_client_setup')) {
-    function c9_client_setup()
-    {
+    function c9_client_setup() {
+
 		add_theme_support(
 			'post-formats',
 			array(
