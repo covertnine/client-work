@@ -7,19 +7,15 @@
  * @package c9
  */
 
-require get_template_directory() . '/admin/class-wp-osa.php';
+require_once get_template_directory() . '/admin/admin-settings.php';
 
-if ( class_exists( 'WP_OSA' ) ) {
+$wposa_obj->add_field(
+	'cortex_branding',
+	array(
+		'id'   => 'dark-logo',
+		'type' => 'image',
+		'name' => __( 'Dark Theme Logo', 'c9' ),
+		'desc' => __( 'Upload your dark color logo here', 'c9' ),
+	)
+);
 
-	$wposa_obj = new WP_OSA();
-
-	$wposa_obj->add_field(
-		'cortex_branding',
-		array(
-			'id'   => 'dark-logo',
-			'type' => 'image',
-			'name' => __( 'Dark Theme Logo', 'c9' ),
-			'desc' => __( 'Upload your dark color logo here', 'c9' ),
-		)
-	);
-}

@@ -4,8 +4,8 @@
  *
  * @package c9
  */
-function megamenu_add_theme_c9_work_1580924236($themes) {
-    $themes["c9_work_1580924236"] = array(
+function megamenu_add_theme_c9_work_1581792549($themes) {
+    $themes["c9_work_1581792549"] = array(
         'title' => 'C9 Work',
         'container_background_from' => 'rgba(34, 34, 34, 0)',
         'container_background_to' => 'rgba(34, 34, 34, 0)',
@@ -69,7 +69,7 @@ function megamenu_add_theme_c9_work_1580924236($themes) {
         'flyout_link_color_hover' => '#666',
         'flyout_link_family' => 'inherit',
         'flyout_link_text_transform' => 'uppercase',
-        'responsive_breakpoint' => '667px',
+        'responsive_breakpoint' => '768px',
         'line_height' => '1',
         'transitions' => 'on',
         'resets' => 'on',
@@ -174,4 +174,4 @@ function megamenu_add_theme_c9_work_1580924236($themes) {
     );
     return $themes;
 }
-add_filter("megamenu_themes", "megamenu_add_theme_c9_work_1580924236");
+add_filter("megamenu_themes", "megamenu_add_theme_c9_work_1581792549");

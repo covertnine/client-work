@@ -2,7 +2,6 @@
 /* Client Specific Styling for Wells Lamont
 /****************************************************************************************/
 @import "client_variables";
-@import url('https://fonts.googleapis.com/css?family=Abel|Bebas+Neue|Lobster&display=swap');
 
 body {
 	color: $gray-900;
@@ -430,11 +429,11 @@ a:hover {
 
 	.navbar-nav,
 	#mega-menu-wrap-primary #mega-menu-primary {
-		width: 80%;
 		display: -webkit-box;
 		display: flex;
 		-webkit-box-pack: justify;
 		justify-content: space-between;
+		margin-left: auto;
 	}
 
 	.header-navbar {
@@ -443,6 +442,14 @@ a:hover {
 
 	.navbar-nav>li>a {
 		color: #fff;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+
+	.navbar-nav,
+	#mega-menu-wrap-primary #mega-menu-primary {
+		min-width: 80%;
 	}
 }
 
@@ -694,6 +701,7 @@ a:hover {
 	overflow: hidden;
 	color: $light;
 	padding: 0px;
+	white-space: nowrap;
 
 	&:before,
 	&:after {
@@ -2012,6 +2020,7 @@ p.wp-block-subhead,
 	line-height: 1;
 	border-radius: 0px;
 	border: none;
+	white-space: nowrap;
 }
 
 .woocommerce #respond input#submit.alt.disabled,
