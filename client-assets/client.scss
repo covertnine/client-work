@@ -335,15 +335,18 @@ a:hover {
 		padding-bottom: 0px;
 	}
 
+	.dark-brand {
+		display: none;
+	}
+
 	/* needs to change to theme setting */
-	.navbar-small .navbar-brand {
-		background: transparent url(/wp-content/uploads/2020/01/c9-work-logo.svg) center no-repeat;
-		background-size: contain;
+	.navbar-small .dark-brand {
 		max-width: 285px;
 		max-height: 45px;
 		width: auto;
 		height: auto;
 		position: absolute;
+		display: inline;
 	}
 
 	.navbar .navbar-brand {
@@ -352,6 +355,7 @@ a:hover {
 
 	.navbar-small .navbar-brand img {
 		opacity: 0;
+		display: none;
 	}
 
 	.navbar .container-fluid .navbar-small-buttons {

@@ -17,19 +17,32 @@
             <?php
 
             // get custom logo, if not set, use customizer logo, if that's not set, show text of site title
-            $c9Logo = get_option('cortex_branding', '');
+			$c9Logo = get_option('cortex_branding', '');
             $c9SiteName = get_bloginfo('name');
 
             if (!empty($c9Logo['logo'])) {
                 ?>
-            <a href="<?php echo get_home_url(); ?>" title="<?php echo $c9SiteName . __(' Homepage', 'cortextoo'); ?>" class="navbar-brand custom-logo-link c9-custom-logo">
-                <img src="<?php echo $c9Logo['logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __(' Logo', 'cortextoo'); ?>" />
+            <a href="<?php echo get_home_url(); ?>" title="<?php echo $c9SiteName . __(' Homepage', 'c9'); ?>" class="navbar-brand custom-logo-link c9-custom-logo">
+                <img src="<?php echo $c9Logo['logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __(' Logo', 'c9'); ?>" />
+
             </a>
                 <?php
             } else {
                 the_custom_logo();
             }
             ?>
+
+			<?php
+
+			if (!empty($c9Logo['dark-logo'])) {
+                ?>
+            <a href="<?php echo get_home_url(); ?>" title="<?php echo $c9SiteName . __(' Homepage', 'c9'); ?>" class="dark-brand custom-logo-link c9-custom-logo">
+                <img src="<?php echo $c9Logo['dark-logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __('Dark Logo', 'c9'); ?>" />
+
+            </a>
+                <?php
+			}
+			?>
 
             <div class="navbar-small-buttons">
                 <div class="nav-search">
