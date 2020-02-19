@@ -14,23 +14,29 @@
     <nav class="navbar navbar-expand-lg">
 
         <div class="container-fluid">
-            <?php
+		<?php
 
-            // get custom logo, if not set, use customizer logo, if that's not set, show text of site title
-			$c9Logo = get_option('cortex_branding', '');
-            $c9SiteName = get_bloginfo('name');
+			// get custom logo, if not set, use customizer logo, if that's not set, show text of site title
+			$c9_logo      = get_option( 'cortex_branding', '' );
+			$c9_site_name = get_bloginfo( 'name' );
 
-            if (!empty($c9Logo['logo'])) {
-                ?>
-            <a href="<?php echo get_home_url(); ?>" title="<?php echo $c9SiteName . __(' Homepage', 'c9'); ?>" class="navbar-brand custom-logo-link c9-custom-logo">
-                <img src="<?php echo $c9Logo['logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __(' Logo', 'c9'); ?>" />
-
-            </a>
-                <?php
-            } else {
-                the_custom_logo();
-            }
-            ?>
+			if ( ! empty( $c9_logo['logo'] ) ) {
+			?>
+			<a href="<?php echo get_home_url(); ?>" title="<?php echo $c9_site_name . __( ' Homepage', 'c9' ); ?>" class="navbar-brand custom-logo-link c9-custom-logo">
+				<img src="<?php echo $c9_logo['logo']; ?>" class="c9-home-logo img-fluid" alt="<?php echo $c9_site_name . __( ' Logo', 'c9' ); ?>" />
+			</a>
+		<?php
+			} elseif (has_custom_logo()) {
+				the_custom_logo();
+			} else {
+			?>
+			<a href="<?php echo get_home_url(); ?>" title="<?php echo $c9_site_name . __( ' Homepage', 'c9' ); ?>" class="navbar-brand c9-custom-logo">
+				<img src="<?php echo get_template_directory_uri() . '/assets/c9-black-text-logo.svg'; ?>" class="c9-home-logo img-fluid" alt="<?php echo $c9_site_name . __( ' Logo', 'c9' );
+				?>" />
+			</a>
+			<?php
+			}
+			?>
 
 			<?php
 
@@ -72,7 +78,7 @@ if ( !function_exists('max_mega_menu_is_enabled') && !max_mega_menu_is_enabled('
 						'link_after'	  => '</span>'
 					)
 				);
-			} else {
+			} elseif ( has_nav_menu('primary') ) {
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
