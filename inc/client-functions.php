@@ -50,6 +50,16 @@ include( "client-setup.php" );
 /****************************************************************************************/
 require_once( "admin-settings.php" );
 
+if ( ! function_exists( 'c9_hide_font_setting' ) ) {
+	/**
+	 * Hide admin setting for font cause we already set those in CSS
+	 */
+	function c9_hide_font_setting() {
+		wp_enqueue_style( 'c9-client-admin-styles', get_template_directory_uri() . '/client/client-assets/dist/client-admin.css' );
+	}
+	add_action( 'admin_print_styles', 'c9_hide_font_setting', 999);
+} //end if function exists
+
 /****************************************************************************************/
 /******** Woocommerce Specific Functionality
 /****************************************************************************************/
