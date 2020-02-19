@@ -34,7 +34,7 @@
 				//user has not uploaded logo, use fallback default
 			?>
 			<a href="<?php echo get_home_url(); ?>" title="<?php echo $c9_site_name . __( ' Homepage', 'c9' ); ?>" class="navbar-brand c9-custom-logo">
-				<img src="<?php echo get_template_directory_uri() . '/client/assets/c9-work-logo-gray.svg'; ?>" class="c9-home-logo img-fluid" alt="<?php echo $c9_site_name . __( ' Logo', 'c9' );
+				<img src="<?php echo get_template_directory_uri() . '/client/client-assets/dist/c9-work-logo-gray.svg'; ?>" class="c9-home-logo img-fluid" alt="<?php echo $c9_site_name . __( ' Logo', 'c9' );
 				?>" />
 			</a>
 			<?php
