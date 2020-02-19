@@ -17,6 +17,7 @@ if ( ! function_exists( 'client_scripts' ) ) {
 	function client_scripts() {
 
 		//wp_enqueue_style( 'c9-megamenu', get_template_directory_uri() . '/client/client-assets/vendor/megamenu.css', array( 'c9-styles' ) );
+		wp_enqueue_style( 'client-fonts', 'https://fonts.googleapis.com/css?family=Abel|Bebas+Neue|Lobster&display=swap', array( 'c9-styles' ) );
 		wp_enqueue_style( 'client-styles', get_template_directory_uri() . '/client/client-assets/dist/client.min.css', array( 'c9-styles' ) );
 		wp_enqueue_script( 'client-scripts', get_template_directory_uri() . '/client/client-assets/custom-client.js', array( 'jquery' ), true );
 
