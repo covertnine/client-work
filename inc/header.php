@@ -26,9 +26,12 @@
 				<img src="<?php echo $c9_logo['logo']; ?>" class="c9-home-logo img-fluid" alt="<?php echo $c9_site_name . __( ' Logo', 'c9' ); ?>" />
 			</a>
 		<?php
+			// see if the user uploaded a custom logo from customizer
 			} elseif (has_custom_logo()) {
 				the_custom_logo();
 			} else {
+
+				//user has not uploaded logo, use fallback default
 			?>
 			<a href="<?php echo get_home_url(); ?>" title="<?php echo $c9_site_name . __( ' Homepage', 'c9' ); ?>" class="navbar-brand c9-custom-logo">
 				<img src="<?php echo get_template_directory_uri() . '/client/assets/c9-work-logo-gray.svg'; ?>" class="c9-home-logo img-fluid" alt="<?php echo $c9_site_name . __( ' Logo', 'c9' );
@@ -40,6 +43,7 @@
 
 			<?php
 
+			//add the dark logo if necessary and filled in for after user scrolls
 			if (!empty($c9Logo['dark-logo'])) {
                 ?>
             <a href="<?php echo get_home_url(); ?>" title="<?php echo $c9SiteName . __(' Homepage', 'c9'); ?>" class="dark-brand custom-logo-link c9-custom-logo">
