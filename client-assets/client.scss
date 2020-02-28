@@ -648,6 +648,18 @@ a:hover {
 
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+
+	.navbar-small.fixed-top #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after,
+	.navbar-small.fixed-top .btn-nav-search,
+	.navbar-small.fixed-top .navbar-toggler,
+	.navbar-small.fixed-top #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label,
+	.navbar-small.fixed-top #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after {
+		color: $dark;
+	}
+
+}
+
 /****************************************************************************************/
 /* Drop down menus, animations of menus, and button hover animations in main nav */
 /****************************************************************************************/
