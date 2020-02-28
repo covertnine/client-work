@@ -37,10 +37,6 @@ a:hover {
 
 }
 
-.c9-layout-column-wrap {
-	display: -ms-grid;
-}
-
 .c9-grid .c9-layout-column-wrap {
 	position: relative;
 }
@@ -352,7 +348,7 @@ a:hover {
 		position: relative;
 	}
 
-	.navbar-small .navbar-brand img {
+	.navbar-small .navbar-brand .c9-work-light {
 		opacity: 0;
 		display: none;
 	}
@@ -385,7 +381,7 @@ a:hover {
 		margin-left: 0px;
 	}
 
-	.btn-nav-search,
+	.nav-search .btn-nav-search,
 	.navbar-toggler {
 		color: $dark;
 		margin: 0px;
@@ -420,7 +416,6 @@ a:hover {
 	}
 
 	#mega-menu-wrap-primary {
-		width: 100%;
 		display: -webkit-box;
 		display: flex;
 		-webkit-box-pack: center;
@@ -446,6 +441,9 @@ a:hover {
 }
 
 @media only screen and (min-width: 992px) {
+	#mega-menu-wrap-primary {
+		width: 100%;
+	}
 
 	.navbar-nav,
 	#mega-menu-wrap-primary #mega-menu-primary {
@@ -456,8 +454,9 @@ a:hover {
 /****************************************************************************************/
 /* header navbar search customizations */
 /****************************************************************************************/
-.header-navbar .nav-item.search {
-	display: none !important;
+.c9 #mega-menu-wrap-primary #mega-menu-primary li.search.nav-item,
+.header-navbar .search.nav-item {
+	display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -631,6 +630,18 @@ a:hover {
 	}
 }
 
+@media only screen and (max-width: 991px) and (min-width: 668px) {
+
+	#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after,
+	.btn-nav-search,
+	.navbar-toggler,
+	#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label,
+	#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after {
+		color: $light;
+	}
+
+}
+
 /****************************************************************************************/
 /* Drop down menus, animations of menus, and button hover animations in main nav */
 /****************************************************************************************/
@@ -697,7 +708,7 @@ a:hover {
 .navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span,
 .navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link,
 .navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span {
-	display: inline-block;
+	display: block;
 	overflow: hidden;
 	color: $light;
 	padding: 0px;
@@ -726,6 +737,7 @@ a:hover {
 
 	>span {
 		display: block;
+		margin: 0px auto;
 		padding: 12px;
 
 		&:before,
@@ -786,6 +798,35 @@ a:hover {
 .navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link,
 .navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span {
 	color: $dark;
+}
+
+.header-navbar .nav-search .btn-nav-search {
+	font-size: 20px;
+}
+
+.nav-search,
+.nav-toggle {
+	display: inline-block;
+	line-height: 2;
+}
+
+@media only screen and (max-width:414px) {}
+
+@media only screen and (max-width: 768px) {
+
+	.header-navbar .nav .nav-item .nav-link>span>span,
+	.header-navbar .nav .nav-item>.nav-link>span,
+	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span,
+	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span>span,
+	.navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span,
+	.navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span>span {
+		padding: 0px;
+		color: $dark;
+	}
+
+	.header-navbar .navbar:not(.navbar-small) .nav-search .btn-nav-search {
+		color: $light;
+	}
 }
 
 /****************************************************************************************/

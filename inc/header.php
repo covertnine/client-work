@@ -22,7 +22,7 @@
 
 			if ( ! empty( $c9_logo['logo'] ) ) {
 			?>
-			<a href="<?php echo get_home_url(); ?>" title="<?php echo $c9_site_name . __( ' Homepage', 'c9' ); ?>" class="navbar-brand custom-logo-link c9-custom-logo">
+			<a href="<?php echo get_home_url(); ?>" title="<?php echo $c9_site_name . __( ' Homepage', 'c9' ); ?>" class="navbar-brand custom-logo-link c9-custom-logo c9-work-light">
 				<img src="<?php echo $c9_logo['logo']; ?>" class="c9-home-logo img-fluid" alt="<?php echo $c9_site_name . __( ' Logo', 'c9' ); ?>" />
 			</a>
 		<?php
@@ -44,10 +44,10 @@
 			<?php
 
 			//add the dark logo if necessary and filled in for after user scrolls
-			if (!empty($c9Logo['dark-logo'])) {
+			if (!empty($c9_logo['dark-logo'])) {
                 ?>
             <a href="<?php echo get_home_url(); ?>" title="<?php echo $c9SiteName . __(' Homepage', 'c9'); ?>" class="dark-brand custom-logo-link c9-custom-logo">
-                <img src="<?php echo $c9Logo['dark-logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __('Dark Logo', 'c9'); ?>" />
+                <img src="<?php echo $c9_logo['dark-logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __('Dark Logo', 'c9'); ?>" />
 
             </a>
                 <?php
