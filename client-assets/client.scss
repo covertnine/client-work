@@ -2066,7 +2066,6 @@ p.wp-block-subhead,
 }
 
 /* font size setting */
-.woocommerce-Price-amount,
 .woocommerce-message,
 .woocommerce-info,
 .woocommerce-notice,
@@ -2079,6 +2078,12 @@ p.wp-block-subhead,
 .select2-results__option,
 .editor-styles-wrapper .wc-block-grid__products .wc-block-grid__product-title {
 	font-size: 1.6em;
+}
+
+.woocommerce ul.products li.product .price,
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+	font-size: 14px;
 }
 
 .wc-block-grid__product-link {
@@ -2106,12 +2111,15 @@ p.wp-block-subhead,
 .c9 .woocommerce-ordering,
 .woocommerce .c9 div.product p.stock,
 .woocommerce-notices-wrapper,
-.shop_table,
+.shop_table {
+	font-size: 16px;
+}
+
 .c9 .woocommerce #respond input#submit,
 .c9 .woocommerce a.button,
 .c9 .woocommerce button.button,
 .c9 .woocommerce input.button {
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .woocommerce-notices-wrapper {
@@ -2141,7 +2149,6 @@ p.wp-block-subhead,
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
 	color: $dark;
-	font-size: 16px;
 }
 
 .woocommerce .c9 ul.products li.product .price ins {
@@ -2165,7 +2172,7 @@ p.wp-block-subhead,
 	background-color: $dark;
 	font-family: $headings-font-family;
 	font-size: 20px;
-	letter-spacing: .01em;
+	letter-spacing: .08em;
 	text-align: center;
 	line-height: 1;
 	border-radius: 0px;
