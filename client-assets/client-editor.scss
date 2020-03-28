@@ -179,12 +179,63 @@
 }
 
 /* grids inside of grids inside of tabs */
+@media only screen and (min-width: 992px) {
+
+	body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .c9-grid .container,
+	body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .c9-grid .container {
+		width: auto;
+	}
+
+	body:not(.folded) .edit-post-layout:not(.is-sidebar-opened) .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body.folded .edit-post-layout:not(.is-sidebar-opened) .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"] {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* grids inside of grids inside of tabs */
 @media only screen and (min-width: 1200px) {
 
+	body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
 	body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .c9-grid .container,
 	body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .c9-grid .container {
 		width: auto;
 		min-width: 600px;
+	}
+
+	body:not(.folded) .edit-post-layout:not(.is-sidebar-opened) .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body.folded .edit-post-layout:not(.is-sidebar-opened) .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"] {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+/* grids inside of grids inside of tabs */
+@media only screen and (min-width: 1500px) {
+
+	body:not(.folded) .edit-post-layout:not(.is-sidebar-opened) .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body.folded .edit-post-layout:not(.is-sidebar-opened) .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .c9-grid .container,
+	body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .c9-grid .container {
+		width: auto;
+		min-width: 600px;
+	}
+
+	body:not(.folded) .edit-post-layout:not(.is-sidebar-opened) .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body.folded .edit-post-layout:not(.is-sidebar-opened) .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"],
+	body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .wp-block[data-type="c9-blocks/grid"] {
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 

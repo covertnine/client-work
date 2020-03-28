@@ -231,7 +231,7 @@ a:hover {
 /* tags */
 .i-tag,
 .tags-links {
-	font-size: 1.2em;
+	font-size: 10px;
 	letter-spacing: 0.01em;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -1068,7 +1068,7 @@ p.wp-block-subhead,
 	text-align: center;
 	text-transform: uppercase;
 	font-family: $font-family-base;
-	font-size: 20px;
+	font-size: 2em;
 	min-height: 12px;
 	max-height: 16px;
 	color: $dark;
@@ -1087,6 +1087,12 @@ p.wp-block-subhead,
 }
 
 @media only screen and (max-width: 667px) {
+
+
+	.editor-styles-wrapper .wp-block-paragraph.is-style-black-bar,
+	.entry-content p.is-style-black-bar {
+		font-size: 1.4em;
+	}
 
 	.entry-content p.is-style-black-bar strong,
 	.editor-styles-wrapper .wp-block-paragraph.is-style-black-bar strong {
@@ -1129,21 +1135,11 @@ p.wp-block-subhead,
 	margin-top: 80px;
 }
 
-@media only screen and (min-width: 1px) {
-
-	.c9 .page .entry-header h1 {
-		text-align: center;
-		color: $light;
-		margin: 70px auto;
-		line-height: 1;
-	}
-
-	.c9-heading .display-1,
-	.editor-styles-wrapper .c9-heading .display-1.c9-txl,
-	.entry-content .c9-heading .c9-txl.display-1,
-	.entry-content .c9-heading h1.c9-txl {
-		font-size: 14em;
-	}
+.c9 .page .entry-header h1 {
+	text-align: center;
+	color: $light;
+	margin: 70px auto;
+	line-height: 1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1534,6 +1530,27 @@ p.wp-block-subhead,
 
 .search-results .site-main .container .entry-header .entry-title a:hover {
 	color: $primary;
+}
+
+.post .entry-footer {
+	line-height: 1;
+}
+
+.post .entry-footer .comments-link {
+	font-size: 12px;
+	margin-top: 8px;
+}
+
+.post .entry-footer .comments-link a {
+	text-decoration: none;
+}
+
+.post .entry-footer .comments-link:after {
+	font-family: FontAwesome;
+	font-size: 12px;
+	content: '\f086';
+	display: inline-block;
+	margin-left: 4px;
 }
 
 /* fullscreen search */
@@ -2030,6 +2047,7 @@ p.wp-block-subhead,
 /****************************************************************************************/
 /* woocommerce products blocks and product single */
 /****************************************************************************************/
+
 /* make gutenberg woocommerce product bocks columns responsive */
 @media only screen and (max-width: 415px) {
 
@@ -2066,6 +2084,7 @@ p.wp-block-subhead,
 }
 
 /* font size setting */
+.c9 .woocommerce p,
 .woocommerce-message,
 .woocommerce-info,
 .woocommerce-notice,
@@ -2076,14 +2095,45 @@ p.wp-block-subhead,
 .c9.woocommerce nav.woocommerce-pagination ul li .page-numbers,
 .quantity input,
 .select2-results__option,
-.editor-styles-wrapper .wc-block-grid__products .wc-block-grid__product-title {
+.editor-styles-wrapper .wc-block-grid__products .wc-block-grid__product-title,
+.wc-block-grid .wc-block-grid__product-title,
+.c9 .woocommerce-ordering,
+.product_meta {
 	font-size: 1.6em;
+}
+
+.product_meta {
+	letter-spacing: .05em;
 }
 
 .woocommerce ul.products li.product .price,
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
 	font-size: 14px;
+}
+
+.c9 .product_meta>span {
+	font-weight: $font-weight-bold;
+	font-family: $headings-font-family;
+	text-transform: uppercase;
+}
+
+.sku {
+	color: $dark;
+}
+
+@media only screen and (max-width: 414px) {
+
+	.woocommerce .woocommerce-ordering,
+	.woocommerce-page .woocommerce-ordering {
+		float: none;
+	}
+
+	.woocommerce .woocommerce-ordering select,
+	.woocommerce-page .woocommerce-ordering select {
+		margin-top: 15px;
+	}
+
 }
 
 .wc-block-grid__product-link {
@@ -2093,7 +2143,6 @@ p.wp-block-subhead,
 .wc-block-grid__product-link:hover {
 	text-decoration: underline;
 }
-
 
 /* product single product_meta */
 .c9 .product_meta>span {
@@ -2108,7 +2157,6 @@ p.wp-block-subhead,
 
 .c9 .entry-content .comment-form .comment-form-comment,
 .c9 .entry-content .comment-form p,
-.c9 .woocommerce-ordering,
 .woocommerce .c9 div.product p.stock,
 .woocommerce-notices-wrapper,
 .shop_table {
@@ -2120,6 +2168,16 @@ p.wp-block-subhead,
 .c9 .woocommerce button.button,
 .c9 .woocommerce input.button {
 	font-size: 20px;
+}
+
+@media only screen and (max-width: 414px) {
+
+	.c9 .woocommerce #respond input#submit,
+	.c9 .woocommerce a.button,
+	.c9 .woocommerce button.button,
+	.c9 .woocommerce input.button {
+		font-size: 14px;
+	}
 }
 
 .woocommerce-notices-wrapper {
@@ -2145,10 +2203,14 @@ p.wp-block-subhead,
 }
 
 /* woocommerce text formatting and color changes */
-.woocommerce ul.products li.product .price,
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
 	color: $dark;
+	font-family: $headings-font-family;
+	font-weight: $font-weight-bold;
+	font-size: 2.8em;
+	margin-bottom: 8px;
+	color: $gray-900;
 }
 
 .woocommerce .c9 ul.products li.product .price ins {
@@ -2156,9 +2218,21 @@ p.wp-block-subhead,
 }
 
 /* product single quantity field */
-.woocommerce .c9 .quantity .qty {
-	min-height: 53px;
+.woocommerce .c9 .quantity .qty,
+.c9 .woocommerce-ordering select,
+.woocommerce .quantity .qty {
+	height: 53px;
+	border: 1px solid #ccc;
 	font-size: 16px;
+}
+
+@media only screen and (max-width: 414px) {
+
+	.woocommerce .c9 .quantity .qty,
+	.c9 .woocommerce-ordering select,
+	.woocommerce .quantity .qty {
+		height: 47px;
+	}
 }
 
 /* woocommerce buttons */
@@ -2205,6 +2279,17 @@ p.wp-block-subhead,
 .woocommerce input.button.alt:disabled[disabled],
 .woocommerce input.button.alt:disabled[disabled]:hover {
 	background-color: $gray-700;
+}
+
+@media only screen and (max-width: 414px) {
+
+	.woocommerce .c9 #respond input#submit,
+	.woocommerce .c9 a.button,
+	.woocommerce .c9 button.button,
+	.woocommerce .c9 input.button,
+	.woocommerce a.button {
+		font-size: 14px;
+	}
 }
 
 .entry-content .wc-block-grid .wc-block-grid__product:before {
@@ -2488,11 +2573,7 @@ body .woocommerce-info:before {
 
 .page-search-results nav .pagination .page-item .page-link,
 .c9.woocommerce nav.woocommerce-pagination ul li .page-numbers {
-	color: $primary;
-}
-
-.c9.woocommerce nav.woocommerce-pagination ul li .page-numbers:hover {
-	color: $dark;
+	color: $gray-900;
 }
 
 .c9.woocommerce nav.woocommerce-pagination,
