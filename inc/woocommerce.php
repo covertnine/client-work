@@ -96,3 +96,6 @@ function c9_loop_shop_per_page($cols) {
     $cols = 40;
     return $cols;
 }
+
+/* remove dialog nag */
+add_filter( 'woocommerce_helper_suppress_admin_notices', '__return_true' );
