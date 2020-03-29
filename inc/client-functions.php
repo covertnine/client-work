@@ -10,11 +10,11 @@
  * @package c9
  */
 
-if ( ! function_exists( 'client_scripts' ) ) {
+if ( ! function_exists( 'c9_client_scripts' ) ) {
 	/**
 	 * Load theme's JavaScript and CSS sources.
 	 */
-	function client_scripts() {
+	function c9_client_scripts() {
 
 		//wp_enqueue_style( 'c9-megamenu', get_template_directory_uri() . '/client/client-assets/vendor/megamenu.css', array( 'c9-styles' ) );
 		wp_enqueue_style( 'client-fonts', 'https://fonts.googleapis.com/css?family=Abel|Bebas+Neue|Lobster&display=swap', array( 'c9-styles' ) );
@@ -25,8 +25,8 @@ if ( ! function_exists( 'client_scripts' ) ) {
 		//wp_enqueue_script( 'smooth-state', get_template_directory_uri() . '/client/client-assets/vendor/jquery.smoothState.min.js', array( 'jquery' ), true );
 
 	}
-} // endif function_exists( 'client_scripts' ).
-add_action( 'wp_enqueue_scripts', 'client_scripts', 20 );
+} // endif function_exists( 'c9_client_scripts' ).
+add_action( 'wp_enqueue_scripts', 'c9_client_scripts', 20 );
 
 if ( ! function_exists( 'c9_client_editor_style' ) ) {
 	/**
