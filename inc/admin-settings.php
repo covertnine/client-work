@@ -9,7 +9,7 @@
 
 require_once get_template_directory() . '/admin/admin-settings.php';
 
-$wposa_obj->add_field(
+$c9_wposa_obj->add_field(
 	'cortex_branding',
 	array(
 		'id'   => 'dark-logo',
