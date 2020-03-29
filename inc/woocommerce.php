@@ -17,43 +17,25 @@ if ( ! function_exists( 'c9_add_woocommerce_support')) {
 	}
 }
 
-// /**
-//  * Register our sidebars and widgetized areas.
-//  */
-// function woocommerce_product_filter()
-// {
-//     register_sidebar(
-//         array(
-//         'name'          => 'Product Filter Header',
-//         'id'            => 'wc_product_filter',
-//         'before_widget' => '<div>',
-//         'after_widget'  => '</div>',
-//         'before_title'  => '<h2 class="filter">',
-//         'after_title'   => '</h2>',
-//         )
-//     );
-// }
-// add_action('widgets_init', 'woocommerce_product_filter');
-
 
 /* Customize Product Features Labels */
 
-add_filter('woocommerce_taxonomy_args_product_tag', 'custom_wc_taxonomy_label_product_tag');
-function custom_wc_taxonomy_label_product_tag( $args )
+add_filter('woocommerce_taxonomy_args_product_tag', 'c9_custom_wc_taxonomy_label_product_tag');
+function c9_custom_wc_taxonomy_label_product_tag( $args )
 {
     $args['label'] = 'Product Feature';
     $args['labels'] = array(
-        'name'                 => __('Product Features', 'woocommerce'),
-        'singular_name'     => __('Product Feature', 'woocommerce'),
-        'menu_name'            => _x('Features', 'Admin menu name', 'woocommerce'),
-        'search_items'         => __('Search Product Features', 'woocommerce'),
-        'all_items'         => __('All Product Features', 'woocommerce'),
-        'parent_item'         => __('Parent Product Feature', 'woocommerce'),
-        'parent_item_colon' => __('Parent Product Feature:', 'woocommerce'),
-        'edit_item'         => __('Edit Product Feature', 'woocommerce'),
-        'update_item'         => __('Update Product Feature', 'woocommerce'),
-        'add_new_item'         => __('Add New Product Feature', 'woocommerce'),
-        'new_item_name'     => __('New Product Feature Name', 'woocommerce')
+        'name'                 => __('Product Features', 'c9'),
+        'singular_name'     => __('Product Feature', 'c9'),
+        'menu_name'            => _x('Features', 'Admin menu name', 'c9'),
+        'search_items'         => __('Search Product Features', 'c9'),
+        'all_items'         => __('All Product Features', 'c9'),
+        'parent_item'         => __('Parent Product Feature', 'c9'),
+        'parent_item_colon' => __('Parent Product Feature:', 'c9'),
+        'edit_item'         => __('Edit Product Feature', 'c9'),
+        'update_item'         => __('Update Product Feature', 'c9'),
+        'add_new_item'         => __('Add New Product Feature', 'c9'),
+        'new_item_name'     => __('New Product Feature Name', 'c9')
     );
 
     return $args;
