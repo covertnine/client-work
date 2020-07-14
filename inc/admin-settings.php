@@ -7,15 +7,42 @@
  * @package c9
  */
 
-require_once get_template_directory() . '/admin/admin-settings.php';
+/**
+ * Add postMessage support for site title and description for the Theme Customizer.
+ *
+ * @param WP_Customize_Manager $wp_customize Theme Customizer object.
+ */
+if ( ! function_exists( 'c9_work_customize_register' ) ) {
+	/**
+	 * Register basic customizer support.
+	 *
+	 * @param object $wp_customize Customizer reference.
+	 */
+	function c9_work_customize_register( $wp_customize ) {
 
-$c9_wposa_obj->add_field(
-	'cortex_branding',
-	array(
-		'id'   => 'dark-logo',
-		'type' => 'image',
-		'name' => __( 'Dark Theme Logo', 'c9' ),
-		'desc' => __( 'Upload your dark color logo here', 'c9' ),
-	)
-);
+		$wp_customize->add_setting(
+			'c9_dark_logo',
+			array(
+				'default'           => '',
+				'sanitize_callback' => 'wp_filter_post_kses',
+				'type' 				=> 'theme_mod',
+				'capability' 		=> 'edit_theme_options',
+			)
+		);
 
+		$wp_customize->add_control(
+			new WP_Customize_Image_Control(
+				$wp_customize,
+				'c9_dark_logo',
+				array(
+					'label'      => __( 'Dark Logo', 'c9' ),
+					'section'    => 'title_tagline',
+					'settings'   => 'c9_dark_logo',
+					'context'    => 'your_setting_context'
+				)
+			)
+		);
+
+	}
+}
+add_action( 'customize_register', 'c9_work_customize_register' );

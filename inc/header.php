@@ -16,42 +16,59 @@
         <div class="container-fluid">
 		<?php
 
-			// get custom logo, if not set, use customizer logo, if that's not set, show text of site title
-			$c9_logo      = get_option( 'cortex_branding', '' );
+			// use customizer logo, if that's not set, show text of site title
 			$c9_site_name = get_bloginfo( 'name' );
 
-			if ( ! empty( $c9_logo['logo'] ) ) {
-			?>
-			<a href="<?php echo get_home_url(); ?>" title="<?php echo $c9_site_name . __( ' Homepage', 'c9' ); ?>" class="navbar-brand custom-logo-link c9-custom-logo c9-work-light">
-				<img src="<?php echo $c9_logo['logo']; ?>" class="c9-home-logo img-fluid" alt="<?php echo $c9_site_name . __( ' Logo', 'c9' ); ?>" />
-			</a>
-		<?php
-			// see if the user uploaded a custom logo from customizer
-			} elseif (has_custom_logo()) {
+			if (has_custom_logo()) {
 				the_custom_logo();
 			} else {
-
 				//user has not uploaded logo, use fallback default
-			?>
-			<a href="<?php echo get_home_url(); ?>" title="<?php echo $c9_site_name . __( ' Homepage', 'c9' ); ?>" class="navbar-brand c9-custom-logo">
-				<img src="<?php echo get_template_directory_uri() . '/client/client-assets/dist/c9-work-logo-gray.svg'; ?>" class="c9-home-logo img-fluid" alt="<?php echo $c9_site_name . __( ' Logo', 'c9' );
-				?>" />
-			</a>
+				?>
+				<?php
+				if (is_home() ) { //if this is the homepage use the h1 tag
+					?>
+					<h1>
+						<a href="<?php echo get_home_url(); ?>" title="<?php echo esc_attr( $c9_site_name . __( ' Homepage', 'c9' ) ); ?>" class="light-color-text d-none d-sm">
+							<?php echo esc_html( $c9_site_name ); ?>
+						</a>
+					</h1>
+					<?php
+				} else {
+					?>
+					<span class="navbar-text h1 hidden-xs">
+						<a href="<?php echo get_home_url(); ?>" title="<?php echo esc_attr( $c9_site_name . __( ' Homepage', 'c9' ) ); ?>" class="light-color-text d-none d-sm">
+							<?php echo esc_html( $c9_site_name ); ?>
+						</a>
+					</span>
+				<?php
+				} //end of checking homepage
+				?>
+
+
 			<?php
-			}
+			} //end of custom logo
 			?>
 
 			<?php
+
+			$c9_dark_logo = get_theme_mod( 'c9_dark_logo', '');
 
 			//add the dark logo if necessary and filled in for after user scrolls
-			if (!empty($c9_logo['dark-logo'])) {
+			if (!empty($c9_dark_logo)) {
                 ?>
-            <a href="<?php echo get_home_url(); ?>" title="<?php echo $c9SiteName . __(' Homepage', 'c9'); ?>" class="dark-brand custom-logo-link c9-custom-logo">
-                <img src="<?php echo $c9_logo['dark-logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __('Dark Logo', 'c9'); ?>" />
-
+            <a href="<?php echo get_home_url(); ?>" title="<?php echo esc_attr( $c9SiteName . __(' Homepage', 'c9') ); ?>" class="dark-brand custom-logo-link c9-custom-logo">
+                <img src="<?php echo esc_url( $c9_dark_logo ); ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo esc_attr( $c9SiteName . __('Dark Logo', 'c9') ); ?>" />
             </a>
                 <?php
-			}
+			} else {
+			?>
+				<span class="navbar-text h1">
+					<a href="<?php echo get_home_url(); ?>" title="<?php echo esc_attr( $c9_site_name . __( ' Homepage', 'c9' ) ); ?>" class="dark-color-text">
+						<?php echo esc_html( $c9_site_name ); ?>
+					</a>
+				</span>
+			<?php
+			} // end checking for dark logo
 			?>
 
             <div class="navbar-small-buttons">
