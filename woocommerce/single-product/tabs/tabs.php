@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Single Product tabs
  *
@@ -13,7 +12,7 @@
  *
  * @see 	https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 2.4.0
+ * @version 3.8.0
  */
 
 if (!defined('ABSPATH')) {
@@ -26,25 +25,29 @@ if (!defined('ABSPATH')) {
  * Each tab is an array containing title, callback and priority.
  * @see woocommerce_default_product_tabs()
  */
-$c9_tabs = apply_filters('woocommerce_product_tabs', array());
+$c9_tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
 if (!empty($c9_tabs)) : ?>
 
-<div class="woocommerce-tabs wc-tabs-wrapper c9-horizontal-tabs">
-    <ul class="tabs wc-tabs nav nav-tabs d-flex justify-content-end" role="tablist">
-        <?php foreach ($c9_tabs as $c9_key => $c9_tab) : ?>
-        <li class="<?php echo esc_attr($c9_key); ?>_tab nav-item" id="tab-title-<?php echo esc_attr($c9_key); ?>" role="tab" aria-controls="tab-<?php echo esc_attr($c9_key); ?>">
-            <a href="#tab-<?php echo esc_attr($c9_key); ?>" class="nav-link"><?php echo apply_filters('woocommerce_product_' . $c9_key . '_tab_title', esc_html($c9_tab['title']), $c9_key); ?></a>
-        </li>
-        <?php endforeach; ?>
-    </ul>
-    <div class="c9-tabs-content tab-content">
-        <?php foreach ($c9_tabs as $c9_key => $c9_tab) : ?>
-        <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr($c9_key); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr($c9_key); ?>" role="tabpanel" aria-labelledby="tab-title-<?php echo esc_attr($c9_key); ?>">
-            <?php if (isset($c9_tab['callback'])) {
-                        call_user_func($c9_tab['callback'], $c9_key, $c9_tab);
-                    } ?>
-        </div>
-        <?php endforeach; ?>
-    </div>
-</div> <?php endif; ?>
+	<div class="woocommerce-tabs wc-tabs-wrapper c9-horizontal-tabs">
+		<ul class="tabs wc-tabs nav nav-tabs d-flex justify-content-end" role="tablist">
+			<?php foreach ($c9_tabs as $c9_key => $c9_tab) : ?>
+			<li class="<?php echo esc_attr($c9_key); ?>_tab nav-item" id="tab-title-<?php echo esc_attr($c9_key); ?>" role="tab" aria-controls="tab-<?php echo esc_attr($c9_key); ?>">
+				<a href="#tab-<?php echo esc_attr($c9_key); ?>" class="nav-link">
+					<?php echo wp_kses_post( apply_filters('woocommerce_product_' . $c9_key . '_tab_title', esc_html( $c9_tab['title'] ), $c9_key ) ); ?>
+				</a>
+			</li>
+			<?php endforeach; ?>
+		</ul>
+		<div class="c9-tabs-content tab-content">
+			<?php foreach ($c9_tabs as $c9_key => $c9_tab) : ?>
+			<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr($c9_key); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr($c9_key); ?>" role="tabpanel" aria-labelledby="tab-title-<?php echo esc_attr($c9_key); ?>">
+				<?php if (isset($c9_tab['callback'])) {
+							call_user_func($c9_tab['callback'], $c9_key, $c9_tab);
+						} ?>
+			</div>
+			<?php endforeach; ?>
+		</div>
+		<?php do_action( 'woocommerce_product_after_tabs' ); ?>
+	</div>
+<?php endif; ?>
