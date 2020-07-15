@@ -101,3 +101,38 @@ if (!function_exists('c9_client_setup')) {
 }
 
 add_action('after_setup_theme', 'c9_client_setup');
+
+if (!function_exists('c9_work_register_required_plugins')) {
+function c9_work_register_required_plugins() {
+	/*
+	 * Array of plugin arrays. Required keys are name and slug.
+	 * If the source is NOT from the .org repo, then source is also required.
+	 */
+	$plugins = array(
+
+		array(
+			'name'		=> 'WooCommerce',
+			'slug'		=> 'woocommerce',
+			'required'	=> false,
+		),
+		array(
+			'name'		=> 'Max Mega Menu',
+			'slug'		=> 'megamenu',
+			'required'	=> false,
+		),
+		array(
+			'name'		=> 'Smash balloon Social Photo Feed',
+			'slug'		=> 'instagram-feed',
+			'required'	=> false,
+		)
+
+	);
+
+	if ( ! isset( $config ) ) {
+		$config = [];
+	}
+
+	tgmpa( $plugins, $config );
+}
+} //end if function exists
+add_action( 'tgmpa_register', 'c9_work_register_required_plugins' );
