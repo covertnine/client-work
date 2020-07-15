@@ -37,8 +37,7 @@ if ( ! function_exists( 'c9_work_customize_register' ) ) {
 				array(
 					'label'      => __( 'Dark Logo', 'c9' ),
 					'section'    => 'title_tagline',
-					'settings'   => 'c9_dark_logo',
-					'context'    => 'your_setting_context'
+					'settings'   => 'c9_dark_logo'
 				)
 			)
 		);
