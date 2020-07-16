@@ -2027,8 +2027,9 @@ p.wp-block-subhead,
 .c9-product-catalog,
 .c9 .product_meta,
 .c9 .comment-respond,
-.wc-block-grid__product .wc-block-grid__product-title {
-  font-size: 1.6em;
+.wc-block-grid__product .wc-block-grid__product-title,
+.wc-block-grid__product-price {
+  font-size: 16px;
 }
 
 .wc-block-grid__product-link {
@@ -2190,8 +2191,20 @@ body .woocommerce-info:before {
 }
 
 /* homepage + catalog woocommerce product blocks */
-.entry-content .wc-block-grid .wc-block-grid__products:only-child {
+.wc-block-grid .wc-block-grid__products:only-child {
   margin-bottom: 0px;
+}
+
+.wc-block-grid ins {
+  text-decoration: none;
+}
+
+.wc-block-grid .wc-block-grid__product-onsale {
+  border: 1px solid transparent;
+  background: $dark;
+  color: $light;
+  font-size: 10px;
+  padding: 2px 8px;
 }
 
 .entry-content
