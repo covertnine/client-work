@@ -231,17 +231,20 @@ a:hover {
 
 /* tags */
 .i-tag,
-.tags-links {
-  font-size: 1.2em;
+.tags-links,
+.cat-links {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   font-weight: normal;
   color: $link-hover-color;
+  font-size: 0.8em;
 }
 
-.tags-links a {
+.tags-links a,
+.cat-links a {
   text-decoration: none;
   color: $link-color;
+  font-weight: $font-weight-bold;
 }
 
 .i-tag:before,
@@ -530,7 +533,7 @@ a:hover {
   margin-left: 4px;
   padding-bottom: 0px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-  height: auto;
+  min-height: 15px;
 }
 
 .header-navbar .search #s:focus {
@@ -849,7 +852,12 @@ p.wp-block-subhead,
   font-family: $font-family-base;
 }
 
-.mega-menu-wrap {
+.navbar,
+.navbar ul li .dropdown-item,
+.navbar ul li a,
+.mega-menu-wrap,
+.header-navbar .navbar .nav .nav-item .nav-link,
+.header-navbar .navbar .nav .nav-item .dropdown-item {
   font-family: $font-family-sans-serif;
 }
 
@@ -1825,8 +1833,16 @@ p.wp-block-subhead,
 .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type="password"],
 .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type="tel"],
 .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type="text"],
-.wp-block[data-type="gravityforms/block"] .gform_wrapper textarea {
+.wp-block[data-type="gravityforms/block"]
+  .gform_wrapper
+  textarea
+  .c9
+  input[type="password"],
+.c9 input[type="tel"],
+.c9 input[type="text"],
+.c9 textarea {
   font-size: 16px;
+  min-height: 55px;
 }
 
 .c9 .gform_wrapper .gform_footer,
@@ -2444,6 +2460,19 @@ body .woocommerce-info:before {
 .c9.woocommerce nav.woocommerce-pagination,
 .page-search-results nav .pagination {
   margin-bottom: 20px;
+}
+
+/****************************************************************************************/
+/* pagination tweak */
+/****************************************************************************************/
+.archive nav .pagination .page-item .page-link,
+.blog nav .pagination .page-item .page-link,
+.c9.woocommerce nav.woocommerce-pagination ul li .page-numbers,
+.c9.woocommerce nav.woocommerce-pagination ul li span,
+.page-search-results nav .pagination .page-item .page-link,
+.single .navigation .nav-next a,
+.single .navigation .nav-previous a {
+  font-size: 1.4em;
 }
 
 /****************************************************************************************/
