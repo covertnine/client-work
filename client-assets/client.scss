@@ -171,7 +171,6 @@ a:hover {
   border: 3px solid $dark;
 }
 
-.btn-secondary,
 .c9 .entry-content .btn-secondary {
   background-color: $secondary;
 }
@@ -1840,6 +1839,8 @@ p.wp-block-subhead,
   input[type="password"],
 .c9 input[type="tel"],
 .c9 input[type="text"],
+.c9 input[type="email"],
+.c9 input[type="url"],
 .c9 textarea {
   font-size: 16px;
   min-height: 55px;
@@ -2025,8 +2026,13 @@ p.wp-block-subhead,
 .woocommerce div.product form.cart table,
 .c9-product-catalog,
 .c9 .product_meta,
-.c9 .comment-respond {
+.c9 .comment-respond,
+.wc-block-grid__product .wc-block-grid__product-title {
   font-size: 1.6em;
+}
+
+.wc-block-grid__product-link {
+  text-decoration: none;
 }
 
 /* product single product_meta */
