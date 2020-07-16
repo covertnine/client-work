@@ -39,7 +39,7 @@
                     </a>
 				</div>
 				<?php
-if ( !function_exists('max_mega_menu_is_enabled') && !max_mega_menu_is_enabled('primary') ) {
+if ( !function_exists('max_mega_menu_is_enabled') ) {
 				?>
                 <div class="nav-toggle">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
