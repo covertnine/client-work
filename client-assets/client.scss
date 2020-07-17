@@ -21,7 +21,8 @@ body.page {
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.8673844537815126) 1%,
-    rgba(0, 0, 0, 0) 12%
+    rgba(0, 0, 0, 0.667) 5%,
+    rgba(0, 0, 0, 0) 13%
   );
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -72,6 +73,10 @@ a:hover {
   .navbar .container {
     width: 1340px;
     max-width: 1340px;
+  }
+  #left-sidebar,
+  #right-sidebar {
+    background-color: $light;
   }
 }
 
@@ -1592,6 +1597,10 @@ p.wp-block-subhead,
 /****************************************************************************************/
 /* Client Footer */
 /****************************************************************************************/
+.footer-entirety {
+  position: relative;
+  z-index: 40;
+}
 
 #wrapper-footer-full {
   color: $gray-100;
@@ -1860,7 +1869,8 @@ p.wp-block-subhead,
 .c9 input[type="text"],
 .c9 input[type="email"],
 .c9 input[type="url"],
-.c9 textarea {
+.c9 textarea,
+.c9 input[type="search"] {
   font-size: 16px;
   min-height: 55px;
 }
