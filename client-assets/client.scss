@@ -1015,10 +1015,10 @@ p.wp-block-subhead,
   }
 
   /* WordPress Gutenberg Font Sizes */
-  .has-small-font-size {
-    font-size: 1.4rem !important;
-    line-height: 1.5 !important;
-    letter-spacing: 0.125em;
+  .entry-content .has-small-font-size {
+    font-size: 1.4em;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -1562,6 +1562,13 @@ p.wp-block-subhead,
   color: $light;
 }
 
+/**************************** WordPress Password Form **********************************/
+.post-password-form p label {
+  font-size: 20px;
+}
+.post-password-form input[type="submit"] {
+  min-height: 55px;
+}
 /****************************************************************************************/
 /* Client Archive, Tag, Category, Blog Index + Default Home Blog Posts, Search Results */
 /****************************************************************************************/
