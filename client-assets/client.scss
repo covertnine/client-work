@@ -270,7 +270,7 @@ a:hover {
   content: "\f02b";
   font: normal normal normal 1.4rem/1 FontAwesome;
   color: $primary;
-  padding-right: 4px;
+  padding-right: 2px;
 }
 
 .tags-links a:hover {
@@ -1563,17 +1563,29 @@ p.wp-block-subhead,
 }
 
 /****************************************************************************************/
-/* Client Archive, Tag, Category, Blog Index + Default Home Blog Posts */
+/* Client Archive, Tag, Category, Blog Index + Default Home Blog Posts, Search Results */
 /****************************************************************************************/
 .blog .c9 .entry-header .entry-title a,
-.archive .c9 .entry-title a {
+.archive .c9 .entry-title a,
+.search-results .c9 .entry-title a {
   text-decoration: none;
 }
 
 .blog .c9 .entry-header .entry-title,
-.archive .c9 .entry-title {
+.archive .c9 .entry-title,
+.search-results .c9 .entry-title {
   line-height: 1.1;
   font-size: 2em;
+}
+
+.search-results .entry-footer {
+  line-height: 1.25;
+}
+
+.search-results .cat-links,
+.search-results .tags-links {
+  display: block;
+  font-size: 0.7em;
 }
 
 /****************************************************************************************/
