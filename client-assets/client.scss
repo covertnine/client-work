@@ -1765,16 +1765,16 @@ p.wp-block-subhead,
 
 /* all widgets */
 .footer-widget .menu .menu-item,
-.footer-widget ul li {
-  font-size: 1.5em;
+.footer-widget > ul > li {
+  font-size: 15px;
   line-height: 2;
   padding-left: 0px;
   margin: 0;
 }
 
 .footer-widget h3 {
-  font-size: 1.7em;
-  letter-spacing: 0.05px;
+  font-size: 2em;
+  letter-spacing: 0.04em;
   text-align: left;
   line-height: 1;
   font-family: $font-family-base;
