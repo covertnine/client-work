@@ -1,5 +1,5 @@
 /****************************************************************************************/
-/* Client Specific Styling for Wells Lamont
+/* Client Specific Styling for C9 Work Specific Theme
 /****************************************************************************************/
 @import "client_variables";
 
@@ -37,12 +37,14 @@ a:hover {
   margin-bottom: 0px;
 }
 
-.single-post .wrapper {
+.single-post .wrapper,
+.archive .c9 .wrapper {
   margin-top: 0px;
 }
 
 @media only screen and (min-width: 768px) {
-  .blog .c9 .wrapper {
+  .blog .c9 .wrapper,
+  .archive .c9 .wrapper {
     margin-top: 30px;
   }
 }
@@ -1001,6 +1003,10 @@ p.wp-block-subhead,
     color: $gray-700;
   }
 
+  .entry-footer-content {
+    margin-top: 30px;
+  }
+
   .entry-footer .comments-link {
     display: block;
     text-align: right;
@@ -1557,14 +1563,17 @@ p.wp-block-subhead,
 }
 
 /****************************************************************************************/
-/* Client Blog Index + Default Home Blog Posts */
+/* Client Archive, Tag, Category, Blog Index + Default Home Blog Posts */
 /****************************************************************************************/
-.blog .c9 .entry-header .entry-title a {
+.blog .c9 .entry-header .entry-title a,
+.archive .c9 .entry-title a {
   text-decoration: none;
 }
 
-.blog .c9 .entry-header .entry-title {
+.blog .c9 .entry-header .entry-title,
+.archive .c9 .entry-title {
   line-height: 1.1;
+  font-size: 2em;
 }
 
 /****************************************************************************************/
