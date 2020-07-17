@@ -1128,11 +1128,11 @@ p.wp-block-subhead,
 .entry-content ol li,
 .editor-styles-wrapper .editor-rich-text ol li,
 .entry-content
-  ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers)
+  ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers):not(.wp-block-archives)
   li,
 .editor-styles-wrapper
   .editor-rich-text
-  ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers)
+  ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers):not(.wp-block-archives)
   li {
   margin: 15px 0px;
 }
