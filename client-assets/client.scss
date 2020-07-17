@@ -16,6 +16,17 @@ a {
   color: $dark;
 }
 
+body.page {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8673844537815126) 1%,
+    rgba(0, 0, 0, 0) 12%
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 a:hover {
   color: $link-hover-color;
 }
@@ -584,8 +595,17 @@ a:hover {
 .header-navbar .navbar-small .search:before,
 .header-navbar .navbar-small .search #s,
 .header-navbar .navbar-small .search #s:focus {
-  color: #000 !important;
+  color: $dark;
   text-shadow: none;
+}
+
+.c9 .navbar-small #mega-menu-wrap-primary #mega-menu-primary li.search:before,
+.c9 .header-navbar .navbar-small .search:before {
+  color: $dark;
+}
+
+.header-navbar .navbar-small .search #s {
+  border-bottom: 1px solid $dark;
 }
 
 @media only screen and (max-width: 768px) {
@@ -708,7 +728,7 @@ a:hover {
 
   > span {
     display: block;
-    padding: 12px;
+    padding: 14px 12px;
 
     &:before,
     &:after {
@@ -1665,15 +1685,14 @@ p.wp-block-subhead,
   font-size: 1.2em;
   position: absolute;
   right: 10px;
-  top: 14px;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translateY(-50%);
   z-index: 22;
 }
 
-.footer-search .input-group #s {
+.footer-search .input-group.search-field {
   padding: 10px 12px;
   font-family: $second-font-family;
-  font-size: 1.3em;
   letter-spacing: 0.02em;
   height: auto;
 }
@@ -2015,6 +2034,23 @@ p.wp-block-subhead,
 /* C9 social share block */
 .c9-social-sharing .c9-share-list a {
   margin: 0px 2px;
+}
+
+/* posts grid block */
+.c9-block-post-grid .c9-block-post-grid-byline {
+  font: $font-weight-light 1.6em/1 $headings-font-family, helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.c9-block-post-grid header .c9-block-post-grid-title,
+.c9-block-post-grid .c9-block-post-grid-byline {
+  margin-bottom: 0.5em;
+}
+
+.entry-content .c9-block-post-grid-excerpt p,
+.editor-styles-wrapper .c9-block-post-grid-excerpt p {
+  line-height: 1.5;
 }
 
 /****************************************************************************************/
@@ -2517,13 +2553,13 @@ body .woocommerce-info:before {
   text-align: center;
 }
 
-.error-404 .page-content #searchform {
+.error-404 .page-content .search-form {
   margin: 0px auto 80px auto;
   max-width: 60%;
 }
 
-.error-404 .page-content #searchform .btn-primary,
-.search .page-content #searchform .btn-primary {
+.error-404 .page-content .search-form .btn-primary,
+.search .page-content .search-form .btn-primary {
   color: $dark;
   font-size: 2em;
   font-weight: 700;
@@ -2533,13 +2569,13 @@ body .woocommerce-info:before {
   padding: 6px 30px 2px 30px !important;
 }
 
-.error-404 .page-content #searchform .input-group {
+.error-404 .page-content .search-form .input-group {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.error-404 .page-content #searchform .input-group #s {
+.error-404 .page-content .search-form .input-group.search-field {
   padding: 10px 12px;
   font-family: $second-font-family;
   font-size: 1.3em;

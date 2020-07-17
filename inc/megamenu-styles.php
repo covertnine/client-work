@@ -4,8 +4,18 @@
  *
  * @package c9
  */
-function megamenu_add_theme_c9_work_1580924236($themes) {
-    $themes["c9_work_1580924236"] = array(
+function c9_megamenu_override_default_theme($value) {
+  // change 'primary' to your menu location ID
+  if ( !isset($value['primary']['theme']) ) {
+    $value['primary']['theme'] = 'c9_work_1594941301'; // change my_custom_theme_key to the ID of your exported theme
+  }
+
+  return $value;
+}
+add_filter('default_option_megamenu_settings', 'c9_megamenu_override_default_theme');
+
+function c9_megamenu_add_theme_c9_work_1594941301($themes) {
+    $themes["c9_work_1594941301"] = array(
         'title' => 'C9 Work',
         'container_background_from' => 'rgba(34, 34, 34, 0)',
         'container_background_to' => 'rgba(34, 34, 34, 0)',
@@ -69,7 +79,7 @@ function megamenu_add_theme_c9_work_1580924236($themes) {
         'flyout_link_color_hover' => '#666',
         'flyout_link_family' => 'inherit',
         'flyout_link_text_transform' => 'uppercase',
-        'responsive_breakpoint' => '667px',
+        'responsive_breakpoint' => '768px',
         'line_height' => '1',
         'transitions' => 'on',
         'resets' => 'on',
@@ -98,8 +108,20 @@ function megamenu_add_theme_c9_work_1580924236($themes) {
 	display: none;
 }
 
+#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label,#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after {color: #000;}
+
+@media only screen and (max-width: 991px) and (min-width: 668px) {
+
+	#mega-menu-wrap-primary .meg20xa-menu-toggle .mega-toggle-block-1:after,
+	#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label,
+	#mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after {
+		color: $light;
+	}
+
+}
+
 .c9 #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link {
-	line-height: 1.3;
+	line-height: 1;
 }
 
 .c9 #mega-menu-wrap-primary #mega-menu-primary a:after,
@@ -121,7 +143,12 @@ function megamenu_add_theme_c9_work_1580924236($themes) {
 
 .c9 #mega-menu-wrap-primary #mega-menu-primary .widget_nav_menu a {padding: 6px 0px;}
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 768px) {
+
+	/* hide additional search nav item */
+	.c9.mega-menu-primary #mega-menu-wrap-primary #mega-menu-primary li.search,
+	.c9.mega-menu-primary .header-navbar .search,
+	.c9 .header-navbar .search{display: none;}
 
 	.navbar-small #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item,
 	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item,
@@ -134,14 +161,16 @@ function megamenu_add_theme_c9_work_1580924236($themes) {
 	}
 
 	.navbar-small #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link,
-	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link {
+	.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link,
+	.navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span {
 		margin: 20px auto;
-		font-size: 20px;
 		display: block;
 		line-height: 1;
 		min-height: 20px;
 		overflow: visible;
 	}
+
+	.navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>.mega-menu-link {min-height: 40px;}
 
 	.header-navbar .nav .nav-item .nav-link:after,
 	.header-navbar .nav .nav-item .nav-link:before,
@@ -174,4 +203,4 @@ function megamenu_add_theme_c9_work_1580924236($themes) {
     );
     return $themes;
 }
-add_filter("megamenu_themes", "megamenu_add_theme_c9_work_1580924236");
+add_filter("megamenu_themes", "c9_megamenu_add_theme_c9_work_1594941301");
