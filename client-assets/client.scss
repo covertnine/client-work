@@ -2513,36 +2513,6 @@ body .woocommerce-info:before {
   display: inline-block;
 }
 
-.page-search-results nav .pagination .page-item .page-link,
-.c9.woocommerce nav.woocommerce-pagination ul li span,
-.c9.woocommerce nav.woocommerce-pagination ul li .page-numbers {
-  font-size: 2em;
-  font-weight: 700;
-  font-family: $headings-font-family;
-  padding: 16px 10px 10px 10px;
-}
-
-.page-search-results .navigation .page-item.active .page-link,
-.page-search-results .navigation .pagination li .current,
-.c9.woocommerce nav.woocommerce-pagination ul li .current.page-numbers {
-  color: $dark;
-}
-
-.page-search-results nav .page-item.active .page-link,
-.page-search-results nav .pagination li .current {
-  background-color: #ebe9eb;
-  border: 1px solid #dee2e6;
-}
-
-.page-search-results nav .pagination .page-item .page-link,
-.c9.woocommerce nav.woocommerce-pagination ul li .page-numbers {
-  color: $primary;
-}
-
-.c9.woocommerce nav.woocommerce-pagination ul li .page-numbers:hover {
-  color: $dark;
-}
-
 .c9.woocommerce nav.woocommerce-pagination,
 .page-search-results nav .pagination {
   margin-bottom: 20px;
@@ -2553,14 +2523,19 @@ body .woocommerce-info:before {
 /****************************************************************************************/
 .archive nav .pagination .page-item .page-link,
 .blog nav .pagination .page-item .page-link,
-.c9.woocommerce nav.woocommerce-pagination ul li .page-numbers,
-.c9.woocommerce nav.woocommerce-pagination ul li span,
 .page-search-results nav .pagination .page-item .page-link,
 .single .navigation .nav-next a,
 .single .navigation .nav-previous a {
   font-size: 1.4em;
 }
+.c9 .woocommerce nav.woocommerce-pagination {
+  font-family: $headings-font-family;
+}
 
+.c9 .woocommerce nav.woocommerce-pagination ul li .page-numbers,
+.c9 .woocommerce nav.woocommerce-pagination ul li span {
+  font-size: 14px;
+}
 /****************************************************************************************/
 /* 404 error page */
 /****************************************************************************************/
