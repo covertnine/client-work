@@ -94,7 +94,6 @@ if (!function_exists('c9_client_setup')) {
 					'footerfull'	=> array(
 						'text_about',
 						'recent-posts',
-						'recent-comments',
 						'meta_custom' => array( 'meta', array(
 							'title'	=> 'Meta Widget',
 						) ),
