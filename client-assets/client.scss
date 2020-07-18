@@ -415,6 +415,12 @@ a:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  .header-navbar {
+    height: 108px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
   .navbar-brand img {
     max-width: 285px;
     max-height: 92px;
@@ -430,7 +436,6 @@ a:hover {
 
   .navbar-nav,
   #mega-menu-wrap-primary #mega-menu-primary {
-    width: 80%;
     display: flex;
     justify-content: space-between;
   }
@@ -441,6 +446,13 @@ a:hover {
 
   .navbar-nav > li > a {
     color: #fff;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar-nav,
+  #mega-menu-wrap-primary #mega-menu-primary {
+    width: 80%;
   }
 }
 
@@ -621,6 +633,20 @@ a:hover {
   }
 
   .header-navbar .navbar:not(.navbar-small) .nav-search .btn-nav-search {
+    color: $light;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .navbar:not(.navbar-small)
+    #mega-menu-wrap-primary
+    .mega-menu-toggle
+    .mega-toggle-block-1
+    .mega-toggle-label,
+  .navbar:not(.navbar-small)
+    #mega-menu-wrap-primary
+    .mega-menu-toggle
+    .mega-toggle-block-1:after {
     color: $light;
   }
 }
@@ -816,6 +842,39 @@ a:hover {
   > a.mega-menu-link
   > span {
   color: $dark;
+}
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .navbar:not(.navbar-small)
+    #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-item
+    > a.mega-menu-link {
+    overflow: visible;
+  }
+  .navbar:not(.navbar-small)
+    #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-item {
+    margin: 0px auto;
+    text-align: center;
+  }
+  .navbar:not(.navbar-small)
+    #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-item
+    > a.mega-menu-link
+    > span {
+    color: $dark;
+  }
+  .navbar:not(.navbar-small)
+    #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-item
+    > a.mega-menu-link
+    > span {
+    margin: 0px;
+  }
 }
 
 /****************************************************************************************/
