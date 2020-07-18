@@ -414,6 +414,20 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  .navbar:not(.navbar-small)
+    #mega-menu-wrap-primary
+    .mega-menu-toggle
+    .mega-toggle-block-1
+    .mega-toggle-label,
+  .navbar:not(.navbar-small)
+    #mega-menu-wrap-primary
+    .mega-menu-toggle
+    .mega-toggle-block-1:after {
+    color: $light;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .header-navbar {
     height: 108px;
@@ -638,16 +652,64 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
-  .navbar:not(.navbar-small)
+  .c9 #mega-menu-wrap-primary #mega-menu-primary li.search,
+  .c9 .header-navbar .navbar li.search {
+    min-width: 125px;
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-navbar .navbar:not(.navbar-small) .search #s {
+    border-bottom: 1px solid $dark;
+    color: $dark;
+  }
+  .c9
+    .navbar:not(.navbar-small)
     #mega-menu-wrap-primary
-    .mega-menu-toggle
-    .mega-toggle-block-1
-    .mega-toggle-label,
-  .navbar:not(.navbar-small)
-    #mega-menu-wrap-primary
-    .mega-menu-toggle
-    .mega-toggle-block-1:after {
-    color: $light;
+    #mega-menu-primary
+    li.search:before,
+  .c9 .navbar:not(.navbar-small) li.search:before {
+    color: $dark;
+  }
+  .header-navbar .navbar-small .search ::-moz-placeholder {
+    color: $dark !important;
+    text-shadow: none;
+  }
+
+  .header-navbar .search ::-webkit-input-placeholder {
+    color: $dark !important;
+    text-shadow: none;
+  }
+
+  .header-navbar .search ::-ms-placeholder {
+    color: $dark !important;
+    text-shadow: none;
+  }
+
+  .header-navbar .search ::-webkit-input-placeholder {
+    color: $dark !important;
+    text-shadow: none;
+  }
+
+  .header-navbar .search :-ms-input-placeholder {
+    color: $dark !important;
+    text-shadow: none;
+  }
+
+  .header-navbar .search ::-ms-input-placeholder {
+    color: $dark !important;
+    text-shadow: none;
+  }
+
+  .header-navbar .search ::-moz-placeholder {
+    color: $dark !important;
+    text-shadow: none;
+  }
+
+  .header-navbar .search ::placeholder {
+    color: $dark !important;
+    text-shadow: none;
   }
 }
 
@@ -855,9 +917,20 @@ a:hover {
   .navbar:not(.navbar-small)
     #mega-menu-wrap-primary
     #mega-menu-primary
-    > li.mega-menu-item {
+    > li.mega-menu-item,
+  .navbar-small
+    #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-item
+    > a.mega-menu-link,
+  .navbar-small.fixed-top
+    #mega-menu-wrap-primary
+    #mega-menu-primary
+    > li.mega-menu-item
+    > a.mega-menu-link {
     margin: 0px auto;
     text-align: center;
+    min-height: 40px;
   }
   .navbar:not(.navbar-small)
     #mega-menu-wrap-primary
