@@ -1105,24 +1105,20 @@ p.wp-block-subhead,
 }
 
 /****************************************************************************************/
-/* Client unordered list stylings */
+/* Client unordered and ordered list stylings */
 /****************************************************************************************/
-.entry-content ul:not(.wp-block-gallery),
-.entry-content ol,
-.editor-styles-wrapper .editor-rich-text ol,
-.editor-styles-wrapper .editor-rich-text ul:not(.wp-block-gallery) {
-  line-height: 2;
-}
 
-.entry-content ul:not(.wp-block-gallery) li,
-.editor-styles-wrapper .editor-rich-text ul:not(.wp-block-gallery) li {
+.entry-content
+  ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products)
+  li,
+.editor-styles-wrapper
+  ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products)
+  li {
   line-height: 1.6;
 }
 
-.entry-content ol,
-.entry-content
-  ul:not(.blocks-gallery-grid):not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) {
-  margin: 30px 0px 30px 30px;
+.entry-content ol li:before {
+  margin-left: -21px;
 }
 
 .entry-content ol li,
@@ -1135,6 +1131,11 @@ p.wp-block-subhead,
   ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers):not(.wp-block-archives)
   li {
   margin: 15px 0px;
+}
+
+.editor-styles-wrapper ol li,
+.entry-content ol li {
+  padding-left: 24px;
 }
 
 @media only screen and (max-width: 414px) {
