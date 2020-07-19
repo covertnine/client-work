@@ -92,11 +92,62 @@ if (!function_exists('c9_client_setup')) {
 				),
 				'widgets'	=> array(
 					'footerfull'	=> array(
-						'text_about',
-						'recent-posts',
+						'c9work_resources'	=> array(
+							'text',
+							array(
+								'title'	=> 'Resources Menu',
+								'text'	=> '<ul id="menu-footer-resources" class="menu">
+									<li class="menu-item">
+										<a href="#">About</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">News</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Library</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Style Guide</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Terms &amp; Conditions</a>
+									</li>
+								</ul>'
+							)
+						),
+						'c9work_company'	=> array(
+							'text',
+							array(
+								'title'	=> 'Company Menu',
+								'text'	=> '<ul id="menu-footer-company" class="menu">
+									<li class="menu-item">
+										<a href="#">Catalog</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Corporate Governance</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Safety Information</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Contact Us</a>
+									</li>
+									<li class="menu-item">
+										<a href="#">Privacy Policy</a>
+									</li>
+								</ul>'
+							)
+						),
 						'meta_custom' => array( 'meta', array(
-							'title'	=> 'Meta Widget',
+							'title'	=> 'WordPress Meta',
 						) ),
+						'c9work_about' => array(
+							'text',
+							array(
+								'title'	=> 'About C9 Work Theme',
+								'text'	=> 'Be sure to activate the <strong>C9 Blocks Plugin</strong> during theme setup. The blocks plugin includes the custom WordPress blocks for tabs, toggles, and the responsive grid system that makes the theme look super duper.'
+							)
+						)
 					),
 					'right-sidebar'	=> array(
 						'search',
