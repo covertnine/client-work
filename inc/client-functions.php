@@ -10,11 +10,11 @@
  * @package c9
  */
 
-if ( ! function_exists( 'client_scripts' ) ) {
+if ( ! function_exists( 'c9_client_scripts' ) ) {
 	/**
 	 * Load theme's JavaScript and CSS sources.
 	 */
-	function client_scripts() {
+	function c9_client_scripts() {
 
 		//wp_enqueue_style( 'c9-megamenu', get_template_directory_uri() . '/client/client-assets/vendor/megamenu.css', array( 'c9-styles' ) );
 		wp_enqueue_style( 'client-styles', get_template_directory_uri() . '/client/client-assets/dist/client.min.css', array( 'c9-styles' ) );
@@ -25,7 +25,7 @@ if ( ! function_exists( 'client_scripts' ) ) {
 
 	}
 } // endif function_exists( 'client_scripts' ).
-add_action( 'wp_enqueue_scripts', 'client_scripts', 20 );
+add_action( 'wp_enqueue_scripts', 'c9_client_scripts', 20 );
 
 if ( ! function_exists( 'c9_client_editor_style' ) ) {
 	/**
@@ -74,6 +74,6 @@ add_filter('wp_nav_menu_items', 'c9_nav_add_search_form', 10, 2);
 function c9_nav_add_search_form($items, $args)
 {
     if ($args->theme_location == 'primary')
-        $items .= '<li class="search"><form role="search" method="get" id="searchform" action="' . home_url('/') . '"><label class="sr-only">Search Site</label><input type="text" value="" placeholder="Search" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . esc_attr__('Search') . '" class="invisible sr-only"/></form></li>';
+        $items .= '<li class="search"><form role="search" method="get" id="searchform" action="' . home_url('/') . '"><label class="sr-only">' . _e( 'Search Site', 'c9-work' ) . '</label><input type="text" value="" placeholder="' . _e( 'Search', 'c9-work' ) . '" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . __e('Search', 'c9-work') . '" class="invisible sr-only"/></form></li>';
     return $items;
 }
