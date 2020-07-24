@@ -26,23 +26,23 @@ if (!defined('ABSPATH')) {
  * Each tab is an array containing title, callback and priority.
  * @see woocommerce_default_product_tabs()
  */
-$tabs = apply_filters('woocommerce_product_tabs', array());
+$c9_tabs = apply_filters('woocommerce_product_tabs', array());
 
-if (!empty($tabs)) : ?>
+if (!empty($c9_tabs)) : ?>
 
 <div class="woocommerce-tabs wc-tabs-wrapper c9-horizontal-tabs">
     <ul class="tabs wc-tabs nav nav-tabs d-flex justify-content-end" role="tablist">
-        <?php foreach ($tabs as $key => $tab) : ?>
-        <li class="<?php echo esc_attr($key); ?>_tab nav-item" id="tab-title-<?php echo esc_attr($key); ?>" role="tab" aria-controls="tab-<?php echo esc_attr($key); ?>">
-            <a href="#tab-<?php echo esc_attr($key); ?>" class="nav-link"><?php echo apply_filters('woocommerce_product_' . $key . '_tab_title', esc_html($tab['title']), $key); ?></a>
+        <?php foreach ($c9_tabs as $c9_key => $c9_tab) : ?>
+        <li class="<?php echo esc_attr($c9_key); ?>_tab nav-item" id="tab-title-<?php echo esc_attr($c9_key); ?>" role="tab" aria-controls="tab-<?php echo esc_attr($c9_key); ?>">
+            <a href="#tab-<?php echo esc_attr($c9_key); ?>" class="nav-link"><?php echo apply_filters('woocommerce_product_' . $c9_key . '_tab_title', esc_html($c9_tab['title']), $c9_key); ?></a>
         </li>
         <?php endforeach; ?>
     </ul>
     <div class="c9-tabs-content tab-content">
-        <?php foreach ($tabs as $key => $tab) : ?>
-        <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr($key); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr($key); ?>" role="tabpanel" aria-labelledby="tab-title-<?php echo esc_attr($key); ?>">
-            <?php if (isset($tab['callback'])) {
-                        call_user_func($tab['callback'], $key, $tab);
+        <?php foreach ($c9_tabs as $c9_key => $c9_tab) : ?>
+        <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--<?php echo esc_attr($c9_key); ?> panel entry-content wc-tab" id="tab-<?php echo esc_attr($c9_key); ?>" role="tabpanel" aria-labelledby="tab-title-<?php echo esc_attr($c9_key); ?>">
+            <?php if (isset($c9_tab['callback'])) {
+                        call_user_func($c9_tab['callback'], $c9_key, $c9_tab);
                     } ?>
         </div>
         <?php endforeach; ?>

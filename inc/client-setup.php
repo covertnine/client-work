@@ -10,7 +10,7 @@ register_block_style(
     'core/separator',
     array(
         'name'         => 'black-bar',
-        'label'        => __( 'Full Width Black Bar' ),
+        'label'        => __( 'Full Width Black Bar', 'c9-work' ),
     )
 );
 
@@ -18,7 +18,7 @@ register_block_style(
     'c9-blocks/grid',
     array(
         'name'         => 'gray-diagonal',
-        'label'        => __( 'Gray Diagonal Background' ),
+        'label'        => __( 'Gray Diagonal Background', 'c9-work' ),
 	)
 
 );
@@ -27,7 +27,7 @@ register_block_style(
     'c9-blocks/grid',
 	array(
 			'name'		  => 'dark-gradient-left',
-			'label'		  => __( 'Left Side Dark Gradient Background' ),
+			'label'		  => __( 'Left Side Dark Gradient Background', 'c9-work' ),
 	)
 );
 
@@ -35,7 +35,7 @@ register_block_style(
     'core/image',
 	array(
 			'name'		  => 'img-shadow',
-			'label'		  => __( 'Shadow Below' ),
+			'label'		  => __( 'Shadow Below', 'c9-work' ),
 	)
 );
 
@@ -43,7 +43,7 @@ register_block_style(
     'c9-blocks/heading',
 	array(
 			'name'		  => 'abel-heading',
-			'label'		  => __( 'Second Heading' ),
+			'label'		  => __( 'Second Heading', 'c9-work' ),
 	)
 );
 
@@ -51,7 +51,7 @@ register_block_style(
     'core/paragraph',
 	array(
 			'name'		  => 'black-bar',
-			'label'		  => __( 'Black Bar Behind' ),
+			'label'		  => __( 'Black Bar Behind', 'c9-work' ),
 	)
 );
 

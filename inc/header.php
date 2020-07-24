@@ -9,7 +9,7 @@
 ?>
 <div id="wrapper-navbar" class="header-navbar" itemscope itemtype="http://schema.org/WebSite">
 
-    <a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'c9' ); ?></a>
+    <a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'c9-work' ); ?></a>
 
     <nav class="navbar navbar-expand-lg">
 
@@ -22,8 +22,8 @@
 
             if (!empty($c9Logo['logo'])) {
                 ?>
-            <a href="<?php echo get_home_url(); ?>" title="<?php echo $c9SiteName . __(' Homepage', 'cortextoo'); ?>" class="navbar-brand custom-logo-link c9-custom-logo">
-                <img src="<?php echo $c9Logo['logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __(' Logo', 'cortextoo'); ?>" />
+            <a href="<?php echo get_home_url(); ?>" title="<?php echo $c9SiteName . __(' Homepage', 'c9-work'); ?>" class="navbar-brand custom-logo-link c9-custom-logo">
+                <img src="<?php echo $c9Logo['logo']; ?>" class="c9-home-logo img-fluid c9-custom-logo" alt="<?php echo $c9SiteName . __(' Logo', 'c9-work'); ?>" />
             </a>
                 <?php
             } else {
@@ -35,7 +35,7 @@
                 <div class="nav-search">
                     <a href="#" class="btn-nav-search">
                         <i class="fa fa-search"></i>
-                        <span class="sr-only"><?php __('Search', 'c9'); ?></span>
+                        <span class="sr-only"><?php __('Search', 'c9-work'); ?></span>
                     </a>
 				</div>
 				<?php
