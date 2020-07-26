@@ -413,14 +413,17 @@ a:hover {
         width: auto;
         height: auto;
     }
-    #mega-menu-wrap-primary {
+    .c9 #mega-menu-wrap-primary {
         width: 100%;
-        display: flex;
+		display: -ms-flex;
+	    display: flex;
         justify-content: center;
     }
     .navbar-nav,
-    #mega-menu-wrap-primary #mega-menu-primary {
-        display: flex;
+    .c9 #mega-menu-wrap-primary #mega-menu-primary {
+		width: 80%;
+		display: -ms-flex;
+		display: flex;
         justify-content: space-between;
     }
     .header-navbar {
@@ -429,26 +432,20 @@ a:hover {
     .navbar-nav>li>a {
         color: #fff;
     }
-}
-
-@media only screen and (min-width: 992px) {
-    .c9 #mega-menu-wrap-primary {
-        width: 100%;
-        display: -ms-flex;
-        display: flex;
-        justify-content: center;
-    }
-
-    .c9 #mega-menu-wrap-primary #mega-menu-primary {
-        width: 80%;
-        display: -ms-flex;
-        display: flex;
-    }
+	.c9 .navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link,
+	.c9 .navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span,
+	.c9 .header-navbar .navbar-small .nav .nav-item>.nav-link,
+	.c9 .header-navbar .navbar-small .nav .nav-item .nav-link>span {
+		display: -ms-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
     .navbar-nav,
-    #mega-menu-wrap-primary #mega-menu-primary {
+    .c9 #mega-menu-wrap-primary #mega-menu-primary {
         width: 80%;
     }
 }
@@ -737,11 +734,10 @@ a:hover {
         opacity: 1;
     }
 }
-/****************************************************************************************/
-/* first level nav link hover effects */
 
-.header-navbar .nav .nav-item>.nav-link,
-.header-navbar .nav .nav-item .nav-link>span,
+/* first level nav link hover effects */
+.c9 .header-navbar .nav .nav-item>.nav-link,
+.c9 .header-navbar .nav .nav-item .nav-link>span,
 .navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link,
 .navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span {
     display: inline-block;
@@ -817,6 +813,11 @@ a:hover {
 .header-navbar .navbar-small .nav .nav-item>.nav-link,
 .header-navbar .navbar-small .nav .nav-item .nav-link>span {
     color: $dark;
+}
+
+.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:hover>span,
+.header-navbar .navbar-small .nav .nav-item .nav-link:hover>span {
+	color: $link-hover-color;
 }
 
 @media only screen and (max-width: 768px) and (orientation: portrait) {
