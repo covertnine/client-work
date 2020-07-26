@@ -815,11 +815,6 @@ a:hover {
     color: $dark;
 }
 
-.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:hover>span,
-.header-navbar .navbar-small .nav .nav-item .nav-link:hover>span {
-	color: $link-hover-color;
-}
-
 @media only screen and (max-width: 768px) and (orientation: portrait) {
     .navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link {
         overflow: visible;
