@@ -1,6 +1,4 @@
 /****************************************************************************************/
-
-
 /* Client Specific Styling for C9 Work Specific Theme
 /****************************************************************************************/
 
@@ -77,15 +75,9 @@ a:hover {
     }
 }
 
-
 /****************************************************************************************/
-
-
 /* Client default colors, button colors + background colors */
-
-
 /****************************************************************************************/
-
 .has-color-orange-color {
     color: $primary !important;
 }
@@ -148,15 +140,9 @@ a:hover {
     background-color: $dark;
 }
 
-
 /****************************************************************************************/
-
-
 /* Client buttons */
-
-
 /****************************************************************************************/
-
 .c9 .entry-content button,
 .editor-styles-wrapper .wp-block-search__button,
 .editor-styles-wrapper .button-primary,
@@ -251,8 +237,7 @@ a:hover {
 .has-color-black-background-color {
     background-color: #000 !important;
 }
-
-
+/****************************************************************************************/
 /* tags */
 
 .i-tag,
@@ -285,15 +270,9 @@ a:hover {
     color: $dark;
 }
 
-
 /****************************************************************************************/
-
-
 /* Client navbar */
-
-
 /****************************************************************************************/
-
 #wrapper-navbar {
     z-index: 1020;
 }
@@ -452,6 +431,21 @@ a:hover {
     }
 }
 
+@media only screen and (min-width: 992px) {
+    .c9 #mega-menu-wrap-primary {
+        width: 100%;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+    }
+
+    .c9 #mega-menu-wrap-primary #mega-menu-primary {
+        width: 80%;
+        display: -ms-flex;
+        display: flex;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .navbar-nav,
     #mega-menu-wrap-primary #mega-menu-primary {
@@ -459,15 +453,9 @@ a:hover {
     }
 }
 
-
 /****************************************************************************************/
-
-
 /* header navbar search customizations */
-
-
 /****************************************************************************************/
-
 .header-navbar .nav-item.search {
     display: none !important;
 }
@@ -695,15 +683,9 @@ a:hover {
     }
 }
 
-
 /****************************************************************************************/
-
-
 /* Drop down menus, animations of menus, and button hover animations in main nav */
-
-
 /****************************************************************************************/
-
 .header-navbar .navbar .nav .nav-item .dropdown-item {
     padding: 10px 8px;
 }
@@ -755,8 +737,7 @@ a:hover {
         opacity: 1;
     }
 }
-
-
+/****************************************************************************************/
 /* first level nav link hover effects */
 
 .header-navbar .nav .nav-item>.nav-link,
@@ -857,15 +838,9 @@ a:hover {
     }
 }
 
-
 /****************************************************************************************/
-
-
 /* Client Typography */
-
-
 /****************************************************************************************/
-
 .h4,
 .h5,
 .h6,
@@ -945,9 +920,6 @@ p.wp-block-subhead,
 .c9 .c9-heading h6 {
     line-height: 1;
 }
-
-
-/* Responsive Typography */
 
 @media only screen and (max-width: 568px) {
     .xxl-heading .c9-txl {
@@ -1099,14 +1071,8 @@ p.wp-block-subhead,
     height: 20px;
     background-color: $dark;
 }
-
-
 /****************************************************************************************/
-
-
 /* Client page title header on logins, search, pages, posts, etc. */
-
-
 /****************************************************************************************/
 
 .page-template-fullwidthpage .c9 .entry-header,
@@ -1145,15 +1111,9 @@ p.wp-block-subhead,
     }
 }
 
-
 /****************************************************************************************/
-
-
 /* Client unordered and ordered list stylings */
-
-
 /****************************************************************************************/
-
 .entry-content ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li,
 .editor-styles-wrapper ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li {
     line-height: 1.6;
@@ -1197,8 +1157,9 @@ p.wp-block-subhead,
     position: relative;
 }
 
-
+/****************************************************************************************/
 /* horizontal rules customized*/
+/****************************************************************************************/
 
 .entry-content .wp-block-column .wp-block-separator.is-style-wide,
 .wp-block-columns .wp-block-separator.is-style-wide {
@@ -1206,8 +1167,9 @@ p.wp-block-subhead,
     max-width: 60%;
 }
 
-
+/****************************************************************************************/
 /* resources guide */
+/****************************************************************************************/
 
 @media only screen and (max-width: 414px) {
     .c9-grid.p5 .c9-layout-columns-2 .c9-column-inner ul:not(.wp-block-gallery) {
@@ -1215,15 +1177,9 @@ p.wp-block-subhead,
     }
 }
 
-
 /****************************************************************************************/
-
-
 /* Client Tabs + Toggles */
-
-
 /****************************************************************************************/
-
 
 /* big style toggles */
 
@@ -1259,7 +1215,6 @@ p.wp-block-subhead,
 .c9 .c9-toggles .c9-toggles-item-heading {
     cursor: pointer;
 }
-
 
 /* small style toggle */
 
@@ -1335,7 +1290,6 @@ p.wp-block-subhead,
 .c9 .c9-toggles.is-style-toggles-small .c9-toggles-toggle .c9-toggles-item-heading[aria-expanded="true"] .fa-angle-right:before {
     content: "\f068";
 }
-
 
 /* tabs */
 
@@ -1472,15 +1426,9 @@ p.wp-block-subhead,
     }
 }
 
-
 /****************************************************************************************/
-
-
 /* Client Search */
-
-
 /****************************************************************************************/
-
 .search-results #wrapper-navbar,
 .c9.search #wrapper-navbar,
 .search-no-results #wrapper-navbar {
@@ -1512,8 +1460,9 @@ p.wp-block-subhead,
     color: $primary;
 }
 
-
+/****************************************************************************************/
 /* fullscreen search */
+/****************************************************************************************/
 
 #fullscreensearch .btn {
     font-size: 2em;
@@ -1523,8 +1472,9 @@ p.wp-block-subhead,
     color: $light;
 }
 
-
+/****************************************************************************************/
 /**************************** WordPress Password Form **********************************/
+/****************************************************************************************/
 
 .post-password-form p label {
     font-size: 20px;
@@ -1534,15 +1484,9 @@ p.wp-block-subhead,
     min-height: 55px;
 }
 
-
 /****************************************************************************************/
-
-
 /* Client Archive, Tag, Category, Blog Index + Default Home Blog Posts, Search Results */
-
-
 /****************************************************************************************/
-
 .blog .c9 .entry-header .entry-title a,
 .archive .c9 .entry-title a,
 .search-results .c9 .entry-title a {
@@ -1566,15 +1510,9 @@ p.wp-block-subhead,
     font-size: 0.7em;
 }
 
-
 /****************************************************************************************/
-
-
 /* Client Blog Single */
-
-
 /****************************************************************************************/
-
 .entry-big-header .entry-title-box .entry-meta,
 .entry-big-header .entry-title-box .entry-meta .author a,
 .entry-big-header .entry-title-box .entry-meta .byline,
@@ -1588,15 +1526,9 @@ p.wp-block-subhead,
     display: none;
 }
 
-
 /****************************************************************************************/
-
-
 /* Client Animations */
-
-
 /****************************************************************************************/
-
 #icon-mouse-scroll {
     text-align: center;
     margin: auto;
@@ -1604,15 +1536,9 @@ p.wp-block-subhead,
     height: 25px;
 }
 
-
 /****************************************************************************************/
-
-
 /* Client Footer */
-
-
 /****************************************************************************************/
-
 .footer-entirety {
     position: relative;
     z-index: 40;
@@ -1768,16 +1694,10 @@ p.wp-block-subhead,
     text-transform: uppercase;
 }
 
-
 /****************************************************************************************/
-
-
 /* Client widget customizations*/
-
-
 /****************************************************************************************/
-
-
+/****************************************************************************************/
 /* all widgets */
 
 .footer-widget .menu .menu-item,
@@ -1847,15 +1767,9 @@ p.wp-block-subhead,
     margin-right: 0;
 }
 
-
 /****************************************************************************************/
-
-
 /* Client Gravity Forms */
-
-
 /****************************************************************************************/
-
 .c9 .gform_wrapper label.gfield_label,
 .c9 .gform_wrapper legend.gfield_label,
 .wp-block[data-type="gravityforms/block"] .gform_wrapper label.gfield_label,
@@ -1915,8 +1829,7 @@ p.wp-block-subhead,
 .c9 .gform_wrapper .field_description_below .gfield_description {
     padding-top: 0px;
 }
-
-
+/****************************************************************************************/
 /* File Attachments + Submit Buttons */
 
 .c9 .gform_wrapper input.button.gform_button_select_files,
@@ -1941,24 +1854,17 @@ p.wp-block-subhead,
     margin: 15px 0px;
 }
 
-
 /****************************************************************************************/
-
-
 /* Client Customizations to Core Blocks  + C9 Blocks */
-
-
 /****************************************************************************************/
-
-
+/****************************************************************************************/
 /* c9-grid */
 
 .editor-styles-wrapper .c9-column-container,
 .c9-column-container {
     z-index: 12;
 }
-
-
+/****************************************************************************************/
 /* header customizations to c9-grids */
 
 .is-style-gray-diagonal,
@@ -1997,8 +1903,7 @@ p.wp-block-subhead,
 .dark-gradient-left {
     position: relative;
 }
-
-
+/****************************************************************************************/
 /* black gradient for about page backgrounds */
 
 .is-style-dark-gradient-left:after,
@@ -2016,8 +1921,7 @@ p.wp-block-subhead,
     background: linear-gradient( to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 37%, rgba(0, 0, 0, 0) 100%);
     // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1);
 }
-
-
+/****************************************************************************************/
 /* gallery adjustments  for core gallery block */
 
 .entry-content .container .wp-block-gallery {
@@ -2033,8 +1937,7 @@ p.wp-block-subhead,
 .wp-block-gallery .blocks-gallery-item a:hover img {
     opacity: 0.9;
 }
-
-
+/****************************************************************************************/
 /*call to action block*/
 
 .c9-cta .c9-cta-button .square {
@@ -2054,15 +1957,13 @@ p.wp-block-subhead,
         font-size: 1.8em;
     }
 }
-
-
+/****************************************************************************************/
 /* C9 social share block */
 
 .c9-social-sharing .c9-share-list a {
     margin: 0px 2px;
 }
-
-
+/****************************************************************************************/
 /* posts grid block */
 
 .c9-block-post-grid .c9-block-post-grid-byline {
@@ -2081,16 +1982,10 @@ p.wp-block-subhead,
     line-height: 1.5;
 }
 
-
 /****************************************************************************************/
-
-
 /* woocommerce products blocks and product single */
-
-
 /****************************************************************************************/
-
-
+/****************************************************************************************/
 /* font size setting */
 
 .woocommerce-store-notice,
@@ -2106,15 +2001,13 @@ p.wp-block-subhead,
 .wc-block-grid__product-link {
     text-decoration: none;
 }
-
-
+/****************************************************************************************/
 /* product single product_meta */
 
 .c9 .product_meta>span {
     display: block;
 }
-
-
+/****************************************************************************************/
 /* reviews form */
 
 .c9 .woocommerce-Reviews,
@@ -2143,8 +2036,7 @@ p.wp-block-subhead,
 .c9 .entry-content .comment-form label {
     margin-right: 10px;
 }
-
-
+/****************************************************************************************/
 /* woocommerce additional information table */
 
 .woocommerce .c9 table.shop_attributes td,
@@ -2153,15 +2045,13 @@ p.wp-block-subhead,
     line-height: 1;
     font-size: 12px;
 }
-
-
+/****************************************************************************************/
 /* wwoocommerce add to cart form table */
 
 .woocommerce div.product form.cart .group_table td {
     vertical-align: middle;
 }
-
-
+/****************************************************************************************/
 /* woocommerce text formatting and color changes */
 
 .woocommerce ul.products li.product .price,
@@ -2174,16 +2064,14 @@ p.wp-block-subhead,
 .woocommerce .c9 ul.products li.product .price ins {
     text-decoration: none;
 }
-
-
+/****************************************************************************************/
 /* product single quantity field */
 
 .woocommerce .c9 .quantity .qty {
     min-height: 53px;
     font-size: 16px;
 }
-
-
+/****************************************************************************************/
 /* woocommerce buttons */
 
 .woocommerce .c9 #respond input#submit,
@@ -2265,15 +2153,13 @@ body .woocommerce-info {
 body .woocommerce-info:before {
     display: none;
 }
-
-
+/****************************************************************************************/
 /* on sale boxes need border box sizing redone */
 
 .onsale {
     box-sizing: content-box;
 }
-
-
+/****************************************************************************************/
 /* homepage + catalog woocommerce product blocks */
 
 .wc-block-grid .wc-block-grid__products:only-child {
@@ -2432,8 +2318,7 @@ body .woocommerce-info:before {
         width: 100%;
     }
 }
-
-
+/****************************************************************************************/
 /*breadcrumbs*/
 
 .woocommerce .site-main .woocommerce-breadcrumb {
@@ -2461,8 +2346,7 @@ body .woocommerce-info:before {
     color: #9b9b9b;
     text-decoration: none;
 }
-
-
+/****************************************************************************************/
 /* product index from breadcrumbs */
 
 .c9.woocommerce #wrapper-navbar {
@@ -2501,15 +2385,9 @@ body .woocommerce-info:before {
     margin-bottom: 20px;
 }
 
-
 /****************************************************************************************/
-
-
 /* pagination tweak */
-
-
 /****************************************************************************************/
-
 .archive nav .pagination .page-item .page-link,
 .blog nav .pagination .page-item .page-link,
 .page-search-results nav .pagination .page-item .page-link,
@@ -2527,15 +2405,9 @@ body .woocommerce-info:before {
     font-size: 14px;
 }
 
-
 /****************************************************************************************/
-
-
 /* 404 error page */
-
-
 /****************************************************************************************/
-
 .error-404 .widget_recent_entries,
 .error-404 .widget_archive {
     display: none;
@@ -2591,15 +2463,9 @@ body .woocommerce-info:before {
     background-color: $dark;
 }
 
-
 /****************************************************************************************/
-
-
 /* Utility Classes */
-
-
 /****************************************************************************************/
-
 .heading-abel,
 .is-style-heading-label {
     font-family: $second-font-family !important;
