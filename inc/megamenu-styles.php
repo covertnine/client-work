@@ -7,7 +7,7 @@
 function c9_megamenu_override_default_theme($value) {
   // change 'primary' to your menu location ID
   if ( !isset($value['primary']['theme']) ) {
-    $value['primary']['theme'] = 'c9_work_1595098038'; // change my_custom_theme_key to the ID of your exported theme
+    $value['primary']['theme'] = 'c9_work_1595799213'; // change my_custom_theme_key to the ID of your exported theme
   }
 
   return $value;
