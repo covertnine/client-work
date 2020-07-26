@@ -14,8 +14,8 @@ function c9_megamenu_override_default_theme($value) {
 }
 add_filter('default_option_megamenu_settings', 'c9_megamenu_override_default_theme');
 
-function c9_megamenu_add_theme_c9_work_1595098038($themes) {
-    $themes["c9_work_1595098038"] = array(
+function c9_megamenu_add_theme_c9_work_1595799213($themes) {
+    $themes["c9_work_1595799213"] = array(
         'title' => 'C9 Work',
         'container_background_from' => 'rgba(34, 34, 34, 0)',
         'container_background_to' => 'rgba(34, 34, 34, 0)',
@@ -27,10 +27,11 @@ function c9_megamenu_add_theme_c9_work_1595098038($themes) {
         'menu_item_background_hover_from' => 'rgba(51, 51, 51, 0)',
         'menu_item_background_hover_to' => 'rgba(51, 51, 51, 0)',
         'menu_item_link_height' => '42px',
+        'menu_item_link_color' => 'rgb(0, 0, 0)',
         'menu_item_link_weight' => 'bold',
         'menu_item_link_text_transform' => 'uppercase',
         'menu_item_link_text_align' => 'center',
-        'menu_item_link_color_hover' => 'rgb(221, 221, 221)',
+        'menu_item_link_color_hover' => 'rgb(102, 102, 102)',
         'menu_item_link_weight_hover' => 'bold',
         'menu_item_link_padding_left' => '0px',
         'menu_item_link_padding_right' => '0px',
@@ -203,4 +204,4 @@ function c9_megamenu_add_theme_c9_work_1595098038($themes) {
     );
     return $themes;
 }
-add_filter("megamenu_themes", "c9_megamenu_add_theme_c9_work_1595098038");
+add_filter("megamenu_themes", "c9_megamenu_add_theme_c9_work_1595799213");
