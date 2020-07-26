@@ -65,36 +65,12 @@ if (!function_exists('c9_client_setup')) {
 		add_theme_support(
 			'starter-content',
 			array(
-				'attachments'	=> array(
-					'c9work-home-img'	=> array(
-						'post_title'	=> 'C9 Work Home Img',
-						'post_content'	=> 'C9 Work Sample Home Photo',
-						'file'			=> 'client/client-assets/img/clark-young-fQxMGkYXqFU-unsplash.jpg'
-					),
-					'c9work-about-img'	=> array(
-						'post_title'	=> 'C9 Work About Img',
-						'post_content'	=> 'C9 Work Sample About Photo',
-						'file'			=> 'client/client-assets/img/jezael-melgoza-HYQvV8wWX18-unsplash.jpg'
-					),
-					'c9work-contact-img'	=> array(
-						'post_title'	=> 'C9 Work Contact Img',
-						'post_content'	=> 'C9 Work Sample Contact Photo',
-						'file'			=> 'client/client-assets/img/set-of-tool-wrench-162553.jpg'
-					),
-					'c9work-news-img'	=> array(
-						'post_title'	=> 'C9 Work News Img',
-						'post_content'	=> 'C9 Work Sample News Photo',
-						'file'			=> 'client/client-assets/img/krzysztof-kowalik-djdoRnnKLyo-unsplash.jpg'
-					),
-				),
 				'posts'	=> array(
 					'home'			=> array(
 						'comment_status'	=> 'closed',
 						'post_content'		=>  file_get_contents(get_template_directory_uri() . '/client/content/home.html')
-						// 'thumbnail'			=> '{{c9work-home-img}}',
 					),
 					'about'			=> array(
-						// 'thumbnail'			=> '{{c9work-about-img}}',
 						'comment_status'	=> 'closed',
 						'post_type'			=> 'page',
 						'post_title'		=> __('Our History', 'c9-work'),
@@ -117,8 +93,7 @@ if (!function_exists('c9_client_setup')) {
 						'post_content'		=>  file_get_contents(get_template_directory_uri() . '/client/content/contact.html')
 					),
 					'news'			=> array(
-						'post_content'			=> __('This page will show all of the news posts once you have populated your database with news items.', 'c9-work'),
-						'thumbnail'			=> '{{c9work-news-img}}',
+						'post_content'			=> __('This page will show all of the news posts once you have populated your database with news items.', 'c9-work')
 					),
 				),
 				'options'			=> array(
