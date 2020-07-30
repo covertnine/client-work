@@ -397,14 +397,6 @@ a:hover {
     }
 }
 
-/* initial nav links should be white and then change to black after navbar small kicks in*/
-@media only screen and (max-width: 991px) {
-    .navbar:not(.navbar-small) #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label,
-	.navbar:not(.navbar-small) #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after {
-        color: $light;
-    }
-}
-
 @media only screen and (min-width: 992px) {
     .navbar-brand img {
         max-width: 285px;
@@ -420,7 +412,6 @@ a:hover {
     }
     .navbar-nav,
     .c9 #mega-menu-wrap-primary #mega-menu-primary {
-		width: 80%;
 		display: -ms-flex;
 		display: flex;
         justify-content: space-between;
@@ -442,32 +433,46 @@ a:hover {
 	}
 }
 
+/* navbar container widths for mega menu and normal menus*/
+@media only screen and (min-width: 1px) {
+    .navbar-nav,
+    .c9 #mega-menu-wrap-primary #mega-menu-primary {
+		width: 100%;
+		margin-left: 40px;
+    }
+}
 @media only screen and (min-width: 1200px) {
     .navbar-nav,
     .c9 #mega-menu-wrap-primary #mega-menu-primary {
-        width: 80%;
+		width: 80%;
+		margin-left: 0;
     }
 }
 
+/* initial nav links should be white and then change to black after navbar small kicks in*/
+@media only screen and (max-width: 991px) {
+    .navbar:not(.navbar-small) #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label,
+	.navbar:not(.navbar-small) #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after {
+        color: $light;
+	}
+
+}
 /****************************************************************************************/
 /* header navbar search customizations */
 /****************************************************************************************/
-
-@media only screen and (min-width: 992px) {
-    .nav-search,
-    .nav-toggle {
-        line-height: 2;
-    }
-    .nav-search {
-        display: none;
-    }
-}
 
 .nav-search {
     margin-right: 10px;
 }
 
 @media only screen and (min-width: 992px) {
+	.nav-search,
+    .nav-toggle {
+        line-height: 2;
+    }
+    .nav-search {
+        display: none;
+    }
 	.header-navbar .search,
 	.c9 #mega-menu-wrap-primary #mega-menu-primary li.search {
 		min-width: 125px;
@@ -477,7 +482,6 @@ a:hover {
 		justify-content: flex-start;
 	}
 }
-
 
 .header-navbar .nav-search .btn-nav-search {
     font-size: 20px;
@@ -806,9 +810,6 @@ a:hover {
         margin: 0px auto;
         text-align: center;
         min-height: 40px;
-    }
-    .navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span {
-        // color: $dark;
     }
     .navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span {
         margin: 0px;
