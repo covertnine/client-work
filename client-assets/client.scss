@@ -386,23 +386,22 @@ a:hover {
     }
     .navbar-small .btn-nav-search,
     .navbar-small .navbar-toggler {
-        color: $dark;
+        color: rgba(0,0,0,.5);
     }
-    .nav-search-icon {
-        display: none !important;
-    }
-}
 
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-    .navbar:not(.navbar-small) #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label,
-    .navbar:not(.navbar-small) #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after {
-        color: $light;
-    }
 }
 
 @media only screen and (min-width: 768px) {
     .header-navbar {
         height: 108px;
+    }
+}
+
+/* initial nav links should be white and then change to black after navbar small kicks in*/
+@media only screen and (max-width: 991px) {
+    .navbar:not(.navbar-small) #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label,
+	.navbar:not(.navbar-small) #mega-menu-wrap-primary .mega-menu-toggle .mega-toggle-block-1:after {
+        color: $light;
     }
 }
 
@@ -429,7 +428,7 @@ a:hover {
     .header-navbar {
         height: 115px;
     }
-    .navbar-nav>li>a {
+	.navbar-nav>li>a {
         color: #fff;
     }
 	.c9 .navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link,
@@ -453,11 +452,8 @@ a:hover {
 /****************************************************************************************/
 /* header navbar search customizations */
 /****************************************************************************************/
-.header-navbar .nav-item.search {
-    display: none !important;
-}
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
     .nav-search,
     .nav-toggle {
         line-height: 2;
@@ -471,21 +467,17 @@ a:hover {
     margin-right: 10px;
 }
 
-.header-navbar .search,
-.c9 #mega-menu-wrap-primary #mega-menu-primary li.search {
-    min-width: 125px;
-    display: flex;
-    font-size: 10px;
-    align-items: center;
-    justify-content: flex-start;
+@media only screen and (min-width: 992px) {
+	.header-navbar .search,
+	.c9 #mega-menu-wrap-primary #mega-menu-primary li.search {
+		min-width: 125px;
+		display: flex;
+		font-size: 10px;
+		align-items: center;
+		justify-content: flex-start;
+	}
 }
 
-@media only screen and (max-width: 667px) {
-    .c9 #mega-menu-wrap-primary #mega-menu-primary li.search,
-    .header-navbar .search {
-        display: none;
-    }
-}
 
 .header-navbar .nav-search .btn-nav-search {
     font-size: 20px;
@@ -611,7 +603,6 @@ a:hover {
     text-shadow: none;
 }
 
-.c9 .navbar-small #mega-menu-wrap-primary #mega-menu-primary li.search:before,
 .c9 .header-navbar .navbar-small .search:before {
     color: $dark;
 }
@@ -620,24 +611,15 @@ a:hover {
     border-bottom: 1px solid $dark;
 }
 
-@media only screen and (max-width: 768px) {
-    .header-navbar .search {
+@media only screen and (max-width: 991px) {
+	.c9 .header-navbar li.search,
+	.c9 #mega-menu-wrap-primary #mega-menu-primary li.search {
         display: none;
     }
     .header-navbar .navbar:not(.navbar-small) .nav-search .btn-nav-search {
         color: $light;
-    }
-}
+	}
 
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-    .c9 #mega-menu-wrap-primary #mega-menu-primary li.search,
-    .c9 .header-navbar .navbar li.search {
-        min-width: 125px;
-        display: flex;
-        font-size: 10px;
-        align-items: center;
-        justify-content: center;
-    }
     .header-navbar .navbar:not(.navbar-small) .search #s {
         border-bottom: 1px solid $dark;
         color: $dark;
@@ -742,7 +724,6 @@ a:hover {
 .navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span {
     display: inline-block;
     overflow: hidden;
-    color: $light;
     padding: 0px;
     &:before,
     &:after {
@@ -792,6 +773,8 @@ a:hover {
         transition: transform 0.4s ease-in-out;
     }
 }
+.header-navbar .nav .nav-item>.nav-link,
+.header-navbar .nav .nav-item .nav-link>span {color: $light;}
 
 .header-navbar .nav .nav-item>.nav-link,
 .header-navbar .nav .nav-item .nav-link>span,
@@ -825,7 +808,7 @@ a:hover {
         min-height: 40px;
     }
     .navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span {
-        color: $dark;
+        // color: $dark;
     }
     .navbar:not(.navbar-small) #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link>span {
         margin: 0px;

@@ -55,6 +55,7 @@ if ( !function_exists('max_mega_menu_is_enabled') ) {
 				wp_nav_menu(
 					array(
 						'theme_location' => 'primary',
+						'menu_id'         => 'main-menu',
 						'link_before'     => '<span>',
 						'link_after'	  => '</span>'
 					)
