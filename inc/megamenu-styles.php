@@ -7,15 +7,15 @@
 function c9_megamenu_override_default_theme($value) {
   // change 'primary' to your menu location ID
   if ( !isset($value['primary']['theme']) ) {
-    $value['primary']['theme'] = 'c9_work_1596142763';
+    $value['primary']['theme'] = 'c9_work_1596233042';
   }
 
   return $value;
 }
 add_filter('default_option_megamenu_settings', 'c9_megamenu_override_default_theme');
 
-function c9_megamenu_add_theme_c9_work_1596142763($themes) {
-    $themes["c9_work_1596142763"] = array(
+function c9_megamenu_add_theme_c9_work_1596233042($themes) {
+    $themes["c9_work_1596233042"] = array(
         'title' => 'C9 Work',
         'container_background_from' => 'rgba(34, 34, 34, 0)',
         'container_background_to' => 'rgba(34, 34, 34, 0)',
@@ -235,8 +235,11 @@ function c9_megamenu_add_theme_c9_work_1596142763($themes) {
 		height: auto;
 		line-height: 1;
     }
+		#mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
+		line-height: 1;
+	}
 }',
     );
     return $themes;
 }
-add_filter('megamenu_themes', 'c9_megamenu_add_theme_c9_work_1596142763');
+add_filter("megamenu_themes", "c9_megamenu_add_theme_c9_work_1596233042");
