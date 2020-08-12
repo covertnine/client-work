@@ -74,6 +74,12 @@ if (!function_exists('c9_client_setup')) {
 						'post_title'		=> __('Our History', 'c9-work'),
 						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory_uri() . '/client/content/about.html')
 					),
+					'setup'			=> array(
+						'comment_status'	=> 'closed',
+						'post_type'			=> 'page',
+						'post_title'		=> __('Setup Guide', 'c9-work'),
+						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory_uri() . '/client/content/setup.html')
+					),
 					'services'		=> array(
 						'comment_status'	=> 'closed',
 						'post_type'			=> 'page',
@@ -122,6 +128,11 @@ if (!function_exists('c9_client_setup')) {
 								'type'		=> 'post_type',
 								'object'	=> 'page',
 								'object_id'	=> '{{about}}',
+							),
+							'page_setup'	=> array(
+								'type'		=> 'post_type',
+								'object'	=> 'page',
+								'object_id'	=> '{{setup}}',
 							),
 							'page_services'	=> array(
 								'type'		=> 'post_type',
