@@ -38,24 +38,68 @@
 			<!-- wp:c9-blocks/column -->
 			<div class="c9-block-layout-column c9-column text-left">
 				<div class="c9-column-innner">
-					<!-- wp:c9-blocks/horizontal-tabs {"tabActive":"tab-featured","buttonsAlign":"center","tabsData":[{"slug":"tab-featured","title":"Featured"},{"slug":"tab-tools","title":"TOOLS"},{"slug":"tab-on-sale","title":"On Sale"}],"instanceId":0,"tabContentBackgroundColor":"#ffffff"} -->
-					<div class="c9-horizontal-tabs" data-tab-active="tab-featured">
+					<!-- wp:c9-blocks/horizontal-tabs {"tabActive":"tab-best-sellers","buttonsAlign":"center","tabsData":[{"slug":"tab-best-sellers","title":"Best Sellers"},{"slug":"tab-staff-picks","title":"Staff Picks"},{"slug":"tab-clearance","title":"Clearance"}],"instanceId":0,"tabContentBackgroundColor":"#ffffff"} -->
+					<div class="c9-horizontal-tabs" data-tab-active="tab-best-sellers">
 						<ul class="nav nav-tabs d-flex justify-content-center" role="tablist">
-							<li class="nav-item"><a data-toggle="tab" role="tab" href="#htab-tab-featured-0" class="nav-link active" id="tab-button-tab-featured">Featured</a></li>
-							<li class="nav-item"><a data-toggle="tab" role="tab" href="#htab-tab-tools-0" class="nav-link" id="tab-button-tab-tools">TOOLS</a></li>
-							<li class="nav-item"><a data-toggle="tab" role="tab" href="#htab-tab-on-sale-0" class="nav-link" id="tab-button-tab-on-sale">On Sale</a></li>
+							<li class="nav-item"><a data-toggle="tab" role="tab" href="#htab-tab-best-sellers-0" class="nav-link active" id="tab-button-tab-best-sellers">Best Sellers</a></li>
+							<li class="nav-item"><a data-toggle="tab" role="tab" href="#htab-tab-staff-picks-0" class="nav-link" id="tab-button-tab-staff-picks">Staff Picks</a></li>
+							<li class="nav-item"><a data-toggle="tab" role="tab" href="#htab-tab-clearance-0" class="nav-link" id="tab-button-tab-clearance">Clearance</a></li>
 						</ul>
 						<div class="c9-tabs-content tab-content" style="background-color:#ffffff">
-							<!-- wp:c9-blocks/horizontal-tabs-tab {"slug":"tab-featured","tabActive":"tab-featured","id":0} -->
-							<!-- wp:woocommerce/product-best-sellers {"columns":4,"rows":1,"categories":[27],"contentVisibility":{"title":true,"price":false,"rating":false,"button":false}} /-->
+							<!-- wp:c9-blocks/horizontal-tabs-tab {"slug":"tab-best-sellers","tabActive":"tab-best-sellers","id":0} -->
+							<div class="c9-horizontal-tabs-tab tab-pane fade show active" role="tabpanel" id="htab-tab-best-sellers-0" aria-labelledby="tab-best-sellers">
+								<!-- wp:heading -->
+								<h2>Tab Heading One</h2>
+								<!-- /wp:heading -->
+
+								<!-- wp:paragraph -->
+								<p>text &nbsp;Nunc laoreet mi at nulla venenatis efficitur. Nunc scelerisque odio ut ipsum convallis fermentum. Mauris eu quam eget nibh finibus rhoncus vitae nec lorem. Suspendisse congue orci mi, vitae fringilla urna aliquet malesuada. Morbi eu metus viverra, sodales ligula sit amet, consectetur purus. Suspendisse posuere metus eget lectus consectetur dapibus euismod ut lectus. Phasellus id efficitur quam.</p>
+								<!-- /wp:paragraph -->
+
+								<!-- wp:spacer {"height":20} -->
+								<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+								<!-- /wp:spacer -->
+
+								<!-- wp:buttons -->
+								<div class="wp-block-buttons">
+									<!-- wp:button -->
+									<div class="wp-block-button"><a class="wp-block-button__link" href="#">Buy Now</a></div>
+									<!-- /wp:button -->
+
+									<!-- wp:button {"backgroundColor":"color-yellow","textColor":"color-black"} -->
+									<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-color-black-color has-background has-color-yellow-background-color">Download</a></div>
+									<!-- /wp:button -->
+								</div>
+								<!-- /wp:buttons -->
+							</div>
 							<!-- /wp:c9-blocks/horizontal-tabs-tab -->
 
-							<!-- wp:c9-blocks/horizontal-tabs-tab {"slug":"tab-tools","tabActive":"tab-featured","id":0} -->
-							<!-- wp:woocommerce/handpicked-products {"editMode":false,"contentVisibility":{"title":true,"price":true,"rating":false,"button":false},"products":[2773,2775,2791,2772]} /-->
+							<!-- wp:c9-blocks/horizontal-tabs-tab {"slug":"tab-staff-picks","tabActive":"tab-best-sellers","id":0} -->
+							<div class="c9-horizontal-tabs-tab tab-pane fade" role="tabpanel" id="htab-tab-staff-picks-0" aria-labelledby="tab-staff-picks">
+								<!-- wp:c9-blocks/heading {"heading":"Tab Heading Two"} -->
+								<div class="section-heading c9-heading text-left">
+									<h1 class="c9-h">Tab Heading Two</h1>
+								</div>
+								<!-- /wp:c9-blocks/heading -->
+
+								<!-- wp:paragraph -->
+								<p>&nbsp;Nunc laoreet mi at nulla venenatis efficitur. Nunc scelerisque odio ut ipsum convallis fermentum. Mauris eu quam eget nibh finibus rhoncus vitae nec lorem. Suspendisse congue orci mi, vitae fringilla urna aliquet malesuada. Morbi eu metus viverra, sodales ligula sit amet, consectetur purus. Suspendisse posuere metus eget lectus consectetur dapibus euismod ut lectus. Phasellus id efficitur quam.</p>
+								<!-- /wp:paragraph -->
+							</div>
 							<!-- /wp:c9-blocks/horizontal-tabs-tab -->
 
-							<!-- wp:c9-blocks/horizontal-tabs-tab {"slug":"tab-on-sale","tabActive":"tab-featured","id":0} -->
-							<!-- wp:woocommerce/handpicked-products {"columns":4,"editMode":false,"contentVisibility":{"title":true,"price":true,"rating":false,"button":true},"products":[2772,2773,2774,2775]} /-->
+							<!-- wp:c9-blocks/horizontal-tabs-tab {"slug":"tab-clearance","tabActive":"tab-best-sellers","id":0} -->
+							<div class="c9-horizontal-tabs-tab tab-pane fade" role="tabpanel" id="htab-tab-clearance-0" aria-labelledby="tab-clearance">
+								<!-- wp:c9-blocks/heading {"heading":"Tab Heading Three"} -->
+								<div class="section-heading c9-heading text-left">
+									<h1 class="c9-h">Tab Heading Three</h1>
+								</div>
+								<!-- /wp:c9-blocks/heading -->
+
+								<!-- wp:paragraph -->
+								<p>&nbsp;Nunc laoreet mi at nulla venenatis efficitur. Nunc scelerisque odio ut ipsum convallis fermentum. Mauris eu quam eget nibh finibus rhoncus vitae nec lorem. Suspendisse congue orci mi, vitae fringilla urna aliquet malesuada. Morbi eu metus viverra, sodales ligula sit amet, consectetur purus. Suspendisse posuere metus eget lectus consectetur dapibus euismod ut lectus. Phasellus id efficitur quam.</p>
+								<!-- /wp:paragraph -->
+							</div>
 							<!-- /wp:c9-blocks/horizontal-tabs-tab -->
 						</div>
 					</div>
@@ -67,7 +111,7 @@
 	</div>
 	<!-- /wp:c9-blocks/column-container -->
 	<div class="c9-overlay-container" style="background-color:rgba(0,0,0,.6);mix-blend-mode:normal"></div>
-	<div class="c9-image-container c9-image-mobile-center-center c9-image-mobile-size-cover" style="background-position:50% 100%;background-image:url(https://work.covertnine.com/wp-content/uploads/2020/07/D7F615BF-54A5-494E-9579-D9A4E635DCD6.jpeg);background-repeat:no-repeat;background-size:cover"></div>
+	<div class="c9-image-container c9-image-mobile-center-center c9-image-mobile-size-cover" style="background-position:50% 100%;background-image:url(https://work.covertnine.com/wp-content/uploads/2020/07/jezael-melgoza-HYQvV8wWX18-unsplash-55-1024x638-1.jpg);background-repeat:no-repeat;background-size:cover"></div>
 </div>
 <!-- /wp:c9-blocks/grid -->
 
