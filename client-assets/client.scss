@@ -172,7 +172,6 @@ a:hover {
 .wp-block-button__link:not([href]):not([tabindex]) {
 	padding: 19px 28px 14px 28px;
 	color: $light;
-	font-family: $headings-font-family;
 	font-size: 20px;
 	letter-spacing: 0.01em;
 	text-align: center;
@@ -760,7 +759,6 @@ a:hover {
 	border: none;
 	border-bottom: 1px solid #fff;
 	text-transform: uppercase;
-	font-family: $headings-font-family;
 	font-weight: 300;
 	line-height: 1;
 	width: 65px;
@@ -922,12 +920,9 @@ h6 {
 .c9 h4,
 .c9 h5,
 .c9 h6 {
-	font-family: $headings-font-family;
 	letter-spacing: 0.04em;
 }
 
-.c9-h,
-.c9-h.h,
 .c9-txl,
 .display-1,
 .display-2,
@@ -935,7 +930,6 @@ h6 {
 .display-4,
 .display-5,
 .display-6 {
-	font-family: $headings-font-family;
 	line-height: 1.1;
 }
 
@@ -1274,8 +1268,8 @@ p.wp-block-subhead,
 	border-bottom: 1px solid #979797;
 }
 
-.c9 .c9-toggles .c9-toggles-item-heading .c9-toggles-toggle-label,
-.editor-styles-wrapper .c9-toggles .c9-toggles-item-heading .c9-toggles-toggle-label {
+.c9 .c9-toggles.is-style-default .c9-toggles-item-heading .c9-toggles-toggle-label,
+.editor-styles-wrapper .c9-toggles.is-style-default .c9-toggles-item-heading .c9-toggles-toggle-label {
 	font-family: $headings-font-family;
 	text-transform: uppercase;
 	color: $dark;

@@ -111,7 +111,7 @@ if (!function_exists('c9_client_setup')) {
 					'c9_show_search'		=> 'show',
 					'c9_copyright_content'	=> '&copy; 2020. <a href="https://www.covertnine.com" title="Web design company in Chicago" target="_blank">WordPress Website design by COVERT NINE</a>.',
 					'c9_default_font'		=> 'yes',
-					'c9_heading_font'		=> 'Bebas Neue',
+					'c9_heading_font'		=> 'Bebas+Neue',
 					'c9_subheading_font'	=> 'Lobster',
 					'c9_body_font'			=> '',
 					'c9_author_visible'		=> 'hide',
