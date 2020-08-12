@@ -168,7 +168,8 @@ a:hover {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link.mce-content-body,
 .wp-block-button__link,
 .wp-block-file__button,
-.wp-block-file .wp-block-file__button {
+.wp-block-file .wp-block-file__button,
+.wp-block-button__link:not([href]):not([tabindex]) {
 	padding: 19px 28px 14px 28px;
 	color: $light;
 	font-family: $headings-font-family;
