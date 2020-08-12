@@ -41,14 +41,6 @@ register_block_style(
 );
 
 register_block_style(
-	'c9-blocks/heading',
-	array(
-		'name'		  => 'abel-heading',
-		'label'		  => __('Second Heading', 'c9-work'),
-	)
-);
-
-register_block_style(
 	'core/paragraph',
 	array(
 		'name'		  => 'black-bar',

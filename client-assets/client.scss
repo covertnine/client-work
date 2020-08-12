@@ -1100,7 +1100,7 @@ p.wp-block-subhead,
 	}
 }
 
-.editor-styles-wrapper .wp-block-paragraph.is-style-black-bar,
+.editor-styles-wrapper .is-style-black-bar[data-type="core/paragraph"],
 .entry-content p.is-style-black-bar {
 	display: block;
 	text-align: center;
@@ -1116,7 +1116,7 @@ p.wp-block-subhead,
 	overflow: hidden;
 }
 
-.editor-styles-wrapper .wp-block-paragraph.is-style-black-bar strong,
+.editor-styles-wrapper .is-style-black-bar[data-type="core/paragraph"] strong,
 .entry-content p.is-style-black-bar strong {
 	background-color: #fff;
 	color: $dark;
@@ -1127,12 +1127,12 @@ p.wp-block-subhead,
 @media only screen and (max-width: 667px) {
 
 	.entry-content p.is-style-black-bar strong,
-	.editor-styles-wrapper .wp-block-paragraph.is-style-black-bar strong {
+	.editor-styles-wrapper .is-style-black-bar[data-type="core/paragraph"] strong {
 		min-height: 12px;
 	}
 
 	.entry-content p.is-style-black-bar strong,
-	.editor-styles-wrapper .wp-block-paragraph.is-style-black-bar strong {
+	.editor-styles-wrapper .is-style-black-bar[data-type="core/paragraph"] strong {
 		padding: 5px 8px 2px 8px !important;
 	}
 }
@@ -2861,19 +2861,6 @@ p.demo_store {
 /****************************************************************************************/
 /* Utility Classes */
 /****************************************************************************************/
-.heading-abel,
-.is-style-heading-label {
-	font-family: $second-font-family !important;
-	text-transform: uppercase;
-	letter-spacing: 0px;
-}
-
-.c9-heading.is-style-abel-heading .c9-txl,
-.c9-heading.is-style-abel-heading .c9-sh,
-.c9-heading.is-style-abel-heading .c9-h {
-	font-family: $second-font-family !important;
-}
-
 .img-shadow,
 .is-style-img-shadow {
 	position: relative;
