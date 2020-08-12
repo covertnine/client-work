@@ -4,13 +4,13 @@
 @import "client_variables";
 
 .editor-styles-wrapper .wp-block-paragraph a {
-  color: $dark;
-  text-decoration: underline;
+	color: $dark;
+	text-decoration: underline;
 }
 
 .editor-styles-wrapper .wp-block-paragraph a:hover {
-  color: $link-hover-color;
-  text-decoration: none;
+	color: $link-hover-color;
+	text-decoration: none;
 }
 
 /****************************************************************************************/
@@ -23,34 +23,32 @@
 .editor-styles-wrapper .wp-block-quote p,
 .editor-styles-wrapper .wp-block-file,
 .editor-default-block-appender textarea.editor-default-block-appender__content {
-  word-wrap: break-word;
-  font-family: $font-family-base;
+	word-wrap: break-word;
+	font-family: $font-family-base;
 }
 
 .editor-styles-wrapper .c9-cta-text.c9-h p,
 .editor-styles-wrapper .container .c9-cta-text.c9-h p {
-  font-family: $headings-font-family;
+	font-family: $headings-font-family;
 }
 
 .editor-styles-wrapper,
 .editor-post-title__block .editor-post-title__input {
-  font-family: $font-family-base !important;
+	font-family: $font-family-base !important;
 }
 
 .editor-styles-wrapper ul li,
 .editor-styles-wrapper ol li {
-  color: $gray-900;
-  margin: 15px 0px;
+	color: $gray-900;
+	margin: 15px 0px;
 }
 
-.editor-styles-wrapper
-  ul:not(.blocks-gallery-grid):not(.nav-tabs):not(.c9-share-list)
-  li {
-  margin: 15px 0px;
+.editor-styles-wrapper ul:not(.blocks-gallery-grid):not(.nav-tabs):not(.c9-share-list) li {
+	margin: 15px 0px;
 }
 
 .editor-styles-wrapper ol li:before {
-  margin-left: -21px;
+	margin-left: -21px;
 }
 
 .editor-styles-wrapper .h1,
@@ -65,9 +63,9 @@
 .editor-styles-wrapper h4,
 .editor-styles-wrapper h5,
 .editor-styles-wrapper h6 {
-  font-family: $headings-font-family;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
+	font-family: $headings-font-family;
+	letter-spacing: 0.02em;
+	line-height: 1.2;
 }
 
 .editor-styles-wrapper p.wp-block-subhead,
@@ -75,8 +73,8 @@
 .editor-styles-wrapper .c9-sh,
 .editor-styles-wrapper .text-muted,
 .editor-styles-wrapper .block-editor-block-list__layout .c9-cta .c9-sh p {
-  font-family: $subheadings-font-family;
-  font-weight: normal;
+	font-family: $subheadings-font-family;
+	font-weight: normal;
 }
 
 /* overrides inline styles from backend editor */
@@ -92,8 +90,8 @@
 .editor-styles-wrapper .block-editor-block-list__layout h4,
 .editor-styles-wrapper .block-editor-block-list__layout h5,
 .editor-styles-wrapper .block-editor-block-list__layout h6 {
-  margin-top: 0px;
-  margin-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 5px;
 }
 
 .editor-styles-wrapper p.wp-block-subhead,
@@ -111,11 +109,11 @@
 .editor-styles-wrapper .c9-heading .h4 .text-muted,
 .editor-styles-wrapper .c9-heading .h5 .text-muted,
 .editor-styles-wrapper .c9-heading .h6 .text-muted {
-  font-family: $subheadings-font-family;
+	font-family: $subheadings-font-family;
 }
 
 .editor-styles-wrapper .c9-toggles .c9-toggles-item-heading .c9-toggles-label {
-  font-family: $headings-font-family !important;
+	font-family: $headings-font-family !important;
 }
 
 .editor-styles-wrapper p.wp-block-subhead,
@@ -127,7 +125,7 @@
 .editor-styles-wrapper .c9-heading h4.subhead-h4,
 .editor-styles-wrapper .c9-heading h5.subhead-h5,
 .editor-styles-wrapper .c9-heading h6.subhead-h6 {
-  font-family: $subheadings-font-family;
+	font-family: $subheadings-font-family;
 }
 
 /****************************************************************************************/
@@ -135,134 +133,102 @@
 /****************************************************************************************/
 /* custom tabs */
 .editor-styles-wrapper .c9-horizontal-tabs ul.nav.nav-tabs {
-  margin: 30px 0px 0px 0px;
+	margin: 30px 0px 0px 0px;
 }
 
 .editor-styles-wrapper .c9-horizontal-tabs .nav-tabs .nav-link {
-  font-size: 15px;
+	font-size: 15px;
 }
 
-.editor-styles-wrapper
-  .c9-horizontal-tabs
-  .blocks-gallery-grid
-  .blocks-gallery-item
-  a {
-  text-decoration: none;
+.editor-styles-wrapper .c9-horizontal-tabs .blocks-gallery-grid .blocks-gallery-item a {
+	text-decoration: none;
 }
 
 .editor-styles-wrapper .c9-horizontal-tabs .nav-tabs .nav-link {
-  background-color: #adb1b2;
-  color: $gray-700;
+	background-color: #adb1b2;
+	color: $gray-700;
 }
 
 .editor-styles-wrapper .nav.nav-tabs .nav-item {
-  margin: 0px 10px;
+	margin: 0px 10px;
 }
 
 .editor-styles-wrapper .c9-horizontal-tabs .nav-tabs .nav-link:hover {
-  color: $gray-700;
-  background-image: linear-gradient(35deg, #fff 75%, $primary 25%);
-  background-color: $light;
-  border-bottom: 0px;
+	color: $gray-700;
+	background-image: linear-gradient(35deg, #fff 75%, $primary 25%);
+	background-color: $light;
+	border-bottom: 0px;
 }
 
 .editor-styles-wrapper .c9-horizontal-tabs .nav-tabs .nav-link.active {
-  background-color: $primary;
+	background-color: $primary;
 }
 
 .editor-styles-wrapper .c9-horizontal-tabs .nav-tabs .nav-link.active,
-.editor-styles-wrapper
-  .woocommerce
-  div.product
-  .woocommerce-tabs
-  ul.tabs
-  li.active
-  a.nav-link {
-  background-color: $primary;
-  padding: 13px 35px;
+.editor-styles-wrapper .woocommerce div.product .woocommerce-tabs ul.tabs li.active a.nav-link {
+	background-color: $primary;
+	padding: 13px 35px;
 }
 
 .editor-styles-wrapper .c9-horizontal-tabs ul.nav.nav-tabs {
-  margin: 30px 0px 0px 0px !important;
+	margin: 30px 0px 0px 0px !important;
 }
 
 div[data-type="c9-blocks/horizontal-tabs"] .wp-block[data-type="core/button"] {
-  margin-left: 0;
-  margin-right: 0;
+	margin-left: 0;
+	margin-right: 0;
 }
 
 /* buttons */
 .editor-styles-wrapper .c9-block-cta .c9-cta-content .wp-block-button__link {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 /* search widget block */
 .wp-block-search .wp-block-search__button .wp-block-search__button-rich-text {
-  padding: 0px;
-  margin: 0px;
-  font-size: 20px;
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
 }
 
 .editor-styles-wrapper .wp-block-search .wp-block-search__button {
-  font-weight: 600;
+	font-weight: 600;
+}
+
+/* toggles */
+.block-editor-block-list__layout .block-editor-block-list__block[data-type="c9-blocks/toggles"] {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 /* grids inside of grids inside of tabs */
 @media only screen and (min-width: 1200px) {
-  body:not(.folded)
-    .edit-post-layout.is-sidebar-opened
-    .editor-styles-wrapper
-    .wp-block[data-type="c9-blocks/grid"]
-    .container
-    .c9-grid
-    .container,
-  body.folded
-    .edit-post-layout.is-sidebar-opened
-    .editor-styles-wrapper
-    .wp-block[data-type="c9-blocks/grid"]
-    .container
-    .c9-grid
-    .container {
-    width: auto;
-    min-width: 600px;
-  }
+
+	body:not(.folded) .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .c9-grid .container,
+	body.folded .edit-post-layout.is-sidebar-opened .editor-styles-wrapper .wp-block[data-type="c9-blocks/grid"] .container .c9-grid .container {
+		width: auto;
+		min-width: 600px;
+	}
 }
 
 /* woocommerce product blocks */
 .editor-styles-wrapper .wc-block-grid a:not(.wp-block-button__link),
-.editor-styles-wrapper
-  .wc-block-grid
-  .wc-block-grid_product
-  a.wc-block-grid_product-link {
-  text-decoration: none;
+.editor-styles-wrapper .wc-block-grid .wc-block-grid_product a.wc-block-grid_product-link {
+	text-decoration: none;
 }
 
 /****************************************************************************************/
 /***************************** Gravity Forms Backend Adjustments
 /****************************************************************************************/
-.editor-styles-wrapper
-  .gform_wrapper
-  input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]),
+.editor-styles-wrapper .gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]),
 .editor-styles-wrapper .gform_wrapper input[type="password"],
 .editor-styles-wrapper .gform_wrapper input[type="tel"],
 .editor-styles-wrapper .gform_wrapper input[type="text"],
 .editor-styles-wrapper .gform_wrapper textarea,
-.editor-styles-wrapper
-  .wp-block[data-type="gravityforms/block"]
-  .gform_wrapper
-  input[type="password"],
-.editor-styles-wrapper
-  .wp-block[data-type="gravityforms/block"]
-  .gform_wrapper
-  input[type="tel"],
-.editor-styles-wrapper
-  .wp-block[data-type="gravityforms/block"]
-  .gform_wrapper
-  input[type="text"],
-.editor-styles-wrapper
-  .wp-block[data-type="gravityforms/block"]
-  .gform_wrapper
-  textarea {
-  font-size: 16px;
-  min-height: 50px;
+.editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type="password"],
+.editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type="tel"],
+.editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type="text"],
+.editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper textarea {
+	font-size: 16px;
+	min-height: 50px;
 }
