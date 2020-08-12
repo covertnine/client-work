@@ -35,7 +35,7 @@ if ( ! function_exists( 'c9_work_customize_register' ) ) {
 				$wp_customize,
 				'c9_dark_logo',
 				array(
-					'label'      => __( 'Dark Logo', 'c9' ),
+					'label'      => __( 'Dark Logo', 'c9-work' ),
 					'section'    => 'title_tagline',
 					'settings'   => 'c9_dark_logo'
 				)

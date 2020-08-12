@@ -2,83 +2,60 @@
 /**
  * Client-specific functionality
  *
- * @package c9
+ * @package c9-work
  */
 
-/****************************************************************************************/
-/***************************** load client scripts for frontend styling
-/****************************************************************************************/
 
+/**
+* Client frontend styles and scripts
+*/
+require_once "client-enqueue.php";
 
-if ( ! function_exists( 'c9_client_scripts' ) ) {
-	/**
-	 * Load theme's JavaScript and CSS sources.
-	 */
-	function c9_client_scripts() {
+/**
+* Client editor styles and scripts
+*/
+require_once "client-editor.php";
 
-		wp_enqueue_style( 'client-styles', get_template_directory_uri() . '/client/client-assets/dist/client.min.css', array( 'c9-styles' ) );
-		wp_enqueue_script( 'client-scripts', get_template_directory_uri() . '/client/client-assets/custom-client.js', array( 'jquery' ), true );
+/**
+* Sets up colors and post types and custom styles for core blocks
+*/
+require_once "client-setup.php";
 
-		//some examples of extending scripts
-		//wp_enqueue_script( 'smooth-state', get_template_directory_uri() . '/client/client-assets/vendor/jquery.smoothState.min.js', array( 'jquery' ), true );
-		//wp_enqueue_style( 'c9-megamenu', get_template_directory_uri() . '/client/client-assets/vendor/megamenu.css', array( 'c9-styles' ) );
+/**
+* WooCommerce Support & Functionality
+*/
+require_once "woocommerce.php";
 
-	}
-} // endif function_exists( 'c9_client_scripts' ).
-add_action( 'wp_enqueue_scripts', 'c9_client_scripts', 20 );
+/**
+* Mega Menu Theme
+*/
+require_once "megamenu-styles.php";
 
-if ( ! function_exists( 'c9_client_editor_style' ) ) {
-	/**
-	 * Add client compiled files to gutenberg editor.
-	 */
-	function c9_client_editor_style() {
-		wp_enqueue_style( 'c9-client-styles', get_template_directory_uri() . '/client/client-assets/dist/client.min.css' );
-		wp_enqueue_style( 'c9-client-editor-styles', get_template_directory_uri() . '/client/client-assets/dist/client-editor.min.css' );
-	}
-	add_action( 'enqueue_block_editor_assets', 'c9_client_editor_style', 99999999 );
-} //end if function exists
+/**
+* Additional Customer Settings for Theme
+*/
+require_once "admin-settings.php";
 
-
-/****************************************************************************************/
-/******** Sets up colors and post types and custom styles for core blocks
-/****************************************************************************************/
-include( "client-setup.php" );
-
-/****************************************************************************************/
-/* C9 Work Admin Settings */
-/****************************************************************************************/
-require_once( "admin-settings.php" );
-
-/****************************************************************************************/
-/******** C9 Woocommerce Specific Functionality
-/****************************************************************************************/
-include( "woocommerce.php" );
-
-/****************************************************************************************/
-/******** Adding filter to look for client folder templates before child theme templates
-/****************************************************************************************/
-add_filter( 'template_include', function( $template ) {
-  $path = explode('/', $template );
-  $template_chosen = end( $path );
-  $grandchild_template = get_template_directory() . '/client/' . $template_chosen;
-  if ( file_exists( $grandchild_template  ) ) {
-     	$template = $grandchild_template;
-  }
-  return $template;
-});
-
-/****************************************************************************************/
-/***************************** Adding Mega Menu styles
-/****************************************************************************************/
-include( "megamenu-styles.php" );
-
-/****************************************************************************************/
-/***************************** nav search form
-/****************************************************************************************/
+/**
+* Navigation Search Item
+*/
 add_filter('wp_nav_menu_items', 'c9_nav_add_search_form', 10, 2);
 function c9_nav_add_search_form($items, $args)
 {
-    if ($args->theme_location == 'primary')
-        $items .= '<li class="search"><form role="search" method="get" id="searchform" action="' . home_url('/') . '"><label class="sr-only">Search Site</label><input type="text" value="" placeholder="Search" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . esc_attr__('Search', 'c9') . '" class="invisible sr-only"/></form></li>';
-    return $items;
+	if ($args->theme_location == 'primary')
+		$items .= '<li class="search"><form role="search" method="get" id="searchform" action="' . home_url('/') . '"><label class="sr-only">' . __('Search Site', 'c9-work') . '</label><input type="text" value="" placeholder="' . __('Search', 'c9-work') . '" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . __('Search', 'c9-work') . '" class="invisible sr-only"/></form></li>';
+	return $items;
 }
+
+/**
+* Filter to allow child templates from client folder prior to child-theme
+*/
+add_filter('template_include', function ($template) {
+	$path = explode('/', $template);
+	$template_chosen = end($path);
+	$grandchild_template = get_template_directory() . '/client/' . $template_chosen;
+	if (file_exists($grandchild_template)) {
+		$template = $grandchild_template;
+	}
+	return $template;
+});

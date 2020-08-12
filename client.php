@@ -10,8 +10,8 @@ function c9_acf_json_save_point($path)
     return $path;
 }
 add_filter('acf/settings/load_json', 'c9_acf_json_load_point');
-function c9_acf_json_load_point($paths)
-{
+
+function c9_acf_json_load_point($paths) {
     // remove original path (optional)
     unset($paths[0]);
     // append path
@@ -20,3 +20,11 @@ function c9_acf_json_load_point($paths)
     // return
     return $paths;
 }
+
+// $path defaults to 'woocommerce/' (in your theme folder)
+add_filter(
+    'woocommerce_template_path', function ($path) {
+        $new_path = get_template_directory() . '/client/woocommerce/';
+        return file_exists($new_path) ? 'client/woocommerce/' : $path;
+    }
+);
