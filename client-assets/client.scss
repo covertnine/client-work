@@ -1888,7 +1888,8 @@ p.wp-block-subhead,
 .c9 input[type="email"],
 .c9 input[type="url"],
 .c9 textarea,
-.c9 input[type="search"] {
+.c9 input[type="search"],
+.search-form .search-field {
 	font-size: 16px;
 	min-height: 55px;
 }
@@ -2828,7 +2829,7 @@ p.demo_store {
 
 .error-404 .page-content .search-form .btn-primary,
 .search .page-content .search-form .btn-primary {
-	color: $dark;
+	color: $light;
 	font-size: 2em;
 	font-weight: 700;
 	border: none;
