@@ -24,14 +24,14 @@
 				<div class="nav-search">
 					<a href="#" class="btn-nav-search">
 						<i class="fa fa-search"></i>
-						<span class="sr-only"><?php __('Search', 'c9-work'); ?></span>
+						<span class="sr-only"><?php esc_html_e('Search', 'c9-work'); ?></span>
 					</a>
 				</div>
 				<?php
 				if (!function_exists('max_mega_menu_is_enabled')) {
 				?>
 					<div class="nav-toggle">
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr__('Toggle Navigation', 'c9-work'); ?>">
 							<i class="fa fa-bars"></i>
 						</button>
 					</div>
