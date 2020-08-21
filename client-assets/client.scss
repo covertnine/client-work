@@ -13,8 +13,18 @@ p {
 	line-height: 2;
 }
 
-a {
+a,
+.editor-styles-wrapper .block-editor-rich-text__editable a {
 	color: $dark;
+}
+
+.entry-content p a {
+	background: linear-gradient(0deg, rgba(74, 74, 74, 0.4) 12%, rgba(74, 74, 74, 0) 12%);
+	text-decoration: none;
+}
+
+.entry-content p a:hover {
+	background: linear-gradient(0deg, rgba(74, 74, 74, 0.6) 20%, rgba(74, 74, 74, 0) 20%);
 }
 
 body.page {
@@ -1660,7 +1670,6 @@ p.wp-block-subhead,
 #wrapper-footer .site-footer .row p,
 #wrapper-footer .site-footer .copyright {
 	line-height: 1.1;
-	font-size: 1.2em;
 }
 
 #wrapper-footer .site-footer p,
@@ -1952,20 +1961,31 @@ p.wp-block-subhead,
 	margin-right: 8px;
 }
 
+/* Button and input focus styles */
+.wp-block-button__link:focus,
+.btn:focus,
+.wp-block-file__button:focus,
+.c9 .entry-content button:focus,
+.wp-block-button__link:not([href]):not([tabindex]):focus,
+.entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link:focus,
+.entry-content .wp-block-button__link:focus,
+.entry-content input[type="text"]:focus,
+#fullscreensearch input[type="search"]:focus,
+.search-close:focus {
+	box-shadow: 1px 1px 9px rgba(0, 0, 0, .5);
+	outline: 1px dotted $light;
+}
+
 /****************************************************************************************/
 /* Client Customizations to Core Blocks  + C9 Blocks */
 /****************************************************************************************/
-/****************************************************************************************/
 /* c9-grid */
-
 .editor-styles-wrapper .c9-column-container,
 .c9-column-container {
 	z-index: 12;
 }
 
-/****************************************************************************************/
 /* header customizations to c9-grids */
-
 .is-style-gray-diagonal,
 .gray-diagonal {
 	overflow: hidden;
