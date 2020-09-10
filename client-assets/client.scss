@@ -767,6 +767,9 @@ a:hover {
 .header-navbar .search #s {
 	background: transparent;
 	border: none;
+	border-top: 1px solid transparent;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
 	border-bottom: 1px solid #fff;
 	text-transform: uppercase;
 	font-weight: 300;
@@ -782,8 +785,8 @@ a:hover {
 }
 
 .header-navbar .search #s:focus {
-	background-color: transparent;
-	border-bottom: 1px solid #fff;
+	background: transparent;
+	border: 1px dotted rgba(255, 255, 255, .2);
 	color: #fff;
 }
 
