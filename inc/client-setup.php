@@ -62,7 +62,17 @@ if (!function_exists('c9_client_setup')) {
 
 		add_theme_support(
 			'starter-content',
-			array(
+				array(
+				'attachments' => array(
+					'logo' => array(
+						'post_title' => _x('C9 Work Logo', 'C9 Work Logo', 'c9-work'),
+						'file' => '/client/client-assets/img/c9-work-white-logo.svg',
+					),
+					'dark-logo' => array(
+						'post_title' => _x('C9 Work Dark Logo', 'C9 Work Dark Logo', 'c9-work'),
+						'file' => '/client/client-assets/img/c9-work-dark-logo.svg',
+					),
+				),
 				'posts'	=> array(
 					'home'			=> array(
 						'comment_status'	=> 'closed',
