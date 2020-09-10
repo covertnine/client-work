@@ -1592,6 +1592,12 @@ h6 {
 	text-decoration: none;
 }
 
+.blog .c9 .entry-header .entry-title a:focus,
+.archive .c9 .entry-title a:focus,
+.search-results .c9 .entry-title a:focus {
+	text-decoration: underline;
+}
+
 .blog .c9 .entry-header .entry-title,
 .archive .c9 .entry-title,
 .search-results .c9 .entry-title {
