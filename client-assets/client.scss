@@ -588,6 +588,23 @@ a:hover {
 	}
 }
 
+.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:focus,
+.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:focus>span,
+.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:focus,
+.navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:focus>span {
+	color: $link-hover-color;
+	outline: 1px dotted $link-hover-color;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary a:hover,
+#mega-menu-wrap-primary #mega-menu-primary a:focus {
+	color: $link-hover-color;
+}
+
+#mega-menu-wrap-primary #mega-menu-primary a:focus {
+	outline: 1px dotted $link-hover-color;
+}
+
 /* first level nav link hover effects */
 .c9 .header-navbar:not(.navbar-small) .nav .nav-item>.nav-link,
 .c9 .header-navbar:not(.navbar-small) .nav .nav-item .nav-link>span,
@@ -1141,7 +1158,6 @@ h6 {
 	background-color: $dark;
 	letter-spacing: 0.06px;
 	line-height: 1;
-	overflow: hidden;
 }
 
 .editor-styles-wrapper .is-style-black-bar[data-type="core/paragraph"] strong,
