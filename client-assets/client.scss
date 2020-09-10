@@ -1696,14 +1696,15 @@ h6 {
 	background-color: #fff;
 }
 
-#wrapper-footer-full .widget_nav_menu a {
-	color: $dark;
+#wrapper-footer-full .widget_nav_menu a,
+#wrapper-footer-full a {
+	color: $link-color;
 	text-decoration: none;
 }
 
 #wrapper-footer-full a:hover {
-	color: $gray-500;
 	text-decoration: underline;
+	color: $link-hover-color;
 }
 
 .footer-wrapper {
@@ -1867,7 +1868,6 @@ h6 {
 
 .footer-widget .menu .menu-item a {
 	font-family: $font-family-sans-serif;
-	color: $dark;
 	letter-spacing: 0.04px;
 }
 

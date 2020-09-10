@@ -118,6 +118,8 @@ if (!function_exists('c9_client_setup')) {
 					'blogdescription'	=> __('A WordPress Theme for small businesses with WooCommerce product catalogs, forms, and mega menu support.', 'c9-work'),
 				),
 				'theme_mods'		=> array(
+					'custom_logo' 			=> '{{logo}}',
+					'c9_dark_logo'			=> '{{dark-logo}}',
 					'c9_show_search'		=> 'show',
 					'c9_copyright_content'	=> '&copy; 2020. <a href="https://www.covertnine.com" title="Web design company in Chicago" target="_blank">WordPress Website design by COVERT NINE</a>.',
 					'c9_default_font'		=> 'yes',
@@ -126,7 +128,13 @@ if (!function_exists('c9_client_setup')) {
 					'c9_body_font'			=> '',
 					'c9_author_visible'		=> 'hide',
 					'c9_blog_sidebar'		=> 'hide',
-					'c9_archive_sidebar'	=> 'hide'
+					'c9_archive_sidebar'	=> 'hide',
+					'c9_show_social'		=> 'show',
+					'c9_twitter'			=> '#',
+					'c9_instagram'			=> '#',
+					'c9_spotify'			=> '#',
+					'c9_youtube'			=> '#',
+					'c9_linkedin'			=> '#',
 
 				),
 				'nav_menus'		=> array(
