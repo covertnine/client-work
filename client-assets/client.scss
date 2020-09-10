@@ -381,6 +381,24 @@ a:hover {
 		justify-content: flex-end;
 	}
 
+	.btn-nav-search,
+	.navbar-toggler {
+		color: $link-color;
+	}
+
+	.nav-toggle .navbar-toggler:focus,
+	.nav-toggle .navbar-toggler:hover {
+		color: $link-hover-color;
+	}
+
+	.navbar-toggler[aria-expanded=true] .fa-bars:before {
+		content: '\f00d';
+	}
+
+	.nav-search,
+	.nav-toggle {
+		display: inline-block;
+	}
 }
 
 @media only screen and (max-width: 667px) {
@@ -403,10 +421,10 @@ a:hover {
 
 	.btn-nav-search,
 	.navbar-toggler {
-		color: $dark;
 		margin: 0px;
 		padding: 5px;
 	}
+
 }
 
 /* toggle adjustments for tablet when not using mega menu*/
@@ -712,7 +730,8 @@ a:hover {
 	}
 }
 
-.header-navbar .nav-search .btn-nav-search {
+.header-navbar .nav-search .btn-nav-search,
+.header-navbar .navbar-toggler {
 	font-size: 20px;
 }
 
