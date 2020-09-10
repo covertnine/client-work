@@ -14,7 +14,7 @@ function c9_megamenu_override_default_theme($value) {
 }
 add_filter('default_option_megamenu_settings', 'c9_megamenu_override_default_theme');
 
-function megamenu_add_theme_c9_work_1599764917($themes) {
+function c9_megamenu_add_theme_c9_work_1599764917($themes) {
     $themes["c9_work_1599764917"] = array(
         'title' => 'C9 Work',
         'container_background_from' => 'rgba(34, 34, 34, 0)',
@@ -244,4 +244,4 @@ function megamenu_add_theme_c9_work_1599764917($themes) {
     );
     return $themes;
 }
-add_filter("megamenu_themes", "megamenu_add_theme_c9_work_1599764917");
+add_filter("megamenu_themes", "c9_megamenu_add_theme_c9_work_1599764917");
