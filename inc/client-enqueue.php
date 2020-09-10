@@ -12,9 +12,8 @@ if (!function_exists('c9_client_scripts')) {
 	function c9_client_scripts()
 	{
 
-		//wp_enqueue_style( 'c9-megamenu', get_template_directory_uri() . '/client/client-assets/vendor/megamenu.css', array( 'c9-styles' ) );
-		wp_enqueue_style('client-styles', get_template_directory_uri() . '/client/client-assets/dist/client.min.css', array('c9-styles'));
-		wp_enqueue_script('client-scripts', get_template_directory_uri() . '/client/client-assets/custom-client.js', array('jquery'), true);
+		wp_enqueue_style('c9work-client-styles', get_template_directory_uri() . '/client/client-assets/dist/client.min.css', array('c9-styles'));
+		wp_enqueue_script('c9work-client-scripts', get_template_directory_uri() . '/client/client-assets/custom-client.js', array('jquery'), true);
 
 		//some examples of extending scripts
 		//wp_enqueue_script( 'smooth-state', get_template_directory_uri() . '/client/client-assets/vendor/jquery.smoothState.min.js', array( 'jquery' ), true );

@@ -43,7 +43,7 @@ add_filter('wp_nav_menu_items', 'c9_nav_add_search_form', 10, 2);
 function c9_nav_add_search_form($items, $args)
 {
 	if ($args->theme_location == 'primary')
-		$items .= '<li class="search"><form role="search" method="get" id="searchform" action="' . home_url('/') . '"><label class="sr-only">' . esc_html_e('Search Site', 'c9-work') . '</label><input type="text" value="" placeholder="' . esc_attr_e('Search', 'c9-work') . '" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . esc_attr_e('Search', 'c9-work') . '" class="invisible sr-only"/></form></li>';
+		$items .= '<li class="search"><form role="search" method="get" id="searchform" action="' . home_url('/') . '"><label class="sr-only">' . esc_html__('Search Site', 'c9-work') . '</label><input type="text" value="" placeholder="' . esc_attr__('Search', 'c9-work') . '" name="s" id="s" /><input type="submit" id="searchsubmit" value="' . esc_attr__('Search', 'c9-work') . '" class="invisible sr-only"/></form></li>';
 	return $items;
 }
 
