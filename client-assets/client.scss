@@ -15,7 +15,7 @@ p {
 
 a,
 .editor-styles-wrapper .block-editor-rich-text__editable a {
-	color: $dark;
+	color: $link-color;
 }
 
 .entry-content p a {
@@ -23,7 +23,8 @@ a,
 	text-decoration: none;
 }
 
-.entry-content p a:hover {
+.entry-content p a:hover,
+.entry-content p a:focus {
 	background: linear-gradient(0deg, rgba(74, 74, 74, 0.6) 20%, rgba(74, 74, 74, 0) 20%);
 }
 
@@ -247,11 +248,11 @@ a:hover {
 }
 
 .has-color-white-background-color {
-	background-color: #fff !important;
+	background-color: $light !important;
 }
 
 .has-color-black-background-color {
-	background-color: #000 !important;
+	background-color: $dark !important;
 }
 
 /****************************************************************************************/
@@ -786,47 +787,56 @@ a:hover {
 
 .header-navbar .search #s:focus {
 	background: transparent;
-	border: 1px dotted rgba(255, 255, 255, .2);
+	border-top: 1px dotted rgba(255, 255, 255, .8);
+	border-left: 1px dotted rgba(255, 255, 255, .8);
+	border-right: 1px dotted rgba(255, 255, 255, .8);
 	color: #fff;
 }
 
+.header-navbar .navbar-small .search #s:focus {
+	color: $dark;
+	border-top: 1px dotted rgba(0, 0, 0, .2);
+	border-left: 1px dotted rgba(0, 0, 0, .2);
+	border-right: 1px dotted rgba(0, 0, 0, .2);
+}
+
 .header-navbar .navbar-small .search ::-moz-placeholder {
-	color: #000 !important;
+	color: $dark !important;
 	text-shadow: none;
 }
 
 .header-navbar .navbar-small .search ::-webkit-input-placeholder {
-	color: #000 !important;
+	color: $dark !important;
 	text-shadow: none;
 }
 
 .header-navbar .navbar-small .search ::-ms-placeholder {
-	color: #000 !important;
+	color: $dark !important;
 	text-shadow: none;
 }
 
 .header-navbar .navbar-small .search ::-webkit-input-placeholder {
-	color: #000 !important;
+	color: $dark$dark !important;
 	text-shadow: none;
 }
 
 .header-navbar .navbar-small .search :-ms-input-placeholder {
-	color: #000 !important;
+	color: rgb(158, 158, 158) !important;
 	text-shadow: none;
 }
 
 .header-navbar .navbar-small .search ::-ms-input-placeholder {
-	color: #000 !important;
+	color: $dark !important;
 	text-shadow: none;
 }
 
 .header-navbar .navbar-small .search ::-moz-placeholder {
-	color: #000 !important;
+	color: $dark !important;
 	text-shadow: none;
 }
 
 .header-navbar .navbar-small .search ::placeholder {
-	color: #000 !important;
+	color: $dark !important;
 	text-shadow: none;
 }
 
