@@ -18,8 +18,19 @@
 
 			$c9work_dark_logo = esc_url(get_theme_mod('c9_dark_logo', ''));
 
+			//check for custom logo upload
 			if (has_custom_logo()) {
-				the_custom_logo();
+
+				//if a dark logo has been uploaded, add a span so we can hide it
+				if (!empty($c9work_dark_logo) ) {
+				?>
+				<div class="c9work-dual-logo">
+					<?php the_custom_logo(); ?>
+				</div>
+				<?php
+				} else {
+					the_custom_logo();
+				}
 			}
 
 			// check for dark logo option if it's there show it
