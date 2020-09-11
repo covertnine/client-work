@@ -16,7 +16,7 @@
 
 			<?php
 
-			$c9work_dark_logo = esc_url(get_theme_mod('c9_dark_logo', ''));
+			$c9work_dark_logo = get_theme_mod('c9_dark_logo', '');
 
 			//check for custom logo upload
 			if (has_custom_logo()) {
@@ -36,8 +36,8 @@
 			// check for dark logo option if it's there show it
 			if ( !empty($c9work_dark_logo) ) {
 				?>
-				<a href="<?php esc_url( get_bloginfo('url') ); ?>" title="<?php esc_attr( get_bloginfo('name') ); ?>" rel="home">
-				<img src="<?php echo $c9work_dark_logo; ?>" alt="<?php esc_attr( get_bloginfo('name') ); ?>" class="navbar-brand c9-custom-logo c9work-dark-logo" />
+				<a href="<?php esc_url( get_bloginfo('url') ); ?>" title="<?php esc_attr_e( get_bloginfo('name') ); ?>" rel="home">
+				<img src="<?php echo $c9work_dark_logo; ?>" alt="<?php esc_attr_e( get_bloginfo('name') ); ?>" class="navbar-brand c9-custom-logo c9work-dark-logo" />
 			</a>
 			<?php
 			}
