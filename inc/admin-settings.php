@@ -24,7 +24,7 @@ if ( ! function_exists( 'c9_work_customize_register' ) ) {
 			'c9_dark_logo',
 			array(
 				'default'           => '',
-				'sanitize_callback' => 'wp_filter_post_kses',
+				'sanitize_callback' => 'esc_url_raw',
 				'type' 				=> 'theme_mod',
 				'capability' 		=> 'edit_theme_options',
 			)
