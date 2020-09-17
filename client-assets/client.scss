@@ -29,6 +29,10 @@ a,
 	background: linear-gradient(0deg, rgba(74, 74, 74, 0.6) 20%, rgba(74, 74, 74, 0) 20%);
 }
 
+.entry-content p a:focus {
+	outline: 1px dotted $dark;
+}
+
 body.page {
 	background: rgb(0, 0, 0);
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0.8673844537815126) 1%, rgba(0, 0, 0, 0.667) 5%, rgba(0, 0, 0, 0) 13%);
