@@ -3,6 +3,10 @@
 /****************************************************************************************/
 @import "client_variables";
 
+body .editor-styles-wrapper {
+	font-family: $font-family-base;
+}
+
 .editor-styles-wrapper .wp-block-paragraph a {
 	color: $dark;
 	text-decoration: underline;
@@ -27,12 +31,16 @@
 /****************************************************************************************/
 .editor-styles-wrapper p,
 .editor-styles-wrapper .container p,
+.editor-styles-wrapper .container-narrow p,
+.editor-styles-wrapper .container-fluid p,
 .editor-styles-wrapper .editor-rich-text .mce-content-body p,
 .editor-styles-wrapper .wp-block-paragraph,
 .editor-styles-wrapper .wp-block-quote p,
 .editor-styles-wrapper .wp-block-file,
-.editor-default-block-appender textarea.editor-default-block-appender__content {
-	word-wrap: break-word;
+.editor-styles-wrapper ul li,
+.editor-styles-wrapper ol li,
+.editor-styles-wrapper .wp-block-pullquote,
+.editor-styles-wrapper .wp-block-pullquote blockquote p {
 	font-family: $font-family-base;
 }
 
