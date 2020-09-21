@@ -54,7 +54,7 @@
 				if (!function_exists('max_mega_menu_is_enabled')) {
 				?>
 					<div class="nav-toggle">
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr__('Toggle Navigation', 'c9-work'); ?>">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle Navigation', 'c9-work'); ?>">
 							<i class="fa fa-bars"></i>
 						</button>
 					</div>
