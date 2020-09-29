@@ -555,6 +555,13 @@ a:hover {
 	margin: 0 6px;
 }
 
+@media only screen and (min-width: 992px) {
+	.header-navbar .nav .nav-item .dropdown-menu {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
 .header-navbar .nav .nav-item .dropdown-menu {
 	border-radius: 0px;
 	margin-top: 1em;
@@ -603,8 +610,6 @@ a:hover {
 	}
 }
 
-.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:focus,
-.navbar #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:focus>span,
 .navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:focus,
 .navbar-small.fixed-top #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link:focus>span {
 	color: $link-hover-color;
