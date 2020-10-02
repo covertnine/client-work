@@ -2442,8 +2442,10 @@ body .woocommerce-info:before {
 	opacity: 0.9;
 }
 
-.wc-block-grid.has-4-columns .wc-block-grid__product {
-	max-width: 24%;
+@media only screen and (min-width: 992px) {
+	.wc-block-grid.has-4-columns .wc-block-grid__product {
+		max-width: 24%;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
