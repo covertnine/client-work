@@ -164,27 +164,22 @@ a:hover {
 /****************************************************************************************/
 /* Client buttons */
 /****************************************************************************************/
-.c9 .entry-content button,
-.editor-styles-wrapper .wp-block-search__button,
-.editor-styles-wrapper .button-primary,
-.editor-styles-wrapper .mce-content-body.button,
-.editor-styles-wrapper .wp-block-button__link,
-.editor-styles-wrapper .c9-cta .c9-cta-button .wp-block-button__link,
-.editor-styles-wrapper .button-primary,
-.editor-styles-wrapper .mce-content-body.button,
+.btn,
+.btn:visited,
 .entry-content .btn,
 .entry-content .btn:visited,
 .entry-content button,
-.entry-content .button,
 .entry-content input[type="button"],
 .entry-content input[type="reset"],
 .entry-content input[type="submit"],
+.entry-content .button,
 .entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link,
-.entry-content .wp-block-button__link,
-.wp-block-button:not(.is-style-outline) .wp-block-button__link.mce-content-body,
 .wp-block-button__link,
+.site .wp-block-button__link,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link.mce-content-body,
 .wp-block-file__button,
 .wp-block-file .wp-block-file__button,
+#searchsubmit,
 .wp-block-button__link:not([href]):not([tabindex]) {
 	padding: 19px 28px 14px 28px;
 	color: $light;
@@ -204,6 +199,19 @@ a:hover {
 
 .c9 .entry-content .btn-secondary {
 	background-color: $secondary;
+}
+
+.c9 .entry-content .wp-block-button__link:active,
+.c9 .entry-content .wp-block-button__link:focus {
+	color: $light;
+	white-space: nowrap;
+}
+
+.c9 .entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link:visited,
+.c9 .entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
+.c9 .entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link,
+.c9 .entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link:not([href]):not([tabindex]) {
+	color: $light;
 }
 
 .c9 button:hover,
