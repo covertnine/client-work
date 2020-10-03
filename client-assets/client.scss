@@ -515,8 +515,14 @@ a:hover {
 	}
 }
 
-/* after nav breaks to mobile navigation, git it a background/style if mega menu isn't active */
-@media only screen and (min-width: 1px) and (max-width: 991px) {}
+@media only screen and (min-width: 1px) and (max-width: 414px) {
+
+	.navbar-nav,
+	.c9 #mega-menu-wrap-primary #mega-menu-primary {
+		top: 49px;
+	}
+}
+
 
 /* spacing for that weird inbetween tablet size for navigation */
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
@@ -2347,6 +2353,13 @@ h6 {
 	background-color: $gray-700;
 }
 
+@media only screen and (max-width: 568px) {
+	.c9 .wc-block-grid>.wc-block-grid__products .wp-block-button__link:not(.is-style-outline) {
+		font-size: 16px;
+		padding: 19px 15px 14px 15px
+	}
+}
+
 .entry-content .wc-block-grid .wc-block-grid__product:before {
 	display: none;
 }
@@ -2563,10 +2576,6 @@ body .woocommerce-info:before {
 	max-width: 1140px;
 	margin: 30px auto;
 	padding: 0px 15px;
-}
-
-.woocommerce .site-main .woocommerce-breadcrumb {
-	font-family: $font-family-sans-serif;
 	font-size: 2em;
 	letter-spacing: 0.05px;
 	text-align: left;
