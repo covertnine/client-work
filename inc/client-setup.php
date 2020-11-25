@@ -62,7 +62,7 @@ if (!function_exists('c9_client_setup')) {
 
 		add_theme_support(
 			'starter-content',
-				array(
+			array(
 				'attachments' => array(
 					'logo' => array(
 						'post_title' => _x('C9 Work Logo', 'C9 Work Logo', 'c9-work'),
@@ -76,35 +76,35 @@ if (!function_exists('c9_client_setup')) {
 				'posts'	=> array(
 					'home'			=> array(
 						'comment_status'	=> 'closed',
-						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory_uri() . '/client/content/home.html')
+						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory() . '/client/content/home.html')
 					),
 					'about'			=> array(
 						'comment_status'	=> 'closed',
 						'post_type'			=> 'page',
 						'post_title'		=> __('Our History', 'c9-work'),
-						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory_uri() . '/client/content/about.html')
+						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory() . '/client/content/about.html')
 					),
 					'setup'			=> array(
 						'comment_status'	=> 'closed',
 						'post_type'			=> 'page',
 						'post_title'		=> __('Setup Guide', 'c9-work'),
-						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory_uri() . '/client/content/setup.html')
+						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory() . '/client/content/setup.html')
 					),
 					'services'		=> array(
 						'comment_status'	=> 'closed',
 						'post_type'			=> 'page',
 						'post_title'		=> __('Services', 'c9-work'),
-						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory_uri() . '/client/content/services.html')
+						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory() . '/client/content/services.html')
 					),
 					'styleguide'		=> array(
 						'comment_status'	=> 'closed',
 						'post_type'			=> 'page',
 						'post_title'		=> __('Style Guide', 'c9-work'),
-						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory_uri() . '/client/content/styleguide.html')
+						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory() . '/client/content/styleguide.html')
 					),
 					'contact'		=> array(
 						'comment_status'	=> 'closed',
-						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory_uri() . '/client/content/contact.html')
+						'post_content'		=>  $wp_filesystem->get_contents(get_template_directory() . '/client/content/contact.html')
 					),
 					'news'			=> array(
 						'post_content'			=> __('This page will show all of the news posts once you have populated your database with news items.', 'c9-work')

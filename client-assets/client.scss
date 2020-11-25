@@ -6,12 +6,9 @@
 
 .c9 dl,
 .entry-content p,
-.entry-footer {
-	line-height: $line-height-base;
-}
-
+.entry-footer,
 p {
-	line-height: 2;
+	line-height: $line-height-base;
 }
 
 a,
@@ -1266,8 +1263,10 @@ h6 {
 /* Client unordered and ordered list stylings */
 /****************************************************************************************/
 .entry-content ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li,
-.editor-styles-wrapper ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li {
-	line-height: 1.6;
+.editor-styles-wrapper .is-root-container>ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li,
+.entry-content ol:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li,
+.editor-styles-wrapper .is-root-container>ol:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li {
+	line-height: $line-height-base;
 }
 
 .entry-content ol li:before {
