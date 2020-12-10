@@ -172,12 +172,12 @@ a:hover {
 .entry-content .button,
 .entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link,
 .wp-block-button__link,
-.site .wp-block-button__link,
+.site .wp-block-button:not(.is-style-outline) .wp-block-button__link,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link.mce-content-body,
 .wp-block-file__button,
 .wp-block-file .wp-block-file__button,
 #searchsubmit,
-.wp-block-button__link:not([href]):not([tabindex]) {
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:not([href]):not([tabindex]) {
 	padding: 19px 28px 14px 28px;
 	color: $light;
 	font-size: 20px;
@@ -188,18 +188,23 @@ a:hover {
 	border: none;
 }
 
-.c9-cta .wp-block-button__link.c9-button-shape-outline {
+.c9-cta .wp-block-button__link.c9-button-shape-outline,
+.wp-block-button.is-style-outline .wp-block-button__link:not([href]):not([tabindex]),
+.wp-block-button.is-style-outline .wp-block-button__link {
 	background-image: none;
 	background-color: transparent;
 	border: 3px solid $dark;
+	padding: 19px 28px 14px 28px;
+	font-size: 20px;
+	letter-spacing: 0.01em;
 }
 
 .c9 .entry-content .btn-secondary {
 	background-color: $secondary;
 }
 
-.c9 .entry-content .wp-block-button__link:active,
-.c9 .entry-content .wp-block-button__link:focus {
+.c9 .entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link:active,
+.c9 .entry-content .wp-block-button:not(.is-style-outline) .wp-block-button__link:focus {
 	color: $light;
 	white-space: nowrap;
 }
@@ -213,11 +218,11 @@ a:hover {
 
 .c9 button:hover,
 .btn:hover,
-.wp-block-button__link:hover,
+.wp-block-button:not(.is-style-outline) .wp-block-button__link:hover,
 .editor-styles-wrapper .button:hover,
 .editor-styles-wrapper .button-primary:hover,
 .editor-styles-wrapper .mce-content-body.button:hover,
-.editor-styles-wrapper .wp-block-button__link:hover {
+.editor-styles-wrapper .wp-block-button:not(.is-style-outline) .wp-block-button__link:hover {
 	opacity: 0.8;
 	color: #fff;
 }
@@ -1348,6 +1353,10 @@ h6 {
 
 .c9-toggles .c9-toggles-toggle:last-child {
 	border-bottom: 1px solid #979797;
+}
+
+.c9-vertical-tabs .c9-tabs-content.tab-content {
+	padding: 25px;
 }
 
 .c9 .c9-toggles.is-style-default .c9-toggles-item-heading .c9-toggles-toggle-label,
