@@ -2155,6 +2155,10 @@ h6 {
 	text-decoration: none;
 }
 
+.entry-content .c9-cta-content .c9-cta-text[style] p {
+	font-size: inherit;
+}
+
 @media only screen and (max-width: 768px) {
 	.c9-cta .c9-cta-button .square {
 		font-size: 1.8em;
