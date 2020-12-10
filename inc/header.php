@@ -22,11 +22,11 @@
 			if (has_custom_logo()) {
 
 				//if a dark logo has been uploaded, add a span so we can hide it
-				if (!empty($c9work_dark_logo) ) {
-				?>
-				<div class="c9work-dual-logo">
-					<?php the_custom_logo(); ?>
-				</div>
+				if (!empty($c9work_dark_logo)) {
+			?>
+					<div class="c9work-dual-logo">
+						<?php the_custom_logo(); ?>
+					</div>
 				<?php
 				} else {
 					the_custom_logo();
@@ -34,11 +34,11 @@
 			}
 
 			// check for dark logo option if it's there show it
-			if ( !empty($c9work_dark_logo) ) {
+			if (!empty($c9work_dark_logo)) {
 				?>
-				<a href="<?php echo esc_url( home_url() ); ?>" title="<?php esc_attr( get_bloginfo('name') ); ?>" rel="home">
-				<img src="<?php echo $c9work_dark_logo; ?>" alt="<?php esc_attr( get_bloginfo('name') ); ?>" class="navbar-brand c9-custom-logo c9work-dark-logo" />
-			</a>
+				<a href="<?php echo esc_url(home_url()); ?>" title="<?php esc_attr(get_bloginfo('name')); ?>" rel="home">
+					<img src="<?php echo $c9work_dark_logo; ?>" alt="<?php esc_attr(get_bloginfo('name')); ?>" class="navbar-brand c9-custom-logo c9work-dark-logo" />
+				</a>
 			<?php
 			}
 			?>
