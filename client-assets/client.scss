@@ -1275,14 +1275,14 @@ h6 {
 
 .entry-content ol li,
 .editor-styles-wrapper .editor-rich-text ol li,
-.entry-content ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers):not(.wp-block-archives) li,
-.editor-styles-wrapper .editor-rich-text ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers):not(.wp-block-archives) li {
+.entry-content ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers):not(.wp-block-archives):not(.wp-block-social-links) li,
+.editor-styles-wrapper .editor-rich-text ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers):not(.wp-block-archives):not(.wp-block-social-links) li {
 	margin: 15px 0px;
 }
 
 .editor-styles-wrapper ol li,
 .entry-content ol li {
-	padding-left: 24px;
+	padding-left: 0px;
 }
 
 @media only screen and (max-width: 414px) {
@@ -1976,7 +1976,8 @@ h6 {
 .c9 input[type="url"],
 .c9 textarea,
 .c9 input[type="search"],
-.search-form .search-field {
+.search-form .search-field,
+.footer-search-wrapper .field[type=text] {
 	font-size: 16px;
 	min-height: 55px;
 }

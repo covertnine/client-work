@@ -59,12 +59,12 @@ body .editor-styles-wrapper {
 	margin: 15px 0px;
 }
 
-.editor-styles-wrapper ul:not(.blocks-gallery-grid):not(.nav-tabs):not(.c9-share-list) li {
+.editor-styles-wrapper ul:not(.blocks-gallery-grid):not(.nav-tabs):not(.c9-share-list):not(.wp-block-social-links) li {
 	margin: 15px 0px;
 }
 
 .editor-styles-wrapper ol li:before {
-	margin-left: -21px;
+	// margin-left: -21px;
 }
 
 .editor-styles-wrapper .h1,
