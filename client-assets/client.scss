@@ -188,15 +188,18 @@ a:hover {
 	border: none;
 }
 
-.c9-cta .wp-block-button__link.c9-button-shape-outline,
 .wp-block-button.is-style-outline .wp-block-button__link:not([href]):not([tabindex]),
 .wp-block-button.is-style-outline .wp-block-button__link {
 	background-image: none;
 	background-color: transparent;
-	border: 3px solid $dark;
+	border: 3px solid;
 	padding: 19px 28px 14px 28px;
 	font-size: 20px;
 	letter-spacing: 0.01em;
+}
+
+.c9-cta.c9-block-cta .wp-block-button__link.c9-button-shape-outline {
+	border: 3px solid;
 }
 
 .c9 .entry-content .btn-secondary {
@@ -2031,7 +2034,6 @@ h6 {
 	background-image: linear-gradient(0deg, #ebb900 0%, #eadc23 100%);
 	padding: 19px 28px 14px 28px !important;
 	color: $dark;
-	font-family: $headings-font-family;
 	font-size: 2.99em;
 	letter-spacing: 0.01em;
 	text-align: center;
@@ -2047,6 +2049,11 @@ h6 {
 
 .entry-content .wp-block-buttons .wp-block-button {
 	margin-right: 8px;
+}
+
+.c9-block-cta .c9-cta-content .wp-block-button__link,
+.c9-block-cta.c9-cta .wp-block-button__link {
+	font-size: 20px;
 }
 
 /* Button and input focus styles */
