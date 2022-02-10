@@ -2987,8 +2987,10 @@ p.demo_store {
 /* Utility Classes */
 /****************************************************************************************/
 .img-shadow,
-.is-style-img-shadow {
+.is-style-img-shadow,
+:not([data-align])>.wp-block-image.is-style-img-shadow {
 	position: relative;
+	display: block;
 }
 
 .is-style-img-shadow img,
@@ -3002,7 +3004,7 @@ p.demo_store {
 	bottom: -30px;
 	z-index: 8;
 	content: "";
-	display: block;
+	display: inline-block;
 	width: 100%;
 	height: 30px;
 	background-image: radial-gradient(ellipse, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 68%);
