@@ -1272,9 +1272,9 @@ h6 {
 /* Client unordered and ordered list stylings */
 /****************************************************************************************/
 .entry-content ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li,
-.editor-styles-wrapper .is-root-container>ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li,
+.editor-styles-wrapper .is-root-container>ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products):not(.wp-block-social-links) li,
 .entry-content ol:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li,
-.editor-styles-wrapper .is-root-container>ol:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li {
+.editor-styles-wrapper .is-root-container>ol:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products):not(.wp-block-social-links) li {
 	line-height: $line-height-base;
 }
 

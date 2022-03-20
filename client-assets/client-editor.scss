@@ -189,3 +189,20 @@ div[data-type="c9-blocks/horizontal-tabs"] .wp-block[data-type="core/button"] {
 	font-size: 16px;
 	min-height: 50px;
 }
+
+/* social icon block updates */
+.is-root-container .wp-block-social-links.has-small-icon-size>.wp-block-social-link>button.components-button:not(.button-link):not(.is-tertiary):not(.is-secondary):not(.is-primary):not(.button):not(.edit-post-sidebar__panel-tab):not(.components-panel__body-toggle):not(.block-editor-button-block-appender):not(.has-icon):not(.has-icon.has-text):not(.is-small) {
+	font-size: 16px;
+}
+
+.is-root-container .wp-block-social-links>.wp-block-social-link>button.components-button:not(.button-link):not(.is-tertiary):not(.is-secondary):not(.is-primary):not(.button):not(.edit-post-sidebar__panel-tab):not(.components-panel__body-toggle):not(.block-editor-button-block-appender):not(.has-icon):not(.has-icon.has-text):not(.is-small) {
+	font-size: 24px;
+}
+
+.is-root-container .wp-block-social-links.has-large-icon-size>.wp-block-social-link>button.components-button:not(.button-link):not(.is-tertiary):not(.is-secondary):not(.is-primary):not(.button):not(.edit-post-sidebar__panel-tab):not(.components-panel__body-toggle):not(.block-editor-button-block-appender):not(.has-icon):not(.has-icon.has-text):not(.is-small) {
+	font-size: 36px;
+}
+
+.is-root-container .wp-block-social-links.has-huge-icon-size>.wp-block-social-link>button.components-button:not(.button-link):not(.is-tertiary):not(.is-secondary):not(.is-primary):not(.button):not(.edit-post-sidebar__panel-tab):not(.components-panel__body-toggle):not(.block-editor-button-block-appender):not(.has-icon):not(.has-icon.has-text):not(.is-small) {
+	font-size: 48px;
+}
