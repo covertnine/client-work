@@ -7,6 +7,10 @@ body .editor-styles-wrapper {
 	font-size: 10px;
 }
 
+html :where(.editor-styles-wrapper) p {
+	font-size: 16px;
+}
+
 .editor-styles-wrapper .wp-block-paragraph a {
 	color: $dark;
 	text-decoration: underline;
