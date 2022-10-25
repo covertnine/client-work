@@ -284,7 +284,7 @@ a:hover {
     text-transform: uppercase;
     font-weight: normal;
     color: $link-hover-color;
-    font-size: 0.8em;
+    font-size: 10px;
 }
 
 .tags-links a,
@@ -298,7 +298,7 @@ a:hover {
 .tags-links a:before {
     display: inline;
     content: "\f02b";
-    font: normal normal normal 1.4rem/1 FontAwesome;
+    font: normal normal normal 14px/1 FontAwesome;
     color: $primary;
     padding-right: 2px;
 }
@@ -2193,7 +2193,7 @@ h6 {
 /* posts grid block */
 
 .c9-block-post-grid .c9-block-post-grid-byline {
-    font: $font-weight-light 1.6em/1 $headings-font-family, helvetica, sans-serif;
+    font: $font-weight-light 16px/1 $headings-font-family, helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
