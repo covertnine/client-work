@@ -1270,27 +1270,23 @@ h6 {
 /****************************************************************************************/
 /* Client unordered and ordered list stylings */
 /****************************************************************************************/
+
 .entry-content ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li,
 .editor-styles-wrapper .is-root-container>ul:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products):not(.wp-block-social-links) li,
 .entry-content ol:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products) li,
-.editor-styles-wrapper .is-root-container>ol:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products):not(.wp-block-social-links) li {
-    line-height: $line-height-base;
+.editor-styles-wrapper .is-root-container>ol:not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products):not(.wp-block-social-links) li,
+.c9-grid .c9-column-inner>ul[class=""],
+.editor-styles-wrapper .c9-grid [data-block] ol[class~="wp-block-list"],
+.editor-styles-wrapper .c9-grid [data-block] ul[class~="wp-block-list"],
+.is-root-container>ol.wp-block-list,
+.is-root-container>ul.wp-block-list,
+html :where(.editor-styles-wrapper) .is-root-container>ul.wp-block-list,
+ul[class=""] {
+    line-height: 1.6;
 }
 
 .entry-content ol li:before {
     margin-left: -21px;
-}
-
-.entry-content ol li,
-.editor-styles-wrapper .editor-rich-text ol li,
-.entry-content ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers):not(.wp-block-archives):not(.wp-block-social-links) li,
-.editor-styles-wrapper .editor-rich-text ul:not(.wp-block-gallery):not(.blocks-gallery-grid):not(.products):not(.nav-tabs):not(.page-numbers):not(.wp-block-archives):not(.wp-block-social-links) li {
-    margin: 15px 0px;
-}
-
-.editor-styles-wrapper ol li,
-.entry-content ol li {
-    padding-left: 0px;
 }
 
 @media only screen and (max-width: 414px) {
@@ -2934,7 +2930,7 @@ p.demo_store {
 .error-404 .page-content .search-form .input-group.search-field {
     padding: 10px 12px;
     font-family: $font-family-sans-serif;
-    font-size:1.3rem;
+    font-size: 1.3rem;
     letter-spacing: 0.02em;
     height: auto;
     border: 1px solid rgb(206, 212, 218);

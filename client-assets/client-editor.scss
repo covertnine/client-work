@@ -56,16 +56,6 @@ html :where(.editor-styles-wrapper) p {
     line-height: 1.6;
 }
 
-.editor-styles-wrapper ul li,
-.editor-styles-wrapper ol li {
-    color: $gray-900;
-    margin: 15px 0px;
-}
-
-.editor-styles-wrapper ul:not(.blocks-gallery-grid):not(.nav-tabs):not(.c9-share-list):not(.wp-block-social-links) li {
-    margin: 15px 0px;
-}
-
 .editor-styles-wrapper .h1,
 .editor-styles-wrapper .h2,
 .editor-styles-wrapper .h3,
