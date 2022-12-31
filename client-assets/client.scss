@@ -181,7 +181,7 @@ a:hover {
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not([href]):not([tabindex]) {
     padding: 19px 28px 14px 28px;
     color: $light;
-    font-size: 20px;
+    font-size: 2rem;
     letter-spacing: 0.01em;
     text-align: center;
     line-height: 1;
@@ -195,7 +195,7 @@ a:hover {
     background-color: transparent;
     border: 3px solid;
     padding: 16px 25px 11px 25px;
-    font-size: 20px;
+    font-size: 2rem;
     letter-spacing: 0.01em;
 }
 
@@ -248,7 +248,7 @@ a:hover {
     .c9 .c9-cta .wp-block-button__link.c9-button-size-medium,
     .c9 .c9-cta .wp-block-button__link.c9-button-size-large,
     .c9 .c9-cta .wp-block-button__link.c9-button-size-extralarge {
-        font-size: 20px;
+        font-size: 2rem;
     }
 }
 
@@ -284,7 +284,7 @@ a:hover {
     text-transform: uppercase;
     font-weight: normal;
     color: $link-hover-color;
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .tags-links a,
@@ -349,7 +349,7 @@ a:hover {
 .navbar-nav li a,
 .header-navbar .navbar-small .nav .nav-item>.nav-link {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 1;
     color: rgba(43, 43, 43, 0.77);
     letter-spacing: 1px;
@@ -781,7 +781,7 @@ a:hover {
     .c9 #mega-menu-wrap-primary #mega-menu-primary li.search {
         min-width: 125px;
         display: flex;
-        font-size: 10px;
+        font-size: 1rem;
         align-items: center;
         justify-content: flex-start;
     }
@@ -789,7 +789,7 @@ a:hover {
 
 .header-navbar .nav-search .btn-nav-search,
 .header-navbar .navbar-toggler {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .search form {
@@ -805,7 +805,7 @@ a:hover {
     display: inline-block;
     font-family: "FontAwesome";
     color: #fff;
-    font-size: 19px;
+    font-size: 1.9rem;
     content: "\f002";
 }
 
@@ -854,7 +854,7 @@ a:hover {
     width: 65px;
     display: inline-block;
     color: #fff;
-    font-size: 19px;
+    font-size: 1.9rem;
     margin-left: 4px;
     padding-bottom: 0px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
@@ -1050,7 +1050,7 @@ h6 {
 }
 
 .xxl-heading .c9-txl {
-    font-size: 180px !important;
+    font-size: 18rem !important;
     line-height: 0.9;
     letter-spacing: 0.02em;
 }
@@ -1066,7 +1066,7 @@ h6 {
 
 @media only screen and (max-width: 568px) {
     .xxl-heading .c9-txl {
-        font-size: 100px !important;
+        font-size: 10rem !important;
         line-height: 0.9;
         letter-spacing: 0.02em;
     }
@@ -1087,7 +1087,6 @@ h6 {
     .entry-content h3.section-heading-accent,
     .entry-content h3.section-heading-accent-alt {
         margin: 10px auto;
-        font-size: 16px;
         font-weight: 500;
         line-height: 1;
         letter-spacing: 0.08em;
@@ -1111,7 +1110,7 @@ h6 {
     .wp-block-heading .subheading4,
     .wp-block-heading .subheading5 {
         font-weight: 400;
-        font-size: 26px;
+        font-size: 2.6rem;
         letter-spacing: 0.055em;
     }
 
@@ -1119,7 +1118,7 @@ h6 {
     .wp-block-heading .subheading2,
     .subheading2 {
         font-weight: 500;
-        font-size: 23px;
+        font-size: 2.3rem;
         letter-spacing: 0.12em;
     }
 
@@ -1127,7 +1126,7 @@ h6 {
     .wp-block-heading .subheading3,
     .subheading3 {
         font-weight: 100;
-        font-size: 20px;
+        font-size: 2rem;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         line-height: 1.2;
@@ -1136,14 +1135,14 @@ h6 {
     .entry-content .subheading4,
     .wp-block-heading .subheading4,
     .subheading4 {
-        font-size: 16px;
+        font-size: 1.6rem;
         letter-spacing: 0.001em;
     }
 
     .entry-content .subheading5,
     .wp-block-heading .subheading5,
     .subheading5 {
-        font-size: 14px;
+        font-size: 1.4rem;
         letter-spacing: 0.125em;
         font-weight: $font-weight-normal;
     }
@@ -1153,7 +1152,7 @@ h6 {
     .wp-block-heading .icon-label {
         text-transform: uppercase;
         font-weight: $font-weight-bold;
-        font-size: 18px !important;
+        font-size: 1.8rem !important;
         letter-spacing: 0.2em;
         line-height: 1.1;
     }
@@ -1174,12 +1173,12 @@ h6 {
         display: block;
         text-align: right;
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 1.2rem;
     }
 
     /* WordPress Gutenberg Font Sizes */
     .entry-content .has-small-font-size {
-        font-size: 14px;
+        font-size: 1.4rem;
         line-height: 1.3;
         letter-spacing: 0.02em;
     }
@@ -1191,7 +1190,7 @@ h6 {
     text-align: center;
     text-transform: uppercase;
     font-family: $font-family-base;
-    font-size: 20px;
+    font-size: 2rem;
     min-height: 16px;
     max-height: 20px;
     color: $dark;
@@ -1254,7 +1253,7 @@ h6 {
 
 @media only screen and (min-width: 1px) {
     .c9 .page .entry-header h1 {
-        font-size: 50px;
+        font-size: 5rem;
         text-align: center;
         color: $light;
         margin: 70px auto;
@@ -1264,7 +1263,7 @@ h6 {
 
 @media only screen and (min-width: 768px) {
     .c9 .page .entry-header h1 {
-        font-size: 80px;
+        font-size: 8rem;
     }
 }
 
@@ -1367,7 +1366,7 @@ h6 {
 .editor-styles-wrapper .c9-toggles.is-style-default .c9-toggles-item-heading .c9-toggles-toggle-label {
     text-transform: uppercase;
     color: $dark;
-    font-size: 79px;
+    font-size: 7.9rem;
     text-align: left;
     line-height: 0.9;
     transition: color 0.5s ease-out;
@@ -1412,7 +1411,7 @@ h6 {
 }
 
 .c9 .c9-toggles.is-style-toggles-small .c9-toggles-toggle .c9-toggles-item-heading .c9-toggles-toggle-label {
-    font-size: 24px;
+    font-size: 2.4rem;
     color: $dark;
     letter-spacing: 0.05px;
     text-align: left;
@@ -1447,7 +1446,7 @@ h6 {
 .c9 .c9-toggles.is-style-toggles-small .c9-toggles-toggle .fa-angle-right:before {
     content: "\f067";
     color: #ebb900;
-    font-size: 16px;
+    font-size: 1.6rem;
     display: block;
     padding-top: 2px;
 }
@@ -1565,7 +1564,7 @@ h6 {
 
     .c9-horizontal-tabs .nav-tabs .nav-link {
         padding: 11px 19px;
-        font-size: 11px;
+        font-size: 1.1rem;
     }
 
     .entry-content .c9-horizontal-tabs .nav.nav-tabs,
@@ -1602,7 +1601,7 @@ h6 {
     }
 
     .single-product .c9-horizontal-tabs>.nav.nav-tabs .nav-link {
-        font-size: 11px;
+        font-size: 1.1rem;
     }
 }
 
@@ -1645,7 +1644,7 @@ h6 {
 /****************************************************************************************/
 
 #fullscreensearch .btn {
-    font-size: 20px;
+    font-size: 2rem;
     font-family: $headings-font-family;
     font-weight: bold;
     margin-top: 20px;
@@ -1657,7 +1656,7 @@ h6 {
 /****************************************************************************************/
 
 .post-password-form p label {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .post-password-form input[type="submit"] {
@@ -1683,7 +1682,7 @@ h6 {
 .archive .c9 .entry-title,
 .search-results .c9 .entry-title {
     line-height: 1.1;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .search-results .entry-footer {
@@ -1693,7 +1692,7 @@ h6 {
 .search-results .cat-links,
 .search-results .tags-links {
     display: block;
-    font-size: 7px;
+    font-size: .7rem;
 }
 
 /****************************************************************************************/
@@ -1705,7 +1704,7 @@ h6 {
 .entry-big-header .entry-title-box .entry-meta .posted-on,
 .entry-big-header .entry-title-box .entry-meta .posted-on a {
     color: $light;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .entry-meta .updated {
@@ -1819,7 +1818,7 @@ h6 {
     font-family: "FontAwesome";
     color: #9b9b9b;
     content: "\f002";
-    font-size: 16px;
+    font-size: 1.6rem;
     position: absolute;
     right: 10px;
     top: 50%;
@@ -1895,14 +1894,14 @@ h6 {
 
 .footer-widget .menu .menu-item,
 .footer-widget>ul>li {
-    font-size: 15px;
+    font-size: 1.5rem;
     line-height: 2;
     padding-left: 0px;
     margin: 0;
 }
 
 .footer-widget h3 {
-    font-size: 20px;
+    font-size: 2rem;
     letter-spacing: 0.04em;
     text-align: left;
     line-height: 1;
@@ -1967,7 +1966,7 @@ h6 {
 .wp-block[data-type="gravityforms/block"] .gform_wrapper label.gfield_label,
 .wp-block[data-type="gravityforms/block"] .gform_wrapper legend.gfield_label,
 .c9 .gform_confirmation_message {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 .c9 .gform_confirmation_message {
@@ -1991,13 +1990,12 @@ h6 {
 .c9 input[type="search"],
 .search-form .search-field,
 .footer-search-wrapper .field[type=text] {
-    font-size: 16px;
     min-height: 55px;
 }
 
 .c9 .gform_wrapper .gform_footer,
 .editor-styles-wrapper .gform_wrapper .gform_footer {
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .c9 .entry-content ul.gform_fields {
@@ -2035,7 +2033,7 @@ h6 {
     background-image: linear-gradient(0deg, #ebb900 0%, #eadc23 100%);
     padding: 19px 28px 14px 28px !important;
     color: $dark;
-    font-size: 29px;
+    font-size: 2.9rem;
     letter-spacing: 0.01em;
     text-align: center;
     line-height: 1;
@@ -2054,7 +2052,7 @@ h6 {
 
 .c9-block-cta .c9-cta-content .wp-block-button__link,
 .c9-block-cta.c9-cta .wp-block-button__link {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 /* Button and input focus styles */
@@ -2163,7 +2161,7 @@ h6 {
 .c9-cta .c9-cta-button .square {
     color: $dark;
     border-radius: 0px;
-    font-size: 30px;
+    font-size: 3rem;
     letter-spacing: 0.97px;
     line-height: 1;
 }
@@ -2178,7 +2176,7 @@ h6 {
 
 @media only screen and (max-width: 768px) {
     .c9-cta .c9-cta-button .square {
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
 
@@ -2214,16 +2212,6 @@ h6 {
 /****************************************************************************************/
 /* font size setting */
 
-.woocommerce-store-notice,
-.woocommerce div.product form.cart table,
-.c9-product-catalog,
-.c9 .product_meta,
-.c9 .comment-respond,
-.wc-block-grid__product .wc-block-grid__product-title,
-.wc-block-grid__product-price {
-    font-size: 16px;
-}
-
 .wc-block-grid__product-link {
     text-decoration: none;
 }
@@ -2243,19 +2231,6 @@ h6 {
     max-width: 675px;
 }
 
-.c9 .entry-content .comment-form .comment-form-comment,
-.c9 .entry-content .comment-form p,
-.c9 .woocommerce-ordering,
-.woocommerce .c9 div.product p.stock,
-.woocommerce-notices-wrapper,
-.shop_table,
-.c9 .woocommerce #respond input#submit,
-.c9 .woocommerce a.button,
-.c9 .woocommerce button.button,
-.c9 .woocommerce input.button {
-    font-size: 16px;
-}
-
 .woocommerce-notices-wrapper {
     max-width: 960px;
     margin: 0px auto;
@@ -2272,7 +2247,7 @@ h6 {
 .woocommerce .c9 table.shop_attributes .woocommerce-product-attributes-item__value p {
     vertical-align: middle;
     line-height: 1;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 /****************************************************************************************/
@@ -2289,7 +2264,6 @@ h6 {
 .woocommerce div.product p.price,
 .woocommerce div.product span.price {
     color: $dark;
-    font-size: 16px;
 }
 
 .woocommerce .c9 ul.products li.product .price ins {
@@ -2301,7 +2275,6 @@ h6 {
 
 .woocommerce .c9 .quantity .qty {
     min-height: 53px;
-    font-size: 16px;
 }
 
 /****************************************************************************************/
@@ -2341,7 +2314,7 @@ h6 {
     padding: 19px 28px 14px 28px;
     color: $light;
     background-color: $dark;
-    font-size: 20px;
+    font-size: 2rem;
     letter-spacing: 0.08em;
     text-align: center;
     line-height: 1;
@@ -2378,7 +2351,6 @@ h6 {
 
 @media only screen and (max-width: 568px) {
     .c9 .wc-block-grid>.wc-block-grid__products .wp-block-button__link:not(.is-style-outline) {
-        font-size: 16px;
         padding: 19px 15px 14px 15px
     }
 }
@@ -2402,14 +2374,14 @@ h6 {
 }
 
 .woocommerce ul.products li.product .woocommerce-loop-product__title {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1;
 }
 
 body .woocommerce-info {
     border: none !important;
     background: white;
-    font-size: 20px;
+    font-size: 2rem;
     font-family: $headings-font-family;
     color: black;
     letter-spacing: 0.5px;
@@ -2441,7 +2413,7 @@ body .woocommerce-info:before {
     border: 1px solid transparent;
     background: $dark;
     color: $light;
-    font-size: 10px;
+    font-size: 1rem;
     padding: 2px 8px;
 }
 
@@ -2539,7 +2511,7 @@ body .woocommerce-info:before {
     .single-product .panel p,
     .single-product .panel ul,
     .single-product .panel ul li {
-        font-size: 15px;
+        font-size: 1.5rem;
         line-height: 1.5;
         letter-spacing: 0.03em;
     }
@@ -2599,7 +2571,7 @@ body .woocommerce-info:before {
     max-width: 1140px;
     margin: 30px auto;
     padding: 0px 15px;
-    font-size: 20px;
+    font-size: 2rem;
     letter-spacing: 0.05px;
     text-align: left;
     color: $dark;
@@ -2627,7 +2599,7 @@ body .woocommerce-info:before {
 .c9 .woocommerce-products-header__title {
     font-family: $headings-font-family;
     font-weight: 700;
-    font-size: 79px;
+    font-size: 7.9rem;
     line-height: 1;
 }
 
@@ -2668,13 +2640,6 @@ body .woocommerce-info:before {
 
 .c9 .woocommerce table.shop_table {
     border-radius: 0px;
-}
-
-.woocommerce td.product-name .wc-item-meta .wc-item-meta-label,
-.woocommerce td.product-name .wc-item-meta dt,
-.woocommerce td.product-name dl.variation .wc-item-meta-label,
-.woocommerce td.product-name dl.variation dt {
-    font-size: 16px;
 }
 
 /* WooCommerce Forms text inputs */
@@ -2744,7 +2709,6 @@ body .woocommerce-info:before {
     padding: 2px 8px;
     border: 1px solid $gray-500;
     line-height: 1;
-    font-size: 16px;
 }
 
 /* coupon */
@@ -2851,7 +2815,7 @@ body .woocommerce-info:before {
 .ui-datepicker-calendar,
 .ui-datepicker .ui-datepicker-title {
     font-family: $font-family-base;
-    font-size: 16px !important;
+    font-size: 1.6rem !important;
 }
 
 .ui-datepicker .ui-datepicker-title {
@@ -2870,11 +2834,11 @@ li.ui-timepicker-selected,
 
 /* order confirmation */
 ul.order_details li {
-    font-size: 14px !important;
+    font-size: 1.4rem !important;
 }
 
 .woocommerce ul.order_details li strong {
-    font-size: 16px !important;
+    font-size: .6rem !important;
 }
 
 .order_details:not(.blocks-gallery-grid):not(.wp-block-gallery):not(.wc-block-grid__products):not(.gfield_checkbox):not(.gfield_radio):not(.nav-tabs):not(.c9-share-list):not(.products):not(.gform_fields) li {
@@ -2891,7 +2855,6 @@ ul.order_details li {
 .woocommerce-store-notice,
 p.demo_store {
     background-color: $dark;
-    font-size: 16px;
     top: auto;
     bottom: 0;
     position: fixed;
@@ -2913,7 +2876,7 @@ p.demo_store {
 .page-search-results nav .pagination .page-item .page-link,
 .single .navigation .nav-next a,
 .single .navigation .nav-previous a {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .c9 .woocommerce nav.woocommerce-pagination {
@@ -2922,7 +2885,7 @@ p.demo_store {
 
 .c9 .woocommerce nav.woocommerce-pagination ul li .page-numbers,
 .c9 .woocommerce nav.woocommerce-pagination ul li span {
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 /****************************************************************************************/
@@ -2939,12 +2902,9 @@ p.demo_store {
     max-width: 960px;
 }
 
-.error-404 .page-content p {
-    font-size: 16px;
-}
 
 .error-404 h1 {
-    font-size: 80px;
+    font-size: 8rem;
     text-align: center;
 }
 
@@ -2956,7 +2916,7 @@ p.demo_store {
 .error-404 .page-content .search-form .btn-primary,
 .search .page-content .search-form .btn-primary {
     color: $light;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
     border: none;
     border-radius: 0px;
@@ -2974,7 +2934,7 @@ p.demo_store {
 .error-404 .page-content .search-form .input-group.search-field {
     padding: 10px 12px;
     font-family: $font-family-sans-serif;
-    font-size: 13px;
+    font-size:1.3rem;
     letter-spacing: 0.02em;
     height: auto;
     border: 1px solid rgb(206, 212, 218);

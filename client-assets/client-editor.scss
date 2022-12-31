@@ -3,12 +3,8 @@
 /****************************************************************************************/
 @import "client_variables";
 
-body .editor-styles-wrapper {
-    font-size: 10px;
-}
-
 html :where(.editor-styles-wrapper) p {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .editor-styles-wrapper .wp-block-paragraph a {
@@ -58,7 +54,6 @@ html :where(.editor-styles-wrapper) p {
 .editor-styles-wrapper p.mce-content-body {
     margin-bottom: 20px;
     line-height: 1.6;
-    font-size: 16px;
 }
 
 .editor-styles-wrapper ul li,
@@ -121,7 +116,7 @@ html :where(.editor-styles-wrapper) p {
 }
 
 .editor-styles-wrapper .c9-horizontal-tabs .nav-tabs .nav-link {
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .editor-styles-wrapper .c9-horizontal-tabs .blocks-gallery-grid .blocks-gallery-item a {
@@ -164,14 +159,14 @@ div[data-type="c9-blocks/horizontal-tabs"] .wp-block[data-type="core/button"] {
 
 /* buttons */
 .editor-styles-wrapper .c9-block-cta .c9-cta-content .wp-block-button__link {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 /* search widget block */
 .wp-block-search .wp-block-search__button .wp-block-search__button-rich-text {
     padding: 0px;
     margin: 0px;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .editor-styles-wrapper .wp-block-search .wp-block-search__button {
@@ -217,25 +212,7 @@ div[data-type="c9-blocks/horizontal-tabs"] .wp-block[data-type="core/button"] {
 .editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type="tel"],
 .editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper input[type="text"],
 .editor-styles-wrapper .wp-block[data-type="gravityforms/block"] .gform_wrapper textarea {
-    font-size: 16px;
     min-height: 50px;
-}
-
-/* social icon block updates */
-.is-root-container .wp-block-social-links.has-small-icon-size>.wp-block-social-link>button.components-button:not(.button-link):not(.is-tertiary):not(.is-secondary):not(.is-primary):not(.button):not(.edit-post-sidebar__panel-tab):not(.components-panel__body-toggle):not(.block-editor-button-block-appender):not(.has-icon):not(.has-icon.has-text):not(.is-small) {
-    font-size: 16px;
-}
-
-.is-root-container .wp-block-social-links>.wp-block-social-link>button.components-button:not(.button-link):not(.is-tertiary):not(.is-secondary):not(.is-primary):not(.button):not(.edit-post-sidebar__panel-tab):not(.components-panel__body-toggle):not(.block-editor-button-block-appender):not(.has-icon):not(.has-icon.has-text):not(.is-small) {
-    font-size: 24px;
-}
-
-.is-root-container .wp-block-social-links.has-large-icon-size>.wp-block-social-link>button.components-button:not(.button-link):not(.is-tertiary):not(.is-secondary):not(.is-primary):not(.button):not(.edit-post-sidebar__panel-tab):not(.components-panel__body-toggle):not(.block-editor-button-block-appender):not(.has-icon):not(.has-icon.has-text):not(.is-small) {
-    font-size: 36px;
-}
-
-.is-root-container .wp-block-social-links.has-huge-icon-size>.wp-block-social-link>button.components-button:not(.button-link):not(.is-tertiary):not(.is-secondary):not(.is-primary):not(.button):not(.edit-post-sidebar__panel-tab):not(.components-panel__body-toggle):not(.block-editor-button-block-appender):not(.has-icon):not(.has-icon.has-text):not(.is-small) {
-    font-size: 48px;
 }
 
 /* adjustment to backend social icons from conflict with core social icons */
