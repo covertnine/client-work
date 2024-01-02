@@ -113,7 +113,7 @@ a:hover {
 }
 
 .has-color-gray-color {
-    color: $gray-900 !important;
+    color: var(--wp--preset--color--color-gray) !important;
 }
 
 .bg-primary,
@@ -156,6 +156,11 @@ a:hover {
 
 .bg-dark {
     background-color: $dark;
+}
+
+mark.has-inline-color,
+.mark.has-inline-color {
+    background-color: inherit;
 }
 
 /****************************************************************************************/
@@ -1287,7 +1292,7 @@ ul[class=""] {
 }
 
 .entry-content ol li:before {
-    margin-left: -21px;
+    margin-left: -30px;
 }
 
 @media only screen and (max-width: 414px) {
