@@ -113,6 +113,10 @@ html :where(.editor-styles-wrapper) p {
     text-decoration: none;
 }
 
+.editor-styles-wrapper .is-root-container .c9-cta .c9-cta-content p {
+    line-height: 1.1;
+}
+
 .editor-styles-wrapper .c9-horizontal-tabs .nav-tabs .nav-link {
     background-color: #adb1b2;
     color: $gray-700;

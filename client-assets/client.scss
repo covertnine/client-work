@@ -104,59 +104,62 @@ a:hover {
     color: $secondary !important;
 }
 
-.has-color-white-color {
+.has-color-white-color,
+.has-color-light-color {
     color: $light !important;
 }
 
-.has-color-black-color {
+.has-color-black-color,
+.has-color-dark-color {
     color: $dark !important;
 }
 
 .has-color-gray-color {
-    color: var(--wp--preset--color--color-gray) !important;
+    color: $gray-600 !important;
 }
 
 .bg-primary,
 .has-color-orange-background-color {
-    background-color: $primary;
+    background-color: $primary !important;
 }
 
 .bg-secondary,
 .has-color-yellow-background-color {
-    background-color: $secondary;
+    background-color: $secondary !important;
 }
 
 .has-color-gray-background-color {
-    background-color: $gray-100;
+    background-color: $gray-100 !important;
 }
 
 .has-color-white-background-color {
-    background-color: #fff;
+    background-color: $light !important;
 }
 
 .has-color-black-background-color {
-    background-color: $dark;
+    background-color: $dark !important;
 }
 
 .bg-success {
-    background-color: $success;
+    background-color: $success !important;
 }
 
 .bg-info {
-    background-color: $info;
+    background-color: $info !important;
 }
 
 .bg-warning {
-    background-color: $warning;
+    background-color: $warning !important;
 }
 
 .bg-danger {
-    background-color: $danger;
+    background-color: $danger !important;
 }
 
 .bg-dark {
-    background-color: $dark;
+    background-color: $dark !important;
 }
+
 
 mark.has-inline-color,
 .mark.has-inline-color {
@@ -258,31 +261,9 @@ mark.has-inline-color,
     }
 }
 
-.bg-primary,
-.has-color-orange-background-color {
-    background-color: $primary !important;
-}
-
-.bg-secondary,
-.has-color-yellow-background-color {
-    background-color: $secondary !important;
-}
-
-.has-color-gray-background-color {
-    background-color: $gray-100 !important;
-}
-
-.has-color-white-background-color {
-    background-color: $light !important;
-}
-
-.has-color-black-background-color {
-    background-color: $dark !important;
-}
-
 /****************************************************************************************/
 /* tags */
-
+/****************************************************************************************/
 .i-tag,
 .tags-links,
 .cat-links {
@@ -1891,8 +1872,6 @@ ul[class=""] {
 /****************************************************************************************/
 /* Client widget customizations*/
 /****************************************************************************************/
-/****************************************************************************************/
-/* all widgets */
 
 .footer-widget .menu .menu-item,
 .footer-widget>ul>li {
@@ -2026,6 +2005,7 @@ ul[class=""] {
 
 /****************************************************************************************/
 /* File Attachments + Submit Buttons */
+/****************************************************************************************/
 
 .c9 .gform_wrapper input.button.gform_button_select_files,
 .c9 .gform_wrapper.gf_browser_safari input.button.gform_button_select_files,
@@ -2123,6 +2103,7 @@ ul[class=""] {
 
 /****************************************************************************************/
 /* black gradient for about page backgrounds */
+/****************************************************************************************/
 
 .is-style-dark-gradient-left:after,
 .dark-gradient-left:after {
@@ -2141,7 +2122,8 @@ ul[class=""] {
 }
 
 /****************************************************************************************/
-/* gallery adjustments  for core gallery block */
+/* gallery adjustments for core gallery block */
+/****************************************************************************************/
 
 .entry-content .container .wp-block-gallery {
     max-width: 1140px;
@@ -2159,6 +2141,7 @@ ul[class=""] {
 
 /****************************************************************************************/
 /*call to action block*/
+/****************************************************************************************/
 
 .c9-cta .c9-cta-button .square {
     color: $dark;
@@ -2184,6 +2167,7 @@ ul[class=""] {
 
 /****************************************************************************************/
 /* C9 social share block */
+/****************************************************************************************/
 
 .c9-social-sharing .c9-share-list a {
     margin: 0px 2px;
@@ -2191,6 +2175,7 @@ ul[class=""] {
 
 /****************************************************************************************/
 /* posts grid block */
+/****************************************************************************************/
 
 .c9-block-post-grid .c9-block-post-grid-byline {
     font: $font-weight-light 16px/1 $headings-font-family, helvetica, sans-serif;
@@ -2211,22 +2196,22 @@ ul[class=""] {
 /****************************************************************************************/
 /* woocommerce products blocks and product single */
 /****************************************************************************************/
-/****************************************************************************************/
-/* font size setting */
 
 .wc-block-grid__product-link {
     text-decoration: none;
 }
 
 /****************************************************************************************/
-/* product single product_meta */
+/* woocommerce product single product_meta */
+/****************************************************************************************/
 
 .c9 .product_meta>span {
     display: block;
 }
 
 /****************************************************************************************/
-/* reviews form */
+/* woocommerce reviews form */
+/****************************************************************************************/
 
 .c9 .woocommerce-Reviews,
 .c9 .woocommerce-tabs .c9-tabs-content {
@@ -2244,6 +2229,7 @@ ul[class=""] {
 
 /****************************************************************************************/
 /* woocommerce additional information table */
+/****************************************************************************************/
 
 .woocommerce .c9 table.shop_attributes td,
 .woocommerce .c9 table.shop_attributes .woocommerce-product-attributes-item__value p {
@@ -2254,6 +2240,7 @@ ul[class=""] {
 
 /****************************************************************************************/
 /* wwoocommerce add to cart form table */
+/****************************************************************************************/
 
 .woocommerce div.product form.cart .group_table td {
     vertical-align: middle;
@@ -2261,6 +2248,7 @@ ul[class=""] {
 
 /****************************************************************************************/
 /* woocommerce text formatting and color changes */
+/****************************************************************************************/
 
 .woocommerce ul.products li.product .price,
 .woocommerce div.product p.price,
@@ -2273,7 +2261,8 @@ ul[class=""] {
 }
 
 /****************************************************************************************/
-/* product single quantity field */
+/* woocommerce product single quantity field */
+/****************************************************************************************/
 
 .woocommerce .c9 .quantity .qty {
     min-height: 53px;
@@ -2281,6 +2270,7 @@ ul[class=""] {
 
 /****************************************************************************************/
 /* woocommerce buttons */
+/****************************************************************************************/
 
 .woocommerce #respond input#submit,
 .woocommerce a.button,
@@ -2394,14 +2384,16 @@ body .woocommerce-info:before {
 }
 
 /****************************************************************************************/
-/* on sale boxes need border box sizing redone */
+/* woocommerce on sale boxes need border box sizing redone */
+/****************************************************************************************/
 
 .onsale {
     box-sizing: content-box;
 }
 
 /****************************************************************************************/
-/* homepage + catalog woocommerce product blocks */
+/* woocommerce homepage + catalog woocommerce product blocks */
+/****************************************************************************************/
 
 .wc-block-grid .wc-block-grid__products:only-child {
     margin-bottom: 0px;
@@ -2567,7 +2559,8 @@ body .woocommerce-info:before {
 }
 
 /****************************************************************************************/
-/*breadcrumbs*/
+/* woocommerce breadcrumbs */
+/****************************************************************************************/
 
 .woocommerce .site-main .woocommerce-breadcrumb {
     max-width: 1140px;
@@ -2592,7 +2585,8 @@ body .woocommerce-info:before {
 }
 
 /****************************************************************************************/
-/* product index from breadcrumbs */
+/* woocommerce product index from breadcrumbs */
+/****************************************************************************************/
 
 .c9.woocommerce #wrapper-navbar {
     background-color: $dark;
@@ -2632,6 +2626,7 @@ body .woocommerce-info:before {
 
 /****************************************************************************************/
 /* WooCommerce Checkout */
+/****************************************************************************************/
 
 .woocommerce.woocommerce-checkout .col2-set .col-1,
 .woocommerce-page.woocommerce-checkout .col2-set .col-1,
@@ -2644,7 +2639,10 @@ body .woocommerce-info:before {
     border-radius: 0px;
 }
 
+/****************************************************************************************/
 /* WooCommerce Forms text inputs */
+/****************************************************************************************/
+
 .c9 .woocommerce form .form-row .input-text,
 .c9 .woocommerce-page form .form-row .input-text,
 .c9 .select2-container .select2-selection--single,
